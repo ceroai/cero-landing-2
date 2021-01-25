@@ -1,0 +1,32 @@
+.Superior {
+  background: linear-gradient(
+    45deg,
+    var(--color-rojo) 0 25%,
+    var(--color-azul),
+    var(--color-purpura) 75%
+  );
+  background-size: 400% 400%;
+  height: 300vh;
+  animation: Superior__bg 10s ease-in-out infinite;
+  padding: 0 10vw;
+  color: var(--color-blanco);
+}
+
+.Superior__mensaje_principal {
+  font-size: 9vw;
+  padding-top: 10vw;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+@keyframes Superior__bg {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
