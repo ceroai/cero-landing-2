@@ -14,9 +14,10 @@
 
 .Superior__mensaje_principal {
   font-size: 9vw;
-  padding-top: 10vw;
+  padding-top: 13vw;
   text-transform: uppercase;
   width: 50%;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 @keyframes Superior__bg {

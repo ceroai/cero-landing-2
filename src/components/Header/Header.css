@@ -2,12 +2,41 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 0 10vw;
+  padding: 2.5vw 10vw;
   color: var(--color-blanco);
+}
+
+.Header__logo {
+  width: 6vw;
+}
+
+.Header__navegacion {
+  display: flex;
+  gap: 5vw;
 }
 
 .Header__link {
   color: var(--color-blanco);
-  text-decoration: nonez;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: .9vw;
+}
+
+.Header__cta {
+  color: var(--color-blanco);
+  text-transform: uppercase;
+  border: .1vw solid var(--color-blanco);
+  background: transparent;
+  align-self: flex-start;
+  padding: 0 1.25vw;
+  height: 2vw;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: .9vw;
+  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
