@@ -34,8 +34,9 @@ const Superior = () => {
     })
     gsap.from('.Superior__logo', {
       scrollTrigger: {
-        trigger: '.Superior__logo',
-        start: 'bottom bottom',
+        trigger: '.Superior__logos',
+        start: 'top center',
+        toggleActions: 'play none none reset'
       },
       y: 50,
       opacity: 0,
@@ -64,8 +65,8 @@ const Superior = () => {
       </div>
       <div className="Superior__logos">
         <p className="Superior__texto_logos">
-          Usado por equipos de marketing<br />
-          y servicio al cliente en:
+          Usado por equipos de<br />
+          marketing y servicio al cliente en:
         </p>
         <div className="Superior__contenedor_logos">
           <img className="Superior__logo" alt="Logo Sanasalud" src={logoSanasalud} />
