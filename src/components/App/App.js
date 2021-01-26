@@ -1,4 +1,5 @@
 import Header from '../Header'
+import QueEs from '../QueEs'
 import Superior from '../Superior'
 import './App.css'
 
@@ -6,9 +7,8 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <main>
-        <Superior />
-      </main>
+      <Superior />
+      <QueEs />
     </div>
   );
 }

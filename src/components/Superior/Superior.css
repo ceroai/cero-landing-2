@@ -6,7 +6,6 @@
     var(--color-purpura) 75%
   );
   background-size: 400% 400%;
-  height: 300vh;
   animation: Superior__bg 10s ease-in-out infinite;
   padding: 0 10vw;
   color: var(--color-blanco);
@@ -18,6 +17,71 @@
   text-transform: uppercase;
   width: 50%;
   font-family: 'Space Grotesk', sans-serif;
+}
+
+.Superior__bajada {
+  display: flex;
+  width: 100%;
+  padding: 6vw 0 4vw 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2vw;
+}
+
+.Superior__instruccion {
+  flex: 1;
+  text-transform: uppercase;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translateX(-10vw);
+}
+
+.Superior__contenedor_texto {
+  flex: 1;
+}
+
+.Superior__texto {
+  max-width: 24vw;
+  line-height: 1.35;
+  padding-bottom: 2vw;
+}
+
+.Superior__cta {
+  color: var(--color-blanco);
+  text-transform: uppercase;
+  border: .1vw solid var(--color-blanco);
+  background: transparent;
+  align-self: flex-start;
+  padding: 0 1.5vw;
+  height: 2vw;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: .9vw;
+  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Superior__logos {
+  display: flex;
+  flex-direction: column;
+  padding: 10vw 0;
+}
+
+.Superior__texto_logos {
+  font-family: 'Space Grotesk', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2vw;
+  padding-bottom: 6vw;
+  line-height: 1.5;
+}
+
+.Superior__contenedor_logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Superior__logo {
+  width: 10vw;
+  filter: saturate(0) brightness(200%);
 }
 
 @keyframes Superior__bg {
