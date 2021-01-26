@@ -1,6 +1,22 @@
 import './QueEs.css'
+import { gsap } from 'gsap'
+import { useEffect } from 'react'
 
 const QueEs = () => {
+
+  useEffect(() => {
+    gsap.from('.QueEs__punto', {
+      scrollTrigger: {
+        trigger: '.QueEs__titulo',
+        start: 'bottom center',
+        toggleActions: 'play none none none',
+      },
+      y: 50,
+      opacity: 0,
+      stagger: .2
+    })
+  }, [])
+
   return (
     <section className="QueEs">
       <h2 className="QueEs__titulo">¿Qué es Cero?</h2>
@@ -10,7 +26,7 @@ const QueEs = () => {
           Cero es el servicio de comunicación automatizada
           más efectivo que conecta con clientes usando
           canales de mensajería popular. Nuestro software,
-          desarrollador por nuestro equipo de ingenieros,
+          desarrollado por nuestro equipo de ingenieros,
           aplica las últimas técnicas de Inteligencia Artificial
           publicadas por la ciencia.
         </p>

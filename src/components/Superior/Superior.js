@@ -3,8 +3,8 @@ import { gsap } from 'gsap'
 import { useEffect, useRef } from 'react'
 import { InlineIcon } from '@iconify/react'
 import iconoExplora from '@iconify-icons/mdi/arrow-left'
-import logoSanasalud from '../../assets/logo_sanasalud.svg'
-import logoRedsalud from '../../assets/logo_redsalud.svg'
+import logoSanasalud from '../../assets/logos/logo_sanasalud.svg'
+import logoRedsalud from '../../assets/logos/logo_redsalud.svg'
 
 const Superior = () => {
 
