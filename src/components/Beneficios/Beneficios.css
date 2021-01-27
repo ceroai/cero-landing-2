@@ -1,13 +1,84 @@
 .Beneficios {
   padding: 5vw 10vw;
-  background: lightgray;
+  background: #f2f2f2;
   display: flex;
   flex-direction: column;
   font-family: 'Space Grotesk', sans-serif;
+  gap: 7vw;
 }
 
 .Beneficios__titulo {
   text-transform: uppercase;
   font-size: 1.4vw;
-  padding-bottom: 6vw;
+  display: flex;
+  width: 100%;
+}
+
+.Beneficios__contenedor_beneficio {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.Beneficios__contenedor_beneficio:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.Beneficios__titulo_beneficio {
+  font-size: 2.5vw;
+  width: 100%;
+  padding-bottom: 5vw;
+}
+
+.Beneficios__contenedor_imagen_beneficio {
+  width: 70%;
+}
+
+.Beneficios__imagen_beneficio {
+  width: 100%;
+  box-shadow: 0 .5vw .75vw rgba(0, 0, 0, .25);
+}
+
+.Beneficios__textos_beneficio {
+  width: 30%;
+  padding: 0 0 0 2vw;
+}
+
+.Beneficios__contenedor_beneficio:nth-child(odd)
+.Beneficios__textos_beneficio {
+  padding: 0 2vw 0 0;
+}
+
+.Beneficios__subtitulo_beneficio {
+  font-weight: bold;
+  padding-bottom: 3vw;
+  font-size: 1.35vw;
+  line-height: 1.25;
+}
+
+.Beneficios__lista_beneficio {
+  font-size: 1.2vw;
+  line-height: 1.25;
+}
+
+.Beneficios__lista_beneficio > li {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-bottom: 1vw;
+}
+
+.Beneficios__cta {
+  color: var(--color-texto);
+  text-transform: uppercase;
+  border: .1vw solid var(--color-texto);
+  background: transparent;
+  align-self: flex-start;
+  padding: 0 1.5vw;
+  height: 2vw;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: .9vw;
+  border-radius: 2vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 2vw;
 }
