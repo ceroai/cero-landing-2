@@ -1,9 +1,12 @@
 import fotoRespuestas from '../../assets/capturas/respuestas.png'
 import fotoChat from '../../assets/capturas/chat.png'
 import fotoGrafana from '../../assets/capturas/grafana.png'
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
 import './Beneficios.css'
 
 const Beneficios = () => {
+
   return (
     <section className="Beneficios">
       <h2 className="Beneficios__titulo">Beneficios</h2>
@@ -79,29 +82,45 @@ const Beneficios = () => {
   )
 }
 
-const Beneficio = ({ titulo, subtitulo, lista, imagen, altImagen }) => (
-  <div className="Beneficios__contenedor_beneficio">
-    <h3 className="Beneficios__titulo_beneficio">{titulo}</h3>
-    <div className="Beneficios__contenedor_imagen_beneficio">
-      <img className="Beneficios__imagen_beneficio" src={imagen} alt={altImagen} />
+const Beneficio = ({ titulo, subtitulo, lista, imagen, altImagen }) => {
+  
+  const contenedor = useRef()
+
+  useEffect(() => {
+    gsap.from(contenedor.current, {
+      scrollTrigger: {
+        trigger: contenedor.current,
+        start: 'top center',
+      },
+      opacity: 0,
+      duration: 1
+    })
+  })
+
+  return (
+    <div ref={contenedor} className="Beneficios__contenedor_beneficio">
+      <h3 className="Beneficios__titulo_beneficio">{titulo}</h3>
+      <div className="Beneficios__contenedor_imagen_beneficio">
+        <img className="Beneficios__imagen_beneficio" src={imagen} alt={altImagen} />
+      </div>
+      <div className="Beneficios__textos_beneficio">
+        <h3 className="Beneficios__subtitulo_beneficio">{subtitulo}</h3>
+        <ul className="Beneficios__lista_beneficio">
+          {lista.map((l, i) => (
+            <li
+              className="Beneficios__elemento_lista_beneficio"
+              key={`${titulo}-lista-${i}`}
+            >
+              {l}
+            </li>
+          ))}
+        </ul>
+        <button className="Beneficios__cta">
+          Comencemos
+        </button>
+      </div>
     </div>
-    <div className="Beneficios__textos_beneficio">
-      <h3 className="Beneficios__subtitulo_beneficio">{subtitulo}</h3>
-      <ul className="Beneficios__lista_beneficio">
-        {lista.map((l, i) => (
-          <li
-            className="Beneficios__elemento_lista_beneficio"
-            key={`${titulo}-lista-${i}`}
-          >
-            {l}
-          </li>
-        ))}
-      </ul>
-      <button className="Beneficios__cta">
-        Comencemos
-      </button>
-    </div>
-  </div>
-)
+  )
+}
 
 export default Beneficios

@@ -1,0 +1,25 @@
+.Testimonios {
+  padding: 5vw 10vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Space Grotesk', sans-serif;
+  gap: 7vw;
+}
+
+.Testimonios__titulo {
+  text-transform: uppercase;
+  font-size: 1.4vw;
+}
+
+.Testimonios__cita {
+  quotes: '\00AB' '\00BB' '\201E' '\201C';
+}
+
+.Testimonios__cita::before {
+  content: open-quote;
+}
+
+.Testimonios__cita::after {
+  content: close-quote;
+}

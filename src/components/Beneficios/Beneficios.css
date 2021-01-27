@@ -35,17 +35,19 @@
 
 .Beneficios__imagen_beneficio {
   width: 100%;
-  box-shadow: 0 .5vw .75vw rgba(0, 0, 0, .25);
+  box-shadow:
+    0 .15vw .25vw rgba(0, 0, 0, .1),
+    0 .25vw .75vw rgba(0, 0, 0, .1);
 }
 
 .Beneficios__textos_beneficio {
   width: 30%;
-  padding: 0 0 0 2vw;
+  padding: 0 0 0 2.25vw;
 }
 
 .Beneficios__contenedor_beneficio:nth-child(odd)
 .Beneficios__textos_beneficio {
-  padding: 0 2vw 0 0;
+  padding: 0 2.25vw 0 0;
 }
 
 .Beneficios__subtitulo_beneficio {
@@ -56,7 +58,7 @@
 }
 
 .Beneficios__lista_beneficio {
-  font-size: 1.2vw;
+  font-size: 1.15vw;
   line-height: 1.25;
 }
 
