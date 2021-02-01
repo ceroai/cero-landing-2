@@ -93,7 +93,7 @@ const Beneficio = ({ titulo, subtitulo, lista, imagen, altImagen }) => {
         start: 'top center',
       },
       opacity: 0,
-      duration: 1
+      duration: 0
     })
   })
 

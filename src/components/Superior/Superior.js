@@ -5,6 +5,8 @@ import { InlineIcon } from '@iconify/react'
 import iconoExplora from '@iconify-icons/mdi/arrow-left'
 import logoSanasalud from '../../assets/logos/logo_sanasalud.svg'
 import logoRedsalud from '../../assets/logos/logo_redsalud.svg'
+import logoVitasalud from '../../assets/logos/logo_vitasalud.svg'
+import logoNorden from '../../assets/logos/logo_norden.svg'
 
 const Superior = () => {
 
@@ -71,9 +73,8 @@ const Superior = () => {
         <div className="Superior__contenedor_logos">
           <img className="Superior__logo" alt="Logo Sanasalud" src={logoSanasalud} />
           <img className="Superior__logo" alt="Logo Redsalud" src={logoRedsalud} />
-          <img className="Superior__logo" alt="Logo Sanasalud" src={logoSanasalud} />
-          <img className="Superior__logo" alt="Logo Redsalud" src={logoRedsalud} />
-          <img className="Superior__logo" alt="Logo Sanasalud" src={logoSanasalud} />
+          <img className="Superior__logo" alt="Logo Vitasalud" src={logoVitasalud} />
+          <img className="Superior__logo" alt="Logo Clínica Norden" src={logoNorden} />
         </div>
       </div>
     </section>
