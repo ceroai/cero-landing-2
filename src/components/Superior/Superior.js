@@ -73,8 +73,8 @@ const Superior = () => {
         <div className="Superior__contenedor_logos">
           <img className="Superior__logo" alt="Logo Sanasalud" src={logoSanasalud} />
           <img className="Superior__logo" alt="Logo Redsalud" src={logoRedsalud} />
-          <img className="Superior__logo" alt="Logo Vitasalud" src={logoVitasalud} />
           <img className="Superior__logo" alt="Logo Clínica Norden" src={logoNorden} />
+          <img className="Superior__logo" alt="Logo Vitasalud" src={logoVitasalud} />
         </div>
       </div>
     </section>

@@ -9,7 +9,7 @@ const QueEs = () => {
       scrollTrigger: {
         trigger: '.QueEs__titulo',
         start: 'bottom center',
-        toggleActions: 'play none none none',
+        toggleActions: 'play none none reverse',
       },
       y: 50,
       opacity: 0,
