@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import classNames from 'classnames'
 import './Testimonios.css'
 
 const Testimonios = () => {
@@ -51,16 +52,20 @@ const Testimonios = () => {
         </div>
         <div className="Testimonios__botones">
           <button
-            className="Testimonios__boton"
+            className={classNames({
+              'Testimonios__boton': true,
+              'Testimonios__boton--oculto': indiceTestimonio >= urls.length - 1
+            })}
             onClick={() => setIndiceTestimonio(Math.min(urls.length - 1, indiceTestimonio + 1))}
-            style={{ opacity: indiceTestimonio < urls.length - 1 ? 1 : 0 }}
           >
             <div className="Testimonios__icono_flecha" />
           </button>
           <button
-            className="Testimonios__boton"
+            className={classNames({
+              'Testimonios__boton': true,
+              'Testimonios__boton--oculto': indiceTestimonio <= 0
+            })}
             onClick={() => setIndiceTestimonio(Math.max(0, indiceTestimonio - 1))}
-            style={{ opacity: indiceTestimonio > 0 ? 1 : 0 }}
           >
             <div className="Testimonios__icono_flecha Testimonios__icono_flecha--atras" />
           </button>
