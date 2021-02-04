@@ -39,9 +39,10 @@
 }
 
 .Superior__texto {
-  max-width: 28vw;
+  max-width: 40vw;
   line-height: 1.35;
   padding-bottom: 2vw;
+  font-size: 2vw;
 }
 
 .Superior__cta {
