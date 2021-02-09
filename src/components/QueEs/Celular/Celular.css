@@ -1,69 +1,145 @@
 .Celular {
-  height: 38vw;
-  background: white;
-  width: 18vw;
+  min-height: 75vh;
+  background: #F7F7F7;
+  width: 38vh;
   margin: 0 auto;
-  border-radius: 3vw;
+  border-radius: 3.5vh;
   box-shadow:
-    0 0 0 .35vw #2B292A,
-    -.1vw -.1vw 0 .35vw #B0B0B0,
-    0 0 0 .7vw #656565;
+    0 0 0 .7vh #2B292A,
+    -.2vh -.2vh 0 .7vh #B0B0B0,
+    0 0 0 1.4vh #656565;
   position: relative;
+  font-family: 'Helvetica', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .Celular::before {
   content: '';
   position: absolute;
-  width: .25vw;
-  top: 8vw;
-  height: 4vw;
-  background: #333333;
-  left: -.9vw;
-  border-radius: 1vw 0 0 1vw;
+  width: .5vh;
+  top: 15vh;
+  height: 7.5vh;
+  background: #444;
+  left: -1.8vh;
+  border-radius: 1vh 0 0 1vh;
 }
 
 .Celular::after {
   content: '';
   position: absolute;
-  width: .3vw;
-  top: 3.5vw;
-  height: 2.5vw;
+  width: .6vh;
+  top: 7vh;
+  height: 5vh;
   background: #333;
-  right: -.9vw;
-  border-radius: 0 1vw 1vw 0;
-  box-shadow: 0 3vw #333;
+  right: -1.8vh;
+  border-radius: 0 2vh 2vh 0;
+  box-shadow: 0 6vh #333;
 }
 
 .Celular__solapa {
   position: absolute;
-  --ancho: 5.5vw;
+  --ancho: 15vh;
   top: 0;
-  left: calc(18vw / 2 - var(--ancho) / 2);
+  left: calc(35vh / 2 - var(--ancho) / 2);
   content: '';
   width: var(--ancho);
-  height: 1.15vw;
+  height: 2.5vh;
   background: #2B292A;
-  border-radius: 0 0 5vw 5vw / 0 0 10vw 10vw;
+  border-radius: 0 0 10vh 10vh / 0 0 20vh 20vh;
 }
 
 .Celular__solapa::before {
   position: absolute;
   content: '';
-  width: .25vw;
-  height: .25vw;
+  width: .5vh;
+  height: .5vh;
   border-radius: 50%;
   background: #5A5A5A;
-  left: 2.6125vw;
-  top: .15vw;
+  left: 7.25vh;
+  top: .3vh;
 }
 
 .Celular__solapa::after {
   position: absolute;
   content: '';
-  width: 3vw;
-  height: .25vw;
-  border-radius: 1vw;
+  width: 6vh;
+  height: .5vh;
+  border-radius: 2vh;
   background: linear-gradient(#2C2C2C, #989898);
-  left: 1.25vw;
-  top: .65vw;
+  left: 4.5vh;
+  top: 1.3vh;
+}
+
+.Celular__barra_estado {
+  height: 3.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.45vh;
+  padding: 0 3vh;
+  font-weight: bold;
+  color: #2B292A;
+}
+
+.Celular__barra_estado_iconos {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+
+.Celular__barra_app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  box-shadow: 0 .1vh .2vh rgba(0, 0, 0, .1);
+}
+
+.Celular__informacion_contacto {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.Celular__icono_volver {
+  font-size: 4vh;
+  margin-left: -.25rem;
+  color: #44a2ff;
+}
+
+.Celular__avatar {
+  background-color: lightgray;
+  width: 3.5vh;
+  height: 3.5vh;
+  border-radius: 50%;
+}
+
+.Celular__contacto {
+  display: flex;
+  flex-direction: column;
+  gap: .45vh;
+  padding-left: .75vh;
+}
+
+.Celular__nombre_contacto {
+  font-size: 1.55vh;
+  font-weight: bold;
+}
+
+.Celular__estado_contacto {
+  font-size: 1.05vh;
+  color: gray;
+}
+
+.Celular__iconos_barra_app {
+  display: flex;
+  gap: 2vh;
+  padding-right: 2vh;
+  color: #44a2ff;
+  font-size: 2.25vh;
+}
+
+.Celular__pantalla {
+  flex: 1;
 }
