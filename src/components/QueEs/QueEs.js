@@ -1,6 +1,7 @@
 import './QueEs.css'
 import { gsap } from 'gsap'
 import { useEffect } from 'react'
+import Celular from './Celular'
 
 const QueEs = () => {
 
@@ -20,7 +21,8 @@ const QueEs = () => {
   return (
     <section className="QueEs">
       <h2 className="QueEs__titulo">¿Qué es Cero?</h2>
-      <div className="QueEs__punto">
+      <Celular />
+      {/* <div className="QueEs__punto">
         <p className="QueEs__numero">01.</p>
         <p className="QueEs__texto">
           Cero es el servicio de comunicación automatizada
@@ -42,7 +44,7 @@ const QueEs = () => {
           transformamos simples interacciones en
           experiencias fluidas, naturales y empáticas.          
         </p>
-      </div>
+      </div> */}
     </section>
   )
 }

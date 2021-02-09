@@ -4,12 +4,13 @@
   display: flex;
   flex-direction: column;
   font-family: 'Space Grotesk', sans-serif;
+  height: 100vh;
 }
 
 .QueEs__titulo {
   text-transform: uppercase;
   font-size: 1.4vw;
-  padding-bottom: 6vw;
+  padding-bottom: 3vw;
 }
 
 .QueEs__punto {

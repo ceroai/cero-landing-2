@@ -1,0 +1,69 @@
+.Celular {
+  height: 38vw;
+  background: white;
+  width: 18vw;
+  margin: 0 auto;
+  border-radius: 3vw;
+  box-shadow:
+    0 0 0 .35vw #2B292A,
+    -.1vw -.1vw 0 .35vw #B0B0B0,
+    0 0 0 .7vw #656565;
+  position: relative;
+}
+
+.Celular::before {
+  content: '';
+  position: absolute;
+  width: .25vw;
+  top: 8vw;
+  height: 4vw;
+  background: #333333;
+  left: -.9vw;
+  border-radius: 1vw 0 0 1vw;
+}
+
+.Celular::after {
+  content: '';
+  position: absolute;
+  width: .3vw;
+  top: 3.5vw;
+  height: 2.5vw;
+  background: #333;
+  right: -.9vw;
+  border-radius: 0 1vw 1vw 0;
+  box-shadow: 0 3vw #333;
+}
+
+.Celular__solapa {
+  position: absolute;
+  --ancho: 5.5vw;
+  top: 0;
+  left: calc(18vw / 2 - var(--ancho) / 2);
+  content: '';
+  width: var(--ancho);
+  height: 1.15vw;
+  background: #2B292A;
+  border-radius: 0 0 5vw 5vw / 0 0 10vw 10vw;
+}
+
+.Celular__solapa::before {
+  position: absolute;
+  content: '';
+  width: .25vw;
+  height: .25vw;
+  border-radius: 50%;
+  background: #5A5A5A;
+  left: 2.6125vw;
+  top: .15vw;
+}
+
+.Celular__solapa::after {
+  position: absolute;
+  content: '';
+  width: 3vw;
+  height: .25vw;
+  border-radius: 1vw;
+  background: linear-gradient(#2C2C2C, #989898);
+  left: 1.25vw;
+  top: .65vw;
+}
