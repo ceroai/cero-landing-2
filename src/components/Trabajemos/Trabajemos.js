@@ -1,10 +1,14 @@
+import { useRef } from 'react'
 import './Trabajemos.css'
 
 const Trabajemos = () => {
+
+  const elemTexto = useRef()
+
   return (
     <div className="Trabajemos">
       <h2 className="Trabajemos__titulo">Trabajemos juntos</h2>
-      <p className="Trabajemos__mensaje">
+      <p ref={elemTexto} className="Trabajemos__mensaje">
         Incorpora el poder de la inteligencia
         artificial a tu servicio al cliente.<br />
         Agenda tu <strong>demo</strong> y conversemos de los

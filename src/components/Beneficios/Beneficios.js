@@ -3,7 +3,7 @@ import fotoChat from '../../assets/capturas/chat.png'
 import fotoGrafana from '../../assets/capturas/grafana.png'
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import './Beneficios.css'
+import './Beneficios.css' 
 
 const Beneficios = () => {
 
@@ -85,25 +85,43 @@ const Beneficios = () => {
 const Beneficio = ({ titulo, subtitulo, lista, imagen, altImagen }) => {
   
   const contenedor = useRef()
+  const elemTitulo = useRef()
+  const elemImagen = useRef()
+  const elemTextos = useRef()
 
   useEffect(() => {
-    gsap.from(contenedor.current, {
-      scrollTrigger: {
-        trigger: contenedor.current,
-        start: 'top center',
-      },
-      opacity: 0,
-      duration: 0
-    })
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: contenedor.current,
+          start: 'top center',
+          toggleActions: 'play none none reverse'
+        },
+      })
+      .from(elemTitulo.current, {
+        yPercent: -15,
+        opacity: 0,
+        duration: .35
+      })
+      .from(elemImagen.current, {
+        xPercent: -2.5,
+        opacity: 0,
+        duration: .35
+      })
+      .from(elemTextos.current, {
+        xPercent: 2.5,
+        opacity: 0,
+        duration: .35
+      })
   })
 
   return (
     <div ref={contenedor} className="Beneficios__contenedor_beneficio">
-      <h3 className="Beneficios__titulo_beneficio">{titulo}</h3>
-      <div className="Beneficios__contenedor_imagen_beneficio">
+      <h3 ref={elemTitulo} className="Beneficios__titulo_beneficio">{titulo}</h3>
+      <div ref={elemImagen} className="Beneficios__contenedor_imagen_beneficio">
         <img className="Beneficios__imagen_beneficio" src={imagen} alt={altImagen} />
       </div>
-      <div className="Beneficios__textos_beneficio">
+      <div ref={elemTextos} className="Beneficios__textos_beneficio">
         <h3 className="Beneficios__subtitulo_beneficio">{subtitulo}</h3>
         <ul className="Beneficios__lista_beneficio">
           {lista.map((l, i) => (

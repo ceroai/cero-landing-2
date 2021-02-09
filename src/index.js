@@ -5,9 +5,10 @@ import './index.css'
 import App from './components/App'
 import reportWebVitals from './reportWebVitals'
 import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/all'
+import { ScrollTrigger, TextPlugin } from 'gsap/all'
 
 gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(TextPlugin)
 
 ReactDOM.render(
   <React.StrictMode>

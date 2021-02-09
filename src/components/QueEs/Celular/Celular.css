@@ -1,9 +1,9 @@
 .Celular {
   min-height: 75vh;
   background: #F7F7F7;
-  width: 38vh;
+  width: 37vh;
   margin: 0 auto;
-  border-radius: 3.5vh;
+  border-radius: 4vh;
   box-shadow:
     0 0 0 .7vh #2B292A,
     -.2vh -.2vh 0 .7vh #B0B0B0,
@@ -94,6 +94,7 @@
   align-items: center;
   height: 5vh;
   box-shadow: 0 .1vh .2vh rgba(0, 0, 0, .1);
+  z-index: 2;
 }
 
 .Celular__informacion_contacto {
@@ -142,4 +143,35 @@
 
 .Celular__pantalla {
   flex: 1;
+  background-color: #e8dfd6;
+  border-radius: 0 0 4vh 4vh;
+  display: flex;
+  padding: 1vh;
+  flex-direction: column;
+  gap: .65vh;
+}
+
+.Celular__mensaje {
+  background-color: red;
+  max-width: 66%;
+  padding: .75vh;
+  border-radius: .5vh;
+  font-size: 1.7vh;
+  line-height: 1.15;
+}
+
+.Celular__mensaje--entrante {
+  transform-origin: 0% 0%;
+  background: white;
+  align-self: flex-start;
+}
+
+.Celular__mensaje--saliente {
+  transform-origin: 100% 0%;
+  background: #dcf8c7;
+  align-self: flex-end;
+}
+
+.Celular strong {
+  font-weight: bold;
 }

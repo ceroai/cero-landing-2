@@ -38,11 +38,12 @@ const Superior = () => {
       scrollTrigger: {
         trigger: '.Superior__logos',
         start: 'top center',
-        toggleActions: 'play none none reset'
+        toggleActions: 'play none none reverse'
       },
       y: 50,
       opacity: 0,
-      stagger: .1
+      stagger: .1,
+      rotateX: 90
     })
   }, [header, explora])
 

@@ -6,16 +6,16 @@ import Celular from './Celular'
 const QueEs = () => {
 
   useEffect(() => {
-    gsap.from('.QueEs__punto', {
-      scrollTrigger: {
-        trigger: '.QueEs__titulo',
-        start: 'bottom center',
-        toggleActions: 'play none none reverse',
-      },
-      y: 50,
-      opacity: 0,
-      stagger: .2
-    })
+    // gsap.from('.QueEs__punto', {
+    //   scrollTrigger: {
+    //     trigger: '.QueEs__titulo',
+    //     start: 'bottom center',
+    //     toggleActions: 'play none none reverse',
+    //   },
+    //   y: 50,
+    //   opacity: 0,
+    //   stagger: .2
+    // })
   }, [])
 
   return (
