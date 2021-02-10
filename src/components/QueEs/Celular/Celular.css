@@ -158,6 +158,7 @@
   border-radius: .5vh;
   font-size: 1.7vh;
   line-height: 1.15;
+  position: relative;
 }
 
 .Celular__mensaje--entrante {
@@ -174,4 +175,30 @@
 
 .Celular strong {
   font-weight: bold;
+}
+
+.Celular__deteccion {
+  position: absolute;
+  width: calc(100% + 1vh);
+  height: calc(100% + 1vh);
+  top: -0.5vh;
+  left: -0.5vh;
+  border: .35vh dashed var(--color-azul);
+}
+
+.Celular__deteccion span {
+  position: absolute;
+  left: calc(100% + 5vh);
+  color: var(--color-azul);
+  width: 50ch;
+}
+
+.Celular__etiqueta_deteccion {
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+.Celular__respuesta_deteccion {
+  top: 3ch;
+  font-size: 1.5vh;
 }
