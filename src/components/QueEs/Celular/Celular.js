@@ -40,13 +40,13 @@ const Celular = () => {
       animation: tl,
       trigger: '.QueEs',
       start: 'top top',
-      pin: true,
-      scrub: 0,
-      snap: {
-        snapTo: 'labels',
-        delay: 0
-      },
-      end: '+=3000px'
+      // pin: true,
+      scrub: false,
+      // snap: {
+      //   snapTo: 'labels',
+      //   delay: 0
+      // },
+      // end: '+=3000px'
     })
   }, [])
 

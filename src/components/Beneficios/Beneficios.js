@@ -95,7 +95,7 @@ const Beneficio = ({ titulo, subtitulo, lista, imagen, altImagen }) => {
         scrollTrigger: {
           trigger: contenedor.current,
           start: 'top center',
-          toggleActions: 'play none none reverse'
+          toggleActions: 'play none none none'
         },
       })
       .from(elemTitulo.current, {
