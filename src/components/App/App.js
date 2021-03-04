@@ -13,9 +13,9 @@ import './App.css'
 const App = () => {
   return (
     <div className="App">
-      <Header />
       <Switch>
         <Route exact path="/">
+          <Header />
           <Superior />
           <QueEs />
           <Beneficios />
@@ -23,9 +23,11 @@ const App = () => {
           <Trabajemos />
         </Route>
         <Route path="/sobre">
+          <Header />
           <AcercaDe />
         </Route>
         <Route path="/contacto">
+          <Header invertir={true} />
           <Contacto />
         </Route>
       </Switch>

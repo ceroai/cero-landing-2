@@ -3,11 +3,11 @@ import './AcercaDe.css'
 const AcercaDe = () => {
   return (
     <div className="AcercaDe">
-      <h1 className="AcercaDe">Sobre Cero</h1>
-      <p>
+      <h1 className="AcercaDe__mensaje_principal">Sobre Cero</h1>
+      <p className="AcercaDe__bajada">
         Estamos en una misión para construir
         mejor comunicación entre
-        organizaciones y usuarios.
+        organizaciones y usuarios.<br/>
         Nos ponemos en el lugar de los
         usuarios ( ¡también lo somos! ) para
         construir servicios que se adapten al
@@ -16,7 +16,7 @@ const AcercaDe = () => {
         de una forma natural, cómoda y
         eficiente para todos.
       </p>
-      <p>
+      <p className="AcercaDe__bajada">
         En Cero creemos que una buena comunicación
         requiere ir un paso más allá de solo entregar un
         mensaje y que consiste en generar una sintonía
@@ -25,7 +25,7 @@ const AcercaDe = () => {
         de Inteligencia Artificial desarrollada por nuestro
         propio equipo (en específico Aprendizaje Profundo
       </p>
-      <p>
+      <p className="AcercaDe__bajada">
         y Autoatención Neuronal, pero la verdad es que ¿a
         quién le importa? ;-)) para comprender a nuestros
         usuarios y generar un nuevo estándar de

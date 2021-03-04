@@ -1,0 +1,10 @@
+.Contacto {
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+  padding: 0 10rem;
+  font-family: 'Space Grotesk', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4fr);
+  gap: 4rem;
+}
