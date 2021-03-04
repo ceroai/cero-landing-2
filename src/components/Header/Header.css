@@ -15,7 +15,8 @@
 
 .Header__navegacion {
   display: flex;
-  gap: 5rem;
+  gap: 8rem;
+  align-items: center;
 }
 
 .Header__link {
