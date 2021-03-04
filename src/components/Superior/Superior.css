@@ -64,7 +64,7 @@
 .Superior__logos {
   display: flex;
   flex-direction: column;
-  padding: 10rem 0;
+  padding: 10rem 0 6rem 0;
 }
 
 .Superior__texto_logos {

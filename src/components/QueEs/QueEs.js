@@ -1,5 +1,5 @@
 import './QueEs.css'
-import { gsap } from 'gsap'
+// import { gsap } from 'gsap'
 import { useEffect } from 'react'
 import Celular from './Celular'
 

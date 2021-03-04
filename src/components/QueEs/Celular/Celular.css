@@ -179,17 +179,15 @@
 
 .Celular__deteccion {
   position: absolute;
-  width: calc(100% + 1vh);
   height: calc(100% + 1vh);
   top: 0vh;
-  left: -0.5vh;
+  left: 35vh;
   border-bottom: .25vh dotted #666;
 }
 
 .Celular__deteccion span {
   position: absolute;
-  left: calc(100% + 15vh);
-  width: 50ch;
+  width: 30ch;
   font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -197,6 +195,7 @@
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2vh;
+  width: auto;
 }
 
 .Celular__respuesta_deteccion {
