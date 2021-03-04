@@ -1,30 +1,30 @@
 .QueEs {
   padding: 5rem 10rem;
   background: var(--color-blanco);
-  display: flex;
-  flex-direction: column;
   font-family: 'Space Grotesk', sans-serif;
-  min-height: 100vh;
+  display: flex;
 }
 
 .QueEs__titulo {
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 3.75rem;
+  line-height: 1.1;
 }
 
-.QueEs__punto {
-  display: flex;
-  border-top: 1px solid lightgray;
-  padding: 1.5rem 0 4rem 0;
-}
-
-.QueEs__numero {
-  flex: 1;
-  font-size: 8rem;
-}
-
-.QueEs__texto {
-  width: 35rem;
-  font-size: 1.4rem;
+.QueEs__textos {
+  width: 20ch;
+  font-size: 1.3rem;
   line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.QueEs__explicacion {
+  width: 21ch;
+}
+
+.QueEs__diagrama {
+  flex: 2;
 }

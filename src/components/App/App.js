@@ -7,6 +7,7 @@ import Trabajemos from '../Trabajemos'
 import Footer from '../Footer'
 import AcercaDe from '../AcercaDe'
 import Contacto from '../Contacto'
+import Carreras from '../Carreras'
 import { Switch, Route } from 'react-router-dom'
 import './App.css'
 
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/sobre">
           <Header />
           <AcercaDe />
+          <Carreras />
         </Route>
         <Route path="/contacto">
           <Header invertir={true} />

@@ -1,8 +1,7 @@
 .Celular {
   min-height: 75vh;
   background: #F7F7F7;
-  width: 37vh;
-  margin: 0 auto;
+  width: 38vh;
   border-radius: 4vh;
   box-shadow:
     0 0 0 .7vh #2B292A,
@@ -12,6 +11,7 @@
   font-family: 'Helvetica', sans-serif;
   display: flex;
   flex-direction: column;
+  margin-left: 5rem;
 }
 
 .Celular::before {
@@ -181,24 +181,26 @@
   position: absolute;
   width: calc(100% + 1vh);
   height: calc(100% + 1vh);
-  top: -0.5vh;
+  top: 0vh;
   left: -0.5vh;
-  border: .35vh dashed var(--color-azul);
+  border-bottom: .25vh dotted #666;
 }
 
 .Celular__deteccion span {
   position: absolute;
-  left: calc(100% + 5vh);
-  color: var(--color-azul);
+  left: calc(100% + 15vh);
   width: 50ch;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .Celular__etiqueta_deteccion {
   font-weight: bold;
+  text-transform: uppercase;
   font-size: 2vh;
 }
 
 .Celular__respuesta_deteccion {
-  top: 3ch;
-  font-size: 1.5vh;
+  top: 1.25rem;
+  font-size: 1.75vh;
+  text-transform: none;
 }

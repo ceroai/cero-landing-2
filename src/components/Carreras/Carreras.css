@@ -1,0 +1,44 @@
+.Carreras {
+  border-top: .1rem solid var(--color-blanco);
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  padding: 0 10rem;
+  font-family: 'Space Grotesk', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.Carreras__titulo {
+  text-transform: uppercase;
+  font-size: 1.35rem;
+  padding: 3.5rem 0;
+}
+
+.Carreras__posicion {
+  border-top: .1rem solid var(--color-blanco);
+  display: flex;
+  justify-content: space-between;
+  padding: 3.5rem 0;
+  font-size: 1.35rem;
+}
+
+.Carreras__posicion p {
+  width: 20ch;
+}
+
+.Carreras__posicion p:first-child {
+  padding-left: 1rem;
+}
+
+.Carreras__boton_aplicar {
+  margin-right: 4rem;
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  border: .1rem solid var(--color-blanco);
+  padding: 0 1.5rem;
+  height: 1.8rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}

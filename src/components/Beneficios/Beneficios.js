@@ -101,17 +101,17 @@ const Beneficio = ({ titulo, subtitulo, lista, imagen, altImagen }) => {
       .from(elemTitulo.current, {
         yPercent: -15,
         opacity: 0,
-        duration: .35
+        duration: .0
       })
       .from(elemImagen.current, {
         xPercent: -2.5,
         opacity: 0,
-        duration: .35
+        duration: .0
       })
       .from(elemTextos.current, {
         xPercent: 2.5,
         opacity: 0,
-        duration: .35
+        duration: .0
       })
   })
 

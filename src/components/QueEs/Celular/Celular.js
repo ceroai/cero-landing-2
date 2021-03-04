@@ -25,17 +25,17 @@ const Celular = () => {
   useEffect(() => {
     const tl = gsap.timeline()
       // .to(elemEstado.current, { text: 'en línea' })
-      .from(elemMsg1.current, { opacity: 0, scale: 0 }).addLabel('msg1')
-      // .to(elemEstado.current, { text: 'escribiendo...' })
-      // .to(elemEstado.current, { text: 'en línea' })
-      .from(elemMsg2.current, { opacity: 0, scale: 0 }).addLabel('msg2')
-      .from(deteccionMsg2.current, { opacity: 0, scale: 1.9 }).addLabel('deteccion2')
-      .from(elemMsg3.current, { opacity: 0, scale: 0 }).addLabel('msg3')
-      .from(elemMsg4.current, { opacity: 0, scale: 0 }).addLabel('msg4')
-      .from(deteccionMsg4.current, { opacity: 0, scale: 1.9 }).addLabel('deteccion4')
-      .from(elemMsg5.current, { opacity: 0, scale: 0 }).addLabel('msg5')
-      .from(elemMsg6.current, { opacity: 0, scale: 0 }).addLabel('msg6')
-      .from(deteccionMsg6.current, { opacity: 0, scale: 1.9 }).addLabel('deteccion6')
+      // .from(elemMsg1.current, { opacity: 0, scale: 0 }).addLabel('msg1')
+      // // .to(elemEstado.current, { text: 'escribiendo...' })
+      // // .to(elemEstado.current, { text: 'en línea' })
+      // .from(elemMsg2.current, { opacity: 0, scale: 0 }).addLabel('msg2')
+      // .from(deteccionMsg2.current, { opacity: 0, scale: 1.9 }).addLabel('deteccion2')
+      // .from(elemMsg3.current, { opacity: 0, scale: 0 }).addLabel('msg3')
+      // .from(elemMsg4.current, { opacity: 0, scale: 0 }).addLabel('msg4')
+      // .from(deteccionMsg4.current, { opacity: 0, scale: 1.9 }).addLabel('deteccion4')
+      // .from(elemMsg5.current, { opacity: 0, scale: 0 }).addLabel('msg5')
+      // .from(elemMsg6.current, { opacity: 0, scale: 0 }).addLabel('msg6')
+      // .from(deteccionMsg6.current, { opacity: 0, scale: 1.9 }).addLabel('deteccion6')
     ScrollTrigger.create({
       animation: tl,
       trigger: '.QueEs',
