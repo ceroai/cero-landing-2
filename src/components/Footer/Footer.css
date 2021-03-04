@@ -1,38 +1,38 @@
 .Footer {
-  padding: 5vw 10vw;
+  padding: 5rem 10rem;
   background: var(--color-negro);
   color: var(--color-blanco);
   display: flex;
   flex-direction: column;
   font-family: 'Space Grotesk', sans-serif;
-  gap: 7vw;
+  gap: 7rem;
   text-transform: uppercase;
-  font-size: 1vw;
+  font-size: 1rem;
   line-height: 1.35;
 }
 
 .Footer__contenedor {
-  border-top: .1vw solid var(--color-blanco);
+  border-top: .1rem solid var(--color-blanco);
   width: 100%;
   display: flex;
-  padding: 6vw 0;
+  padding: 6rem 0;
 }
 
 .Footer__titulo {
   text-transform: uppercase;
-  font-size: 1.4vw;
-  padding-bottom: 6vw;
+  font-size: 1.4rem;
+  padding-bottom: 6rem;
 }
 
 .Footer__empresa {
   flex: 3;
   display: flex;
   flex-direction: column;
-  gap: 6vw;
+  gap: 6rem;
 }
 
 .Footer__logo_cero {
-  width: 9vw;
+  width: 9rem;
 }
 
 .Footer__informacion {
@@ -48,7 +48,7 @@
 }
 
 .Footer__integraciones {
-  border-top: .1vw solid var(--color-blanco);
-  padding-top: 1vw;
+  border-top: .1rem solid var(--color-blanco);
+  padding-top: 1rem;
   flex: 1;
 }

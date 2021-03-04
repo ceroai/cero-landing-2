@@ -1,15 +1,15 @@
 .Beneficios {
-  padding: 5vw 10vw;
+  padding: 5rem 10rem;
   background: #f2f2f2;
   display: flex;
   flex-direction: column;
   font-family: 'Space Grotesk', sans-serif;
-  gap: 7vw;
+  gap: 7rem;
 }
 
 .Beneficios__titulo {
   text-transform: uppercase;
-  font-size: 1.4vw;
+  font-size: 1.4rem;
   display: flex;
   width: 100%;
 }
@@ -24,9 +24,9 @@
 }
 
 .Beneficios__titulo_beneficio {
-  font-size: 2.5vw;
+  font-size: 2.5rem;
   width: 100%;
-  padding-bottom: 5vw;
+  padding-bottom: 5rem;
 }
 
 .Beneficios__contenedor_imagen_beneficio {
@@ -36,51 +36,51 @@
 .Beneficios__imagen_beneficio {
   width: 100%;
   box-shadow:
-    0 .15vw .25vw rgba(0, 0, 0, .1),
-    0 .25vw .75vw rgba(0, 0, 0, .1);
+    0 .15rem .25rem rgba(0, 0, 0, .1),
+    0 .25rem .75rem rgba(0, 0, 0, .1);
 }
 
 .Beneficios__textos_beneficio {
   width: 30%;
-  padding: 0 0 0 2.25vw;
+  padding: 0 0 0 2.25rem;
 }
 
 .Beneficios__contenedor_beneficio:nth-child(odd)
 .Beneficios__textos_beneficio {
-  padding: 0 2.25vw 0 0;
+  padding: 0 2.25rem 0 0;
 }
 
 .Beneficios__subtitulo_beneficio {
   font-weight: bold;
-  padding-bottom: 3vw;
-  font-size: 1.35vw;
+  padding-bottom: 3rem;
+  font-size: 1.35rem;
   line-height: 1.25;
 }
 
 .Beneficios__lista_beneficio {
-  font-size: 1.15vw;
+  font-size: 1.15rem;
   line-height: 1.25;
 }
 
 .Beneficios__lista_beneficio > li {
   list-style-type: disc;
   list-style-position: inside;
-  padding-bottom: 1vw;
+  padding-bottom: 1rem;
 }
 
 .Beneficios__cta {
   color: var(--color-texto);
   text-transform: uppercase;
-  border: .1vw solid var(--color-texto);
+  border: .1rem solid var(--color-texto);
   background: transparent;
   align-self: flex-start;
-  padding: 0 1.5vw;
-  height: 2vw;
+  padding: 0 1.5rem;
+  height: 2rem;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: .9vw;
-  border-radius: 2vw;
+  font-size: .9rem;
+  border-radius: 2rem;
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-top: 2vw;
+  margin-top: 2rem;
 }

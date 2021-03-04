@@ -4,18 +4,18 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 2.5vw 10vw;
+  padding: 2.5rem 10rem;
   color: var(--color-blanco);
   z-index: 2;
 }
 
 .Header__logo {
-  width: 6vw;
+  width: 6rem;
 }
 
 .Header__navegacion {
   display: flex;
-  gap: 5vw;
+  gap: 5rem;
 }
 
 .Header__link {
@@ -23,20 +23,20 @@
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: .9vw;
+  font-size: .9rem;
 }
 
 .Header__cta {
   color: var(--color-blanco);
   text-transform: uppercase;
-  border: .1vw solid var(--color-blanco);
+  border: .1rem solid var(--color-blanco);
   background: transparent;
   align-self: flex-start;
-  padding: 0 1.25vw;
-  height: 2vw;
+  padding: 0 1.25rem;
+  height: 2rem;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: .9vw;
-  border-radius: 2vw;
+  font-size: .9rem;
+  border-radius: 2rem;
   display: flex;
   align-items: center;
   cursor: pointer;

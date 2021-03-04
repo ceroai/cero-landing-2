@@ -1,5 +1,5 @@
 .QueEs {
-  padding: 5vw 10vw;
+  padding: 5rem 10rem;
   background: var(--color-blanco);
   display: flex;
   flex-direction: column;
@@ -9,22 +9,22 @@
 
 .QueEs__titulo {
   text-transform: uppercase;
-  font-size: 1.4vw;
+  font-size: 1.4rem;
 }
 
 .QueEs__punto {
   display: flex;
   border-top: 1px solid lightgray;
-  padding: 1.5vw 0 4vw 0;
+  padding: 1.5rem 0 4rem 0;
 }
 
 .QueEs__numero {
   flex: 1;
-  font-size: 8vw;
+  font-size: 8rem;
 }
 
 .QueEs__texto {
-  width: 35vw;
-  font-size: 1.4vw;
+  width: 35rem;
+  font-size: 1.4rem;
   line-height: 1.25;
 }

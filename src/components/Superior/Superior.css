@@ -7,13 +7,13 @@
   );
   background-size: 400% 400%;
   animation: Superior__bg 10s ease-in-out infinite;
-  padding: 0 10vw;
+  padding: 0 10rem;
   color: var(--color-blanco);
 }
 
 .Superior__mensaje_principal {
-  font-size: 9vw;
-  padding-top: 13vw;
+  font-size: 9rem;
+  padding-top: 13rem;
   text-transform: uppercase;
   width: 50%;
   font-family: 'Space Grotesk', sans-serif;
@@ -22,16 +22,16 @@
 .Superior__bajada {
   display: flex;
   width: 100%;
-  padding: 6vw 0 4vw 0;
+  padding: 6rem 0 4rem 0;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.4vw;
+  font-size: 1.4rem;
 }
 
 .Superior__instruccion {
   flex: 1;
   text-transform: uppercase;
   transform-origin: 0 0;
-  transform: rotate(-90deg) translateX(-10vw);
+  transform: rotate(-90deg) translateX(-10rem);
 }
 
 .Superior__contenedor_texto {
@@ -39,23 +39,23 @@
 }
 
 .Superior__texto {
-  max-width: 40vw;
+  max-width: 40rem;
   line-height: 1.35;
-  padding-bottom: 2vw;
-  font-size: 2vw;
+  padding-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .Superior__cta {
   color: var(--color-blanco);
   text-transform: uppercase;
-  border: .1vw solid var(--color-blanco);
+  border: .1rem solid var(--color-blanco);
   background: transparent;
   align-self: flex-start;
-  padding: 0 1.5vw;
-  height: 2vw;
+  padding: 0 1.5rem;
+  height: 2rem;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: .9vw;
-  border-radius: 2vw;
+  font-size: .9rem;
+  border-radius: 2rem;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -64,14 +64,14 @@
 .Superior__logos {
   display: flex;
   flex-direction: column;
-  padding: 10vw 0;
+  padding: 10rem 0;
 }
 
 .Superior__texto_logos {
   font-family: 'Space Grotesk', sans-serif;
   text-transform: uppercase;
-  font-size: 1.2vw;
-  padding-bottom: 6vw;
+  font-size: 1.2rem;
+  padding-bottom: 6rem;
   line-height: 1.5;
 }
 
@@ -81,7 +81,7 @@
 }
 
 .Superior__logo {
-  width: 10vw;
+  width: 10rem;
   filter: saturate(0) brightness(200%);
 }
 

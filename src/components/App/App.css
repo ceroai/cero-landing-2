@@ -1,3 +1,7 @@
+:root {
+  font-size: 1vmax;
+}
+
 .App {
   position: relative;
   font-family: 'Helvetica', sans-serif;
