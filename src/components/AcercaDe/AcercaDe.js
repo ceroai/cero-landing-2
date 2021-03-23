@@ -1,6 +1,7 @@
 import './AcercaDe.css'
 
 const AcercaDe = () => {
+
   return (
     <div className="AcercaDe">
       <h1 className="AcercaDe__mensaje_principal">Sobre Cero</h1>

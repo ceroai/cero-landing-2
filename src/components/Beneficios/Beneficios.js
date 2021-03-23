@@ -11,25 +11,13 @@ const Beneficios = () => {
     <section className="Beneficios">
       <h2 className="Beneficios__titulo">Beneficios</h2>
       <Beneficio
-        titulo="Automatiza"
+        titulo="Natural, empático y al ritmo de tus usuarios."
         imagen={fotoRespuestas}
         altImagen="Demo automatiza"
-        subtitulo={`Detecta procesos de
-          comunicación sistemática y
-          automatiza hasta el 90% de los
-          casos de uso`}
+        subtitulo={`Dale continuidad al viaje del usuario aumentando los puntos de contacto.`}
         lista={[
-          `Integra poderosas experiencias 
-          automatizadas de comunicación y 
-          resuelve casos al instante. Dale 
-          continuidad al viaje del usuario 
-          aumentando los puntos de 
-          contacto, ahorrando tiempo y 
-          esfuerzo a tu equipo.`,
-          `Trabajemos juntos para 
-          transformar puntos de quiebre de la 
-          comunicación en oportunidades de 
-          conversión para tu organización.`
+          `Detecta procesos de comunicación sistemática y automatiza hasta el 90% de los casos de uso y enfoca tu equipo en los casos más complejos. Trabajemos juntos para transformar puntos de quiebre de la comunicación en oportunidades de conversión para tu organización.`,
+          `Desde la coordinación de una cita online hasta la recopilación de comentarios después de cada visita, Cero.ai agiliza el proceso de ayudar a tus usuarios a alcanzar sus objetivos.`
         ]}
       />
       <Beneficio

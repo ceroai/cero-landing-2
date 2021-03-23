@@ -11,6 +11,10 @@
   line-height: 1.35;
 }
 
+.Footer > * {
+  z-index: 2;
+}
+
 .Footer__contenedor {
   border-top: .1rem solid var(--color-blanco);
   width: 100%;

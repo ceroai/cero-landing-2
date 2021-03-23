@@ -6,7 +6,7 @@
   width: 100%;
   padding: 2.5rem 10rem;
   color: var(--color-blanco);
-  z-index: 2;
+  z-index: 3;
 }
 
 .Header__logo {

@@ -1,26 +1,44 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { useState } from 'react'
 import classNames from 'classnames'
+import fotoRS from '../../assets/fotos/Pablo_Magerkurth_RS.jpeg'
+import fotoSS from '../../assets/fotos/Diego_Moreira_SS.jpeg'
+import fotoNO from '../../assets/fotos/Max_Hasenohr_NO.png'
 import './Testimonios.css'
+
+const testimonios = [
+  {
+    texto: 'Me gusta trabajar con el equipo de Cero porque son abiertos, rápidos y tienen iniciativa trayendo excelentes discusiones.',
+    nombre: 'Pablo Magerkurth',
+    cargo: 'Subgerente Servicio al Cliente',
+    institucion: 'Redsalud',
+    foto: fotoRS
+  },
+  {
+    texto: 'Gracias a Cero, hoy tenemos un canal de comunicación efectivo con más del 90% de nuestros pacientes y por una fracción del costo de un call center.',
+    nombre: 'Diego Moreira',
+    cargo: 'Gerente Comercial y Desarrollo',
+    institucion: 'Sanasalud',
+    foto: fotoSS
+  },
+  {
+    texto: 'Con Cero logramos automatizar el proceso de confirmación de citas de nuestras clínicas y reducir las inasistencias de pacientes, liberando a nuestros ejecutivos de atención al cliente para casos más complejos.',
+    nombre: 'Max Hasenohr',
+    cargo: 'Gerente Comercial y Marketing',
+    institucion: 'Norden Dental Care',
+    foto: fotoNO
+  }
+]
 
 const Testimonios = () => {
 
-  const [urls, setUrls] = useState([])
   const [indiceTestimonio, setIndiceTestimonio] = useState(0)
-
-  useEffect(() => {
-    axios.get('https://api.unsplash.com/search/photos?query=face&client_id=XuuXMbh4vdN52KbWQLPi0-TXiFtJmf2PW-A530rg3nQ')
-    .then(data => {
-      setUrls(data.data.results.map(u => u.urls.small))
-    })
-  }, [])
 
   return (
     <div className="Testimonios">
       <h2 className="Testimonios__titulo">Lo que dicen quienes han confiado en nosotros</h2>
       <div className="Testimonios__contenedor">
         <div className="Testomonios__carrusel">
-          {urls.map((u, i) => (
+          {testimonios.map((testimonio, i) => (
             <div
               className="Testimonios__testimonio"
               key={`testimonio-${i}`}
@@ -30,21 +48,17 @@ const Testimonios = () => {
                 <img
                   className="Testimonios__retrato"
                   alt={`Imagen cliente ${i}`}
-                  src={u}
+                  src={testimonio.foto}
                 />
               </div>
               <div className="Testimonios__contenedor_cita">
                 <blockquote className="Testimonios__cita">
-                  Me gusta trabajar con el
-                  equipo de Cero porque son
-                  abiertos, rápidos y tienen
-                  iniciativa trayendo excelentes
-                  discusiones.
+                  {testimonio.texto}
                 </blockquote>
                 <div className="Testimonios__autor">
-                  <p>Pablo Magerkurth,</p>
-                  <p>Gerente Contact Center</p>
-                  <p>de RedSalud</p>
+                  <p>{testimonio.nombre}</p>
+                  <p>{testimonio.cargo}</p>
+                  <p>de {testimonio.institucion}</p>
                 </div>
               </div>
             </div>
@@ -54,9 +68,9 @@ const Testimonios = () => {
           <button
             className={classNames({
               'Testimonios__boton': true,
-              'Testimonios__boton--oculto': indiceTestimonio >= urls.length - 1
+              'Testimonios__boton--oculto': indiceTestimonio >= testimonios.length - 1
             })}
-            onClick={() => setIndiceTestimonio(Math.min(urls.length - 1, indiceTestimonio + 1))}
+            onClick={() => setIndiceTestimonio(Math.min(testimonios.length - 1, indiceTestimonio + 1))}
           >
             <div className="Testimonios__icono_flecha" />
           </button>

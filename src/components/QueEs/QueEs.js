@@ -21,18 +21,10 @@ const QueEs = () => {
   return (
     <section className="QueEs">
       <div className="QueEs__textos">
-        <h2 className="QueEs__titulo">Qué me permite Cero?</h2>
+        <h2 className="QueEs__titulo">¿Qué me permite Cero?</h2>
         <p className="QueEs__explicacion">
-          Los asistentes virtuales de
-          CERO.AI permiten a
-          organizaciones automatizar
-          procesos de comunicación
-          a través de interacciones
-          naturales y personalizadas
-          por Whatsapp, reduciendo
-          costos de personal de
-          apoyo y superando las
-          expectativas del usuario.
+          Automatizar procesos de comunicación para optimizar tu operación,
+          aumentar tus ventas o entregar atención al cliente de forma efectiva, natural y mediante WhatsApp.
         </p>
       </div>
       <div className="QueEs__diagrama">

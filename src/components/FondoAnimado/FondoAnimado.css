@@ -1,0 +1,13 @@
+canvas {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(2rem);
+  z-index: 0;
+}
+
+.FondoAnimado__hijos * {
+  z-index: 2;
+}
