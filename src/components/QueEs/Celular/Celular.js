@@ -4,12 +4,18 @@ import iconoBateria from '@iconify-icons/mdi/battery-std'
 import iconoVolver from '@iconify-icons/mdi/chevron-left'
 import iconoCamara from '@iconify-icons/mdi/camera-outline'
 import iconoLlamada from '@iconify-icons/mdi/phone-outline'
+import iconoSi from '@iconify-icons/mdi/check-circle'
+import iconoNo from '@iconify-icons/mdi/cancel-circle'
+import iconoCheck from '@iconify-icons/mdi/check-decagram'
 import './Celular.css'
 import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { format } from 'date-fns'
 
 const Celular = () => {
+
+  const [hora, setHora] = useState(Date.now())
 
   const elemEstado = useRef()
   const elemMsg1 = useRef()
@@ -50,11 +56,16 @@ const Celular = () => {
     })
   }, [])
 
+  useEffect(() => {
+    const actualizarHora = setInterval(() => setHora(new Date()), 60000)
+    return () => clearInterval(actualizarHora)
+  }, [])
+
   return (
     <div className="Celular">
       <div className="Celular__solapa"></div>
       <div className="Celular__barra_estado">
-        <p>3:43</p>
+        <p>{format(hora, 'HH:mm')}</p>
         <p className="Celular__barra_estado_iconos">
           <InlineIcon icon={iconoWifi} />
           <InlineIcon icon={iconoBateria} style={{ transform: 'rotate(90deg)' }} />
@@ -65,7 +76,7 @@ const Celular = () => {
           <Icon className="Celular__icono_volver" icon={iconoVolver} />
           <div className="Celular__avatar" />
           <div className="Celular__contacto">
-            <p className="Celular__nombre_contacto">RedSalud</p>
+            <p className="Celular__nombre_contacto">Red de Salud <InlineIcon icon={iconoCheck} className="Celular__icono_verificado" /></p>
             <p ref={elemEstado} className="Celular__estado_contacto">en línea</p>
           </div>
         </div>
@@ -79,30 +90,33 @@ const Celular = () => {
           Hola María Isabel. Tiene una hora reservada para un <strong>importante examen de salud</strong> el próximo martes en nuestro centro médico. ¿Asistirá?
         </div>
         <div ref={elemMsg2} className="Celular__mensaje Celular__mensaje--saliente">
-          Hola. Tengo que asistir sí o sí a otro compromiso, está difícil.
+          Hola. Tengo que asistir <span className="Celular__deteccion_si">sí o sí</span> a <span className="Celular__deteccion_no">otro compromiso</span>, está <span className="Celular__deteccion_no">difícil</span>.
           <div ref={deteccionMsg2} className="Celular__deteccion">
-            <span className="Celular__etiqueta_deteccion">Paciente cancela hora</span>
-            <span className="Celular__respuesta_deteccion">Generando respuesta...</span>
+            <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_no" icon={iconoNo} />Paciente cancela hora</div>
+            <div className="Celular__respuesta_deteccion">Generando respuesta...</div>
           </div>
         </div>
         <div ref={elemMsg3} className="Celular__mensaje Celular__mensaje--entrante">
           Entiendo, no se preocupe. ¿Le gustaría cambiar su hora para otro día?
         </div>
         <div ref={elemMsg4} className="Celular__mensaje Celular__mensaje--saliente">
-          Eso sería ideal.
+          Eso <span className="Celular__deteccion_si">sería lo ideal!</span>
           <div ref={deteccionMsg4} className="Celular__deteccion">
-            <span className="Celular__etiqueta_deteccion">Paciente quiere reagendar hora</span>
-            <span className="Celular__respuesta_deteccion">Generando respuesta...</span>
+            <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Paciente quiere reagendar hora</div>
+            <div className="Celular__respuesta_deteccion">Generando respuesta...</div>
           </div>
         </div>
         <div ref={elemMsg5} className="Celular__mensaje Celular__mensaje--entrante">
-          ¡Perfecto! Nos comunicaremos con Ud. para coordinar el reagendamiento de su hora 🕖.
+          ¡Perfecto! Nos comunicaremos con Ud. para coordinar el reagendamiento de su hora 🕖
         </div>
         <div ref={elemMsg6} className="Celular__mensaje Celular__mensaje--saliente">
           Muchas gracias! Que buena atención 👩‍🦰 💯
           <div ref={deteccionMsg6} className="Celular__deteccion">
-            <span className="Celular__etiqueta_deteccion">Interacción finalizada</span>
+            <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Interacción finalizada</div>
           </div>
+        </div>
+        <div className="Celular__mensaje Celular__mensaje--entrante">
+          😊
         </div>
       </div>
     </div>

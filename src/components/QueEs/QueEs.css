@@ -3,6 +3,8 @@
   background: var(--color-blanco);
   font-family: 'Space Grotesk', sans-serif;
   display: flex;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .QueEs__titulo {
@@ -17,7 +19,8 @@
   line-height: 1.25;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 3rem;
   flex: 1;
 }
 
