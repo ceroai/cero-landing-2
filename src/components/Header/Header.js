@@ -1,8 +1,23 @@
+import { useEffect } from 'react'
 import './Header.css'
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import logo from '../../assets/logos/logo.svg'
+import { gsap } from 'gsap'
 
 const Header = ({ invertir }) => {
+
+  useEffect(() => {
+    gsap.to('.Header', {
+      scrollTrigger: {
+        trigger: '.QueEs',
+        start: 'center top',
+        toggleActions: 'play none none reverse'
+      },
+      position: 'fixed',
+      backgroundColor: 'black',
+      height: '4rem'
+    })
+  }, [])
 
   return (
     <div
