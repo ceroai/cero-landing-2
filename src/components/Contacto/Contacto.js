@@ -1,4 +1,5 @@
 import { useRef, useEffect } from 'react'
+import axios from 'axios'
 import './Contacto.css'
 
 const Contacto = () => {
@@ -8,6 +9,18 @@ const Contacto = () => {
   useEffect(() => {
     refPrimerCampo.current.focus()
   }, [])
+
+  const contactar = e => {
+    e.preventDefault()
+    axios.post('/',
+      {
+        hola: 1
+      },
+      {
+        headers: { "Content-Type": "application/x-www-form-urlencoded" }
+      }
+    ).then(() => console.log('ok'))
+  }
   
   return (
     <div className="Contacto">
@@ -16,7 +29,8 @@ const Contacto = () => {
         Hablemos sobre los desafíos de comunicación de tu empresa.<br />
         Agenda una Demo con nuestro equipo de especialistas.
       </p>
-      <form className="Contacto__formulario">
+      <form netlify className="Contacto__formulario" onSubmit={contactar}>
+        <input type="hidden" name="form-name" value="contactoCero" />
         <div className="Contacto__seccion_formulario">
           <h2 className="Contacto__titulo_seccion_formulario">
             Datos personales
@@ -61,7 +75,7 @@ const Contacto = () => {
           </h2>
           <div className="Contacto__contenedor_campos">
             <textarea dra className="Contato__area_desafio" id="desafio"></textarea>
-            <button className="Contacto__boton_enviar">Enviar</button>
+            <button type="submit" className="Contacto__boton_enviar">Enviar</button>
           </div>
         </div>
       </form>
