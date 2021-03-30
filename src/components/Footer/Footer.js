@@ -1,4 +1,9 @@
 import logo from '../../assets/logos/logo.svg'
+import { Link } from 'react-router-dom'
+import logoSUPChile from '../../assets/logos/logo_sup_chile.png'
+import logoDentalink from '../../assets/logos/logo_dentalink.png'
+import logoKopland from '../../assets/logos/logo_kopland.png'
+import logoSked from '../../assets/logos/logo_sked.svg'
 import './Footer.css'
 
 const Footer = () => {
@@ -20,13 +25,28 @@ const Footer = () => {
           <div className="Footer__links">
             <div>
               <p>Apoyado por</p>
-              <p>Start-up Chile</p>
+              <p>
+                <a target="_blank" rel="noreferrer noopener" href="https://www.startupchile.org/es/home-es/">
+                  <img className="Footer_logo_sup_chile" src={logoSUPChile} alt="Logo Start-up Chile" />
+                </a>
+              </p>
             </div>
-            <div>Contacto</div>
-            <div>Documentación</div>
+            <div><Link to="/contacto">Contacto</Link></div>
+            <div><a target="_blank" rel="noreferrer noopener" href="https://status.cero.ai/">STATUS</a></div>
           </div>
           <div className="Footer__integraciones">
-            Integraciones
+            <p>Integraciones</p>
+            <div className="Footer__contenedor_integraciones">
+              <a target="_blank" rel="noreferrer noopener" href="https://www.softwaredentalink.com/">
+                <img className="Footer__logo_integracion" src={logoDentalink} alt="Logo Dentalink" />
+              </a>
+              <a target="_blank" rel="noreferrer noopener" href="https://www.siliconriver.cl/koplandsymphony/">
+                <img className="Footer__logo_integracion" src={logoKopland} alt="Logo Kopland" />
+              </a>
+              <a target="_blank" rel="noreferrer noopener" href="https://skedsocial.com/">
+                <img className="Footer__logo_integracion" src={logoSked} alt="Logo Sked" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

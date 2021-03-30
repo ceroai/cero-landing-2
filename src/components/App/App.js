@@ -26,10 +26,10 @@ const App = () => {
         </Route>
         <Route path="/sobre">
             <Header />
-          <FondoAnimado>
-            <AcercaDe />
-            <Carreras />
-          </FondoAnimado>
+            <FondoAnimado>
+              <AcercaDe />
+              <Carreras />
+            </FondoAnimado>
         </Route>
         <Route path="/contacto">
           <Header invertir={true} />

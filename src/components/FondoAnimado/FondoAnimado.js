@@ -4,13 +4,13 @@ import watercolor from './watercolor.js'
 
 const FondoAnimado = props => {
 
-  useEffect(() => {
-    watercolor()
-  }, [])
+  // useEffect(() => {
+  //   watercolor()
+  // }, [])
 
   return (
     <div className="FondoAnimado">
-      <canvas></canvas>
+      {/* <canvas></canvas> */}
       <div className="FondoAnimado__hijos">
         {props.children}
       </div>
