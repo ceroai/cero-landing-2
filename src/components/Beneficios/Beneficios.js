@@ -16,54 +16,32 @@ const Beneficios = () => {
         altImagen="Demo automatiza"
         subtitulo={`Dale continuidad al viaje del usuario aumentando los puntos de contacto.`}
         lista={[
-          `Detecta procesos de comunicación sistemática y automatiza hasta el 90% de los casos de uso y enfoca tu equipo en los casos más complejos. Trabajemos juntos para transformar puntos de quiebre de la comunicación en oportunidades de conversión para tu organización.`,
-          `Desde la coordinación de una cita online hasta la recopilación de comentarios después de cada visita, Cero.ai agiliza el proceso de ayudar a tus usuarios a alcanzar sus objetivos.`
+          `Adapta tu comunicación a los canales preferidos por tus usuarios. Al usar Whatsapp evitas los portales de usuario, aplicaciones móviles o inicios de sesión complejos.`,
+          `Suma empatía y sentimiento para crear instancias donde los usuarios interactúen con naturalidad, respondiendo a su ritmo y estilo. `
         ]}
       />
       <Beneficio
-        titulo="Interactúa"
+        titulo="Aumenta los puntos de contacto con tus clientes"
         imagen={fotoChat}
         altImagen="Demo interacción"
         subtitulo={`Natural, empático y al ritmo 
         de tus usuarios`}
         lista={[
-          `Acércate a tus usuarios mediante 
-          comunicación con sentido y 
-          sentimiento. Porque la forma 
-          importa y los usuarios lo perciben, 
-          creamos interacciones 
-          personalizadas para cada usuario y 
-          caso de uso, aplicando los 
-          beneﬁcios de ciencia y tecnología 
-          de vanguardia (NO BULLSHIT) en 
-          nuestro idioma ESPAÑOL.`
+          `Dale continuidad al viaje del usuario aumentando los puntos de contacto.`,
+          `Automatiza hasta el 90% de los casos de uso y enfoca tu equipo en los casos más complejos. Transforma puntos de quiebre de comunicación en oportunidades de conversión para tu organización.`,
+          `Desde la coordinación de una cita online hasta la recopilación de comentarios después de cada visita, Cero.ai agiliza el proceso de ayudar a tus usuarios a alcanzar sus objetivos.` 
         ]}
       />
       <Beneficio
-        titulo="Monitorea"
+        titulo="Monitorea y optimiza tu operación"
         imagen={fotoGrafana}
         altImagen="Demo monitorización"
         subtitulo={`Monitorea procesos y 
           resultados según tus 
           necesidades`}
         lista={[
-          `Revisa en tiempo real las tasas de 
-          respuesta, disminuye el no show y 
-          mantente un paso adelante con 
-          información de las tendencias de 
-          respuesta de tus usuarios. Detecta 
-          patrones para mejorar tu negocio y 
-          escala reduciendo hasta 70% en los 
-          costos de contacto a usuarios. 
-          Invierte en soluciones de 
-          comunicación simples y de gran 
-          impacto que te permitan escalar 
-          según tus necesidades.`,
-          `Nos adaptamos a tus procesos 
-          entregando un servicio 
-          personalizado, ﬂexible y ágil para 
-          que juntos entreguemos mejor 
-          comunicación.`
+          `Nos integramos a tus sistemas y adaptamos a tus procesos para entregar un servicio personalizado y ágil que te permita maximizar tus resultados de negocio.`,
+          `Revisa en tiempo real métricas de comunicación y mantente un paso adelante con información de las tendencias de respuesta de tus usuarios. Detecta patrones para mejorar tu negocio y escala reduciendo hasta 70% en los costos de contacto a tus usuarios.`
         ]}
       />
     </section>
@@ -110,7 +88,7 @@ const Beneficio = ({ titulo, subtitulo, lista, imagen, altImagen }) => {
         <img className="Beneficios__imagen_beneficio" src={imagen} alt={altImagen} />
       </div>
       <div ref={elemTextos} className="Beneficios__textos_beneficio">
-        <h3 className="Beneficios__subtitulo_beneficio">{subtitulo}</h3>
+        {/* <h3 className="Beneficios__subtitulo_beneficio">{subtitulo}</h3> */}
         <ul className="Beneficios__lista_beneficio">
           {lista.map((l, i) => (
             <li

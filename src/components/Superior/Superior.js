@@ -58,10 +58,9 @@ const Superior = () => {
         </p>
         <div className="Superior__contenedor_texto">
           <p className="Superior__texto">
-            Conecta con tus usuarios usando
-            nuestra herramienta de comunicación
-            escrita automatizada, empática y
-            efectiva.
+            Interactúa con tus usuarios usando nuestra
+            herramienta de comunicación escrita automatizada,
+            empática y efectiva en cada paso de la atención.
           </p>
           <button className="Superior__cta">Comencemos</button>
         </div>

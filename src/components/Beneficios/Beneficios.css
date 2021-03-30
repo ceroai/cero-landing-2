@@ -26,7 +26,7 @@
 .Beneficios__titulo_beneficio {
   font-size: 2.5rem;
   width: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .Beneficios__contenedor_imagen_beneficio {
@@ -58,14 +58,14 @@
 }
 
 .Beneficios__lista_beneficio {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   line-height: 1.25;
 }
 
-.Beneficios__lista_beneficio > li {
-  list-style-type: disc;
+.Beneficios__elemento_lista_beneficio {
+  list-style-type: none;
   list-style-position: inside;
-  padding-bottom: 1rem;
+  padding-bottom: 1.25rem;
 }
 
 .Beneficios__cta {
