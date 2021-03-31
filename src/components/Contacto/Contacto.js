@@ -28,7 +28,7 @@ const Contacto = () => {
     params.append('software', software)
     params.append('desafio', desafio)
     params.append('form-name', 'contactoCero')
-    params.append('subject', 'Contacto Cero.ai')
+    params.append('subject', 'Contacto a través de Cero.ai')
     axios.post('/',
       params,
       { headers: { "Content-Type": "application/x-www-form-urlencoded" } }

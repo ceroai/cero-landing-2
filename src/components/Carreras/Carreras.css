@@ -24,6 +24,7 @@
 
 .Carreras__posicion p {
   width: 20ch;
+  line-height: 1.25;
 }
 
 .Carreras__posicion p:first-child {
@@ -42,4 +43,7 @@
   border-radius: 1.5rem;
   cursor: pointer;
   text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
