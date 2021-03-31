@@ -1,10 +1,17 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import axios from 'axios'
 import './Contacto.css'
 
 const Contacto = () => {
 
   const refPrimerCampo = useRef()
+  const [nombre, setNombre] = useState('')
+  const [telefono, setTelefono] = useState('')
+  const [email, setEmail] = useState('')
+  const [nombreOrganizacion, setNombreOrganizacion] = useState('')
+  const [tipoOrganizacion, setTipoOrganizacion] = useState('')
+  const [software, setSoftware] = useState('')
+  const [desafio, setDesafio] = useState('')
 
   useEffect(() => {
     refPrimerCampo.current.focus()
@@ -13,10 +20,13 @@ const Contacto = () => {
   const contactar = e => {
     e.preventDefault()
     const params = new URLSearchParams()
-    params.append('name', 'Akexorcist')
-    params.append('age', '28')
-    params.append('position', 'Android Developer')
-    params.append('form-name', 'contactoCero')
+    params.append('nombre', nombre)
+    params.append('telefono', telefono)
+    params.append('email', email)
+    params.append('nombreOrganizacion', nombreOrganizacion)
+    params.append('tipoOrganizacion', tipoOrganizacion)
+    params.append('software', software)
+    params.append('desafio', desafio)
     axios.post('/',
       params,
       { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
@@ -38,15 +48,29 @@ const Contacto = () => {
           <div className="Contacto__contenedor_campos">
             <label htmlFor="nombre">
               Nombre
-              <input id="nombre" name="nombre" ref={refPrimerCampo} />
+              <input
+                id="nombre"
+                name="nombre"
+                ref={refPrimerCampo}
+                onChange={e => setNombre(e.target.value)}
+              />
             </label>
             <label htmlFor="telefono">
               Teléfono
-              <input id="telefono" name="telefono" />
+              <input
+                id="telefono"
+                name="telefono"
+                onChange={e => setTelefono(e.target.value)}
+              />
             </label>
             <label htmlFor="email">
               E-mail de trabajo
-              <input type="email" id="email" name="email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                onChange={e => setEmail(e.target.value)}
+              />
             </label>
           </div>
         </div>
@@ -57,15 +81,27 @@ const Contacto = () => {
           <div className="Contacto__contenedor_campos">
             <label htmlFor="nombre_organizacion">
               Nombre organización
-              <input id="nombre_organizacion" name="nombre_organizacion" />
+              <input
+                id="nombre_organizacion"
+                name="nombre_organizacion"
+                onChange={e => setNombreOrganizacion(e.target.value)}
+              />
             </label>
             <label htmlFor="tipo_organizacion">
               Tipo de organización
-              <input id="tipo_organizacion" name="tipo_organizacion" />
+              <input
+                id="tipo_organizacion"
+                name="tipo_organizacion"
+                onChange={e => setTipoOrganizacion(e.target.value)}
+              />
             </label>
             <label htmlFor="software_gestion">
               Software de gestión
-              <input id="software_gestion" name="software_gestion" />
+              <input
+                id="software_gestion"
+                name="software_gestion"
+                onChange={e => setSoftware(e.target.value)}
+              />
             </label>
           </div>
         </div>
@@ -74,7 +110,12 @@ const Contacto = () => {
             ¿Con qué desafío de comunicación<br />te podemos ayudar?
           </h2>
           <div className="Contacto__contenedor_campos">
-            <textarea className="Contato__area_desafio" name="desafio" id="desafio"></textarea>
+            <textarea
+              className="Contato__area_desafio"
+              name="desafio"
+              id="desafio"
+              onChange={e => setDesafio(e.target.value)}
+            ></textarea>
             <button type="submit" className="Contacto__boton_enviar">Enviar</button>
           </div>
         </div>
