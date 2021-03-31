@@ -27,6 +27,8 @@ const Contacto = () => {
     params.append('tipo_organizacion', tipoOrganizacion)
     params.append('software', software)
     params.append('desafio', desafio)
+    params.append('desafio', desafio)
+    params.append('form-name', 'contactoCero')
     axios.post('/',
       params,
       { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
