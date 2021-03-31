@@ -14,7 +14,8 @@ const Contacto = () => {
     e.preventDefault()
     axios.post('/',
       {
-        hola: 1
+        hola: 1,
+        'form-name': 'contactoCero'
       },
       {
         headers: { "Content-Type": "application/x-www-form-urlencoded" }
@@ -30,7 +31,6 @@ const Contacto = () => {
         Agenda una Demo con nuestro equipo de especialistas.
       </p>
       <form netlify="true" className="Contacto__formulario" onSubmit={contactar}>
-        <input type="hidden" name="form-name" value="contactoCero" />
         <div className="Contacto__seccion_formulario">
           <h2 className="Contacto__titulo_seccion_formulario">
             Datos personales
