@@ -23,8 +23,8 @@ const Contacto = () => {
     params.append('nombre', nombre)
     params.append('telefono', telefono)
     params.append('email', email)
-    params.append('nombreOrganizacion', nombreOrganizacion)
-    params.append('tipoOrganizacion', tipoOrganizacion)
+    params.append('nombre_organizacion', nombreOrganizacion)
+    params.append('tipo_organizacion', tipoOrganizacion)
     params.append('software', software)
     params.append('desafio', desafio)
     axios.post('/',
