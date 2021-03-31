@@ -29,22 +29,22 @@ const Contacto = () => {
         Hablemos sobre los desafíos de comunicación de tu empresa.<br />
         Agenda una Demo con nuestro equipo de especialistas.
       </p>
-      <form netlify className="Contacto__formulario" onSubmit={contactar}>
+      <form netlify="true" className="Contacto__formulario" onSubmit={contactar}>
         <input type="hidden" name="form-name" value="contactoCero" />
         <div className="Contacto__seccion_formulario">
           <h2 className="Contacto__titulo_seccion_formulario">
             Datos personales
           </h2>
           <div className="Contacto__contenedor_campos">
-            <label for="nombre">
+            <label htmlFor="nombre">
               Nombre
               <input id="nombre" ref={refPrimerCampo} />
             </label>
-            <label for="telefono">
+            <label htmlFor="telefono">
               Teléfono
               <input id="telefono" />
             </label>
-            <label for="email">
+            <label htmlFor="email">
               E-mail de trabajo
               <input type="email" id="email" />
             </label>
@@ -55,15 +55,15 @@ const Contacto = () => {
             Datos de tu organización
           </h2>
           <div className="Contacto__contenedor_campos">
-            <label for="nombre_organizacion">
+            <label htmlFor="nombre_organizacion">
               Nombre organización
               <input id="nombre_organizacion" />
             </label>
-            <label for="tipo_organizacion">
+            <label htmlFor="tipo_organizacion">
               Tipo de organización
               <input id="tipo_organizacion" />
             </label>
-            <label for="software_gestion">
+            <label htmlFor="software_gestion">
               Software de gestión
               <input id="software_gestion" />
             </label>
@@ -74,7 +74,7 @@ const Contacto = () => {
             ¿Con qué desafío de comunicación<br />te podemos ayudar?
           </h2>
           <div className="Contacto__contenedor_campos">
-            <textarea dra className="Contato__area_desafio" id="desafio"></textarea>
+            <textarea className="Contato__area_desafio" id="desafio"></textarea>
             <button type="submit" className="Contacto__boton_enviar">Enviar</button>
           </div>
         </div>

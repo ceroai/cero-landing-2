@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import logoSUPChile from '../../assets/logos/logo_sup_chile.png'
 import logoDentalink from '../../assets/logos/logo_dentalink.png'
 import logoKopland from '../../assets/logos/logo_kopland.png'
-import logoSked from '../../assets/logos/logo_sked.svg'
+import logoSked from '../../assets/logos/logo_sked.png'
 import './Footer.css'
 
 const Footer = () => {
