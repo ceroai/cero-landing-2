@@ -30,7 +30,12 @@ const Contacto = () => {
         Hablemos sobre los desafíos de comunicación de tu empresa.<br />
         Agenda una Demo con nuestro equipo de especialistas.
       </p>
-      <form netlify="true" className="Contacto__formulario" onSubmit={contactar}>
+      <form
+        data-netlify="true"
+        name="contactoCero"
+        method="post"
+        className="Contacto__formulario" onSubmit={contactar}
+      >
         <div className="Contacto__seccion_formulario">
           <h2 className="Contacto__titulo_seccion_formulario">
             Datos personales
