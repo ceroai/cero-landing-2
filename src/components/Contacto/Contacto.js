@@ -30,12 +30,7 @@ const Contacto = () => {
         Hablemos sobre los desafíos de comunicación de tu empresa.<br />
         Agenda una Demo con nuestro equipo de especialistas.
       </p>
-      <form
-        data-netlify="true"
-        name="contactoCero"
-        method="post"
-        className="Contacto__formulario" onSubmit={contactar}
-      >
+      <form name="contactoCero" className="Contacto__formulario" onSubmit={contactar}>
         <div className="Contacto__seccion_formulario">
           <h2 className="Contacto__titulo_seccion_formulario">
             Datos personales
@@ -43,15 +38,15 @@ const Contacto = () => {
           <div className="Contacto__contenedor_campos">
             <label htmlFor="nombre">
               Nombre
-              <input id="nombre" ref={refPrimerCampo} />
+              <input id="nombre" name="nombre" ref={refPrimerCampo} />
             </label>
             <label htmlFor="telefono">
               Teléfono
-              <input id="telefono" />
+              <input id="telefono" name="telefono" />
             </label>
             <label htmlFor="email">
               E-mail de trabajo
-              <input type="email" id="email" />
+              <input type="email" id="email" name="email" />
             </label>
           </div>
         </div>
@@ -62,15 +57,15 @@ const Contacto = () => {
           <div className="Contacto__contenedor_campos">
             <label htmlFor="nombre_organizacion">
               Nombre organización
-              <input id="nombre_organizacion" />
+              <input id="nombre_organizacion" name="nombre_organizacion" />
             </label>
             <label htmlFor="tipo_organizacion">
               Tipo de organización
-              <input id="tipo_organizacion" />
+              <input id="tipo_organizacion" name="tipo_organizacion" />
             </label>
             <label htmlFor="software_gestion">
               Software de gestión
-              <input id="software_gestion" />
+              <input id="software_gestion" name="software_gestion" />
             </label>
           </div>
         </div>
@@ -79,7 +74,7 @@ const Contacto = () => {
             ¿Con qué desafío de comunicación<br />te podemos ayudar?
           </h2>
           <div className="Contacto__contenedor_campos">
-            <textarea className="Contato__area_desafio" id="desafio"></textarea>
+            <textarea className="Contato__area_desafio" name="desafio" id="desafio"></textarea>
             <button type="submit" className="Contacto__boton_enviar">Enviar</button>
           </div>
         </div>

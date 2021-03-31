@@ -18,5 +18,16 @@
   <body>
     <noscript>Necesitas JavaScript.</noscript>
     <div id="root"></div>
+    
+    <!-- A little help for the Netlify post-processing bots -->
+    <form name="contactoCero" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="nombre" />
+      <input type="text" name="telefono" />
+      <input type="email" name="email" />
+      <input type="text" name="nombre_organizacion" />
+      <input type="text" name="tipo_organizacion" />
+      <input type="text" name="software_gestion" />
+      <input type="text" name="desafio" />
+    </form>
   </body>
 </html>
