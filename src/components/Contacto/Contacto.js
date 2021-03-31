@@ -12,14 +12,14 @@ const Contacto = () => {
 
   const contactar = e => {
     e.preventDefault()
+    const params = new URLSearchParams()
+    params.append('name', 'Akexorcist')
+    params.append('age', '28')
+    params.append('position', 'Android Developer')
+    params.append('form-name', 'contactoCero')
     axios.post('/',
-      {
-        hola: 1,
-        'form-name': 'contactoCero'
-      },
-      {
-        headers: { "Content-Type": "application/x-www-form-urlencoded" }
-      }
+      params,
+      { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
     ).then(() => console.log('ok'))
   }
   
