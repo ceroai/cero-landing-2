@@ -1,3 +1,4 @@
+import Carreras from '../Carreras'
 import './AcercaDe.css'
 
 const AcercaDe = () => {

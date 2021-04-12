@@ -1,10 +1,39 @@
 .Beneficios {
   padding: 5rem 10rem;
-  background: #f2f2f2;
+  background:
+    radial-gradient(ellipse 25rem 25em at var(--x) var(--y), var(--color-verde) 5%, transparent),
+    radial-gradient(ellipse 25rem 25rem at calc(80% - var(--x)) calc(100% - var(--y)), var(--color-azul) 0%, transparent),
+    radial-gradient(ellipse 25rem 25rem at calc(var(--x) - 10%) calc(50% + var(--y)), var(--color-rojo) 0%, transparent),
+    var(--color-fondo-beneficios);
   display: flex;
   flex-direction: column;
   font-family: 'Space Grotesk', sans-serif;
   gap: 7rem;
+  --x: 15rem;
+  animation: prueba 25s ease alternate-reverse infinite both;
+}
+
+@property --x {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 10%;
+}
+
+@property --y {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 10%;
+}
+
+@keyframes prueba {
+  0% {
+    --x: 5%;
+    --y: 5%;
+  }
+  100% {
+    --x: 90%;
+    --y: 50%;
+  }
 }
 
 .Beneficios__titulo {
@@ -17,6 +46,7 @@
 .Beneficios__contenedor_beneficio {
   display: flex;
   flex-flow: row wrap;
+  position: relative;
 }
 
 .Beneficios__contenedor_beneficio:nth-child(odd) {
@@ -60,6 +90,7 @@
 .Beneficios__lista_beneficio {
   font-size: 1.25rem;
   line-height: 1.25;
+  mix-blend-mode: darken;
 }
 
 .Beneficios__elemento_lista_beneficio {

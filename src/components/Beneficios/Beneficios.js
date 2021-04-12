@@ -1,8 +1,6 @@
 import fotoRespuestas from '../../assets/capturas/respuestas.png'
 import fotoChat from '../../assets/capturas/chat.png'
 import fotoGrafana from '../../assets/capturas/grafana.png'
-import { useEffect, useRef } from 'react'
-import { gsap } from 'gsap'
 import './Beneficios.css' 
 import { useHistory } from 'react-router'
 
@@ -51,45 +49,15 @@ const Beneficios = () => {
 
 const Beneficio = ({ titulo, subtitulo, lista, imagen, altImagen }) => {
   
-  const contenedor = useRef()
-  const elemTitulo = useRef()
-  const elemImagen = useRef()
-  const elemTextos = useRef()
   const history = useHistory()
 
-  useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: contenedor.current,
-          start: 'top center',
-          toggleActions: 'play none none none'
-        },
-      })
-      .from(elemTitulo.current, {
-        yPercent: -15,
-        opacity: 0,
-        duration: .0
-      })
-      .from(elemImagen.current, {
-        xPercent: -2.5,
-        opacity: 0,
-        duration: .0
-      })
-      .from(elemTextos.current, {
-        xPercent: 2.5,
-        opacity: 0,
-        duration: .0
-      })
-  })
-
   return (
-    <div ref={contenedor} className="Beneficios__contenedor_beneficio">
-      <h3 ref={elemTitulo} className="Beneficios__titulo_beneficio">{titulo}</h3>
-      <div ref={elemImagen} className="Beneficios__contenedor_imagen_beneficio">
+    <div className="Beneficios__contenedor_beneficio">
+      <h3 className="Beneficios__titulo_beneficio">{titulo}</h3>
+      <div className="Beneficios__contenedor_imagen_beneficio">
         <img className="Beneficios__imagen_beneficio" src={imagen} alt={altImagen} />
       </div>
-      <div ref={elemTextos} className="Beneficios__textos_beneficio">
+      <div className="Beneficios__textos_beneficio">
         {/* <h3 className="Beneficios__subtitulo_beneficio">{subtitulo}</h3> */}
         <ul className="Beneficios__lista_beneficio">
           {lista.map((l, i) => (
