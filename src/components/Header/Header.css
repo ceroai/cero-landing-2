@@ -6,8 +6,8 @@
   width: 100%;
   padding: 0rem 10rem;
   height: 7rem;
-  color: var(--color-blanco);
   z-index: 3;
+  mix-blend-mode: luminosity;
 }
 
 .Header__logo {
@@ -43,10 +43,9 @@
   align-items: center;
   cursor: pointer;
   transition: all .15s ease-in-out;
-  mix-blend-mode: luminosity;
 }
 
 .Header__cta:hover {
   background: var(--color-blanco);
-  color: var(--color-azul);
+  color: var(--color-negro);
 }

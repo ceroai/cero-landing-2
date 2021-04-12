@@ -144,7 +144,15 @@
 
 .Celular__pantalla {
   flex: 1;
-  background-color: #e8dfd6;
+  background: linear-gradient(
+      45deg,
+      #ed332425 0 25%,
+      #005bf125,
+      #a506e925 75%
+    )
+    #e8dfd6;
+  background-size: 500% 100%;
+  animation: Superior__bg 10s ease infinite;
   border-radius: 0 0 5vh 5vh;
   display: flex;
   padding: 1.5vh 2vh;

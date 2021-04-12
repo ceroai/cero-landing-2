@@ -87,7 +87,7 @@ const Celular = () => {
       </div>
       <div className="Celular__pantalla">
         <div ref={elemMsg1} className="Celular__mensaje Celular__mensaje--entrante">
-          ¡Hola Sofía! Tiene hora para un <strong>importante examen de salud</strong> el próximo martes en nuestro centro médico. ¿Asistirá?
+          ¡Hola Gabriela! Tiene hora para un <strong>importante examen de salud</strong> el próximo martes en nuestro centro médico. ¿Asistirá?
         </div>
         <div ref={elemMsg2} className="Celular__mensaje Celular__mensaje--saliente">
           Hola. Tengo que asistir <span className="Celular__deteccion_si">sí o sí</span> a <span className="Celular__deteccion_no">otro compromiso</span>, está <span className="Celular__deteccion_no">difícil</span>.
@@ -100,7 +100,7 @@ const Celular = () => {
           Entiendo, no se preocupe. ¿Le gustaría cambiar su hora para otro día?
         </div>
         <div ref={elemMsg4} className="Celular__mensaje Celular__mensaje--saliente">
-          Eso <span className="Celular__deteccion_si">sería lo ideal!</span>
+          Eso <span className="Celular__deteccion_si">sería ideal!</span>
           <div ref={deteccionMsg4} className="Celular__deteccion">
             <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Paciente quiere reagendar hora</div>
             <div className="Celular__respuesta_deteccion">Generando respuesta...</div>

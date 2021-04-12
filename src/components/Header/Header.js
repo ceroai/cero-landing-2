@@ -25,10 +25,7 @@ const Header = ({ invertir }) => {
   }, [path])
 
   return (
-    <div
-      className="Header"
-      style={{ mixBlendMode: invertir ? 'difference' : 'normal' }}
-    >
+    <div className="Header">
       <Link to="/">
         <img className="Header__logo" src={logo} alt="Logo de Cero" />
       </Link>
