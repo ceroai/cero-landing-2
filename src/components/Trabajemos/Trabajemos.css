@@ -37,4 +37,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: all .15s ease-in-out;
+}
+
+.Trabajemos__cta:hover {
+  background: var(--color-blanco);
+  color: var(--color-negro);
 }

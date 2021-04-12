@@ -83,4 +83,10 @@
   align-items: center;
   cursor: pointer;
   margin-top: 2rem;
+  transition: all .15s ease-in-out;
+}
+
+.Beneficios__cta:hover {
+  background: var(--color-negro);
+  color: var(--color-blanco);
 }

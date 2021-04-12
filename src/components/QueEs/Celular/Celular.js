@@ -87,7 +87,7 @@ const Celular = () => {
       </div>
       <div className="Celular__pantalla">
         <div ref={elemMsg1} className="Celular__mensaje Celular__mensaje--entrante">
-          Hola María Isabel. Tiene una hora reservada para un <strong>importante examen de salud</strong> el próximo martes en nuestro centro médico. ¿Asistirá?
+          ¡Hola Sofía! Tiene hora para un <strong>importante examen de salud</strong> el próximo martes en nuestro centro médico. ¿Asistirá?
         </div>
         <div ref={elemMsg2} className="Celular__mensaje Celular__mensaje--saliente">
           Hola. Tengo que asistir <span className="Celular__deteccion_si">sí o sí</span> a <span className="Celular__deteccion_no">otro compromiso</span>, está <span className="Celular__deteccion_no">difícil</span>.

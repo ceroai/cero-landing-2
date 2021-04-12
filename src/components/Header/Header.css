@@ -42,4 +42,11 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: all .15s ease-in-out;
+  mix-blend-mode: luminosity;
+}
+
+.Header__cta:hover {
+  background: var(--color-blanco);
+  color: var(--color-azul);
 }

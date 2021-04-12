@@ -7,11 +7,13 @@ import logoSanasalud from '../../assets/logos/logo_sanasalud.svg'
 import logoRedsalud from '../../assets/logos/logo_redsalud.svg'
 import logoVitasalud from '../../assets/logos/logo_vitasalud.svg'
 import logoNorden from '../../assets/logos/logo_norden.svg'
+import { useHistory } from 'react-router'
 
 const Superior = () => {
 
   const header = useRef()
   const explora = useRef()
+  const history = useHistory()
 
   useEffect(() => {
     gsap.to(header.current, {
@@ -62,7 +64,7 @@ const Superior = () => {
             herramienta de comunicación escrita automatizada,
             empática y efectiva en cada paso de la atención.
           </p>
-          <button className="Superior__cta">Comencemos</button>
+          <button onClick={() => history.push('/contacto')} className="Superior__cta">Comencemos</button>
         </div>
       </div>
       <div className="Superior__logos">

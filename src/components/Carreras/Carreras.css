@@ -46,4 +46,10 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: all .15s ease-in-out;
+}
+
+.Carreras__boton_aplicar:hover {
+  background: var(--color-blanco);
+  color: var(--color-negro);
 }

@@ -116,6 +116,7 @@ const Contacto = () => {
               className="Contato__area_desafio"
               name="desafio"
               id="desafio"
+              placeholder="Ej. Necesito ayuda para gestionar mis pacientes"
               onChange={e => setDesafio(e.target.value)}
             ></textarea>
             <button type="submit" className="Contacto__boton_enviar">Enviar</button>

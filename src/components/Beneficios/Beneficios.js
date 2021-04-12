@@ -4,6 +4,7 @@ import fotoGrafana from '../../assets/capturas/grafana.png'
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import './Beneficios.css' 
+import { useHistory } from 'react-router'
 
 const Beneficios = () => {
 
@@ -54,6 +55,7 @@ const Beneficio = ({ titulo, subtitulo, lista, imagen, altImagen }) => {
   const elemTitulo = useRef()
   const elemImagen = useRef()
   const elemTextos = useRef()
+  const history = useHistory()
 
   useEffect(() => {
     gsap
@@ -99,7 +101,7 @@ const Beneficio = ({ titulo, subtitulo, lista, imagen, altImagen }) => {
             </li>
           ))}
         </ul>
-        <button className="Beneficios__cta">
+        <button onClick={() => history.push('/contacto')} className="Beneficios__cta">
           Comencemos
         </button>
       </div>

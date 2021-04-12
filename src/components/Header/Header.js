@@ -1,12 +1,13 @@
 import { useEffect } from 'react'
 import './Header.css'
-import { Link, useRouteMatch } from 'react-router-dom'
+import { Link, useHistory, useRouteMatch } from 'react-router-dom'
 import logo from '../../assets/logos/logo.svg'
 import { gsap } from 'gsap'
 
 const Header = ({ invertir }) => {
 
   const { path } = useRouteMatch()
+  const history = useHistory()
 
   useEffect(() => {
     if (path === '/') {
@@ -34,7 +35,7 @@ const Header = ({ invertir }) => {
       <nav className="Header__navegacion">
         <Link to="/sobre" className="Header__link" href="#hola">Sobre Cero</Link>
         <Link to="/contacto" className="Header__link" href="#hola">Contáctanos</Link>
-        <button className="Header__cta">Empieza ya</button>
+        <button onClick={() => history.push('/contacto')} className="Header__cta">Empieza ya</button>
       </nav>
     </div>
   )

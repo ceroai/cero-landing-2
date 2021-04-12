@@ -1,9 +1,11 @@
 import { useRef } from 'react'
+import { useHistory } from 'react-router'
 import './Trabajemos.css'
 
 const Trabajemos = () => {
 
   const elemTexto = useRef()
+  const history = useHistory()
 
   return (
     <div className="Trabajemos">
@@ -15,7 +17,7 @@ const Trabajemos = () => {
         desafíos de comunicación con clientes
         que tiene tu organización.
       </p>
-      <button className="Trabajemos__cta">Pide tu demo</button>
+      <button onClick={() => history.push('/contacto')} className="Trabajemos__cta">Pide tu demo</button>
     </div>
   )
 }
