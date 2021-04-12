@@ -149,19 +149,18 @@
       #ed332425 0 25%,
       #005bf125,
       #a506e925 75%
-    )
-    #e8dfd6;
+    ), white;
   background-size: 500% 100%;
   animation: Superior__bg 10s ease infinite;
   border-radius: 0 0 5vh 5vh;
   display: flex;
   padding: 1.5vh 2vh;
   flex-direction: column;
-  gap: 1.25vh;
+  gap: 1.5vh;
+  position: relative;
 }
 
 .Celular__mensaje {
-  background-color: red;
   max-width: 66%;
   padding: 1.15vh;
   border-radius: .5vh;
@@ -169,6 +168,16 @@
   line-height: 1.25;
   position: relative;
   filter: drop-shadow(0 .1rem .15rem rgba(0, 0, 0, .1));
+}
+
+.Celular__mensaje--saliente::after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px dotted var(--color-negro);
+  height: 100%;
+  width: calc(100% + 30vw);
+  left: .25vh;
+  top: .75vh;
 }
 
 .Celular__mensaje--entrante::before {
@@ -227,6 +236,7 @@
   padding-left: calc(100% + 5rem);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: 'Space Grotesk', sans-serif;
   min-width: 50rem;
 }
@@ -243,26 +253,6 @@
   font-size: 2vh;
   text-transform: none;
   margin-left: 2rem;
-}
-
-.Celular__deteccion_si, .Celular__deteccion_no {
-  position: relative;
-}
-
-.Celular__deteccion_si::after, .Celular__deteccion_no::after {
-  content: '';
-  position: absolute;
-  height: .5vh;
-  width: 100%;
-  background: var(--color-verde);
-  border-radius: 1vh;
-  left: 0;
-  top: calc(100% - .5vh);
-  box-shadow: 0 .05vh .1vh rgba(0, 0, 0, .35);
-}
-
-.Celular__deteccion_no::after {
-  background: var(--color-rojo);
 }
 
 .Celular__icono_no {
