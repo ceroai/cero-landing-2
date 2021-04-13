@@ -106,7 +106,7 @@
 
 @media (orientation: portrait) {
   .Superior {
-    padding: 0 5rem;
+    padding: 5rem;
   }
 
   .Superior__mensaje_principal {
@@ -114,7 +114,7 @@
     text-align: center;
     width: 100%;
     line-height: 1.25;
-    padding: 16rem 0 10rem 0;
+    padding: 19rem 0 2rem 0;
   }
 
   .Superior__instruccion {

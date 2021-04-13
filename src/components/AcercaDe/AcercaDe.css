@@ -47,3 +47,9 @@
   line-height: 1.25;
   grid-area: 3 / 2 / 4 / 3;
 }
+
+@media (orientation: portrait) {
+  .AcercaDe {
+    padding: 5rem;
+  }
+}

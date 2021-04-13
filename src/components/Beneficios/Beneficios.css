@@ -104,7 +104,6 @@
   text-transform: uppercase;
   border: .1rem solid var(--color-texto);
   background: rgba(255, 255, 255, .15);
-  align-self: flex-start;
   padding: 0 1.5rem;
   height: 2rem;
   font-family: 'Space Grotesk', sans-serif;
@@ -126,6 +125,13 @@
   .Beneficios {
     padding: 5rem;
     background: var(--color-fondo-beneficios);
+    text-align: center;
+  }
+
+  .Beneficios__titulo {
+    width: 100%;
+    font-size: 2rem;
+    justify-content: center;
   }
 
   .Beneficios__contenedor_beneficio {
@@ -134,5 +140,30 @@
 
   .Beneficios__contenedor_imagen_beneficio {
     width: 100%;
+  }
+
+  .Beneficios__titulo_beneficio {
+    font-size: 4rem;
+  }
+
+  .Beneficios__textos_beneficio {
+    width: 100%;
+    padding: 4rem 0 0 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Beneficios__elemento_lista_beneficio {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+
+  .Beneficios__cta {
+    margin-top: 4rem;
+    padding: 0 2.5rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 9in;
   }
 }
