@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import classNames from 'classnames'
 import fotoRS from '../../assets/fotos/Pablo_Magerkurth_RS.jpeg'
 import fotoSS from '../../assets/fotos/Diego_Moreira_SS.jpeg'
@@ -32,6 +32,17 @@ const testimonios = [
 const Testimonios = () => {
 
   const [indiceTestimonio, setIndiceTestimonio] = useState(0)
+  const [animacionActiva, setAnimacionActiva] = useState(true)
+
+  useEffect(() => {
+    const animacionCarrusel = setInterval(() => {
+      if (animacionActiva) {
+        setIndiceTestimonio(prev => (prev + 1) % testimonios.length)
+        console.log(indiceTestimonio)
+      }
+    }, 3000)
+    return () => clearInterval(animacionCarrusel)
+  }, [animacionActiva, indiceTestimonio])
 
   return (
     <div className="Testimonios">
@@ -70,7 +81,10 @@ const Testimonios = () => {
               'Testimonios__boton': true,
               'Testimonios__boton--oculto': indiceTestimonio >= testimonios.length - 1
             })}
-            onClick={() => setIndiceTestimonio(Math.min(testimonios.length - 1, indiceTestimonio + 1))}
+            onClick={() => {
+              setIndiceTestimonio(Math.min(testimonios.length - 1, indiceTestimonio + 1))
+              setAnimacionActiva(false)
+            }}
           >
             <div className="Testimonios__icono_flecha" />
           </button>
@@ -79,7 +93,10 @@ const Testimonios = () => {
               'Testimonios__boton': true,
               'Testimonios__boton--oculto': indiceTestimonio <= 0
             })}
-            onClick={() => setIndiceTestimonio(Math.max(0, indiceTestimonio - 1))}
+            onClick={() => {
+              setIndiceTestimonio(Math.max(0, indiceTestimonio - 1))
+              setAnimacionActiva(false)
+            }}
           >
             <div className="Testimonios__icono_flecha Testimonios__icono_flecha--atras" />
           </button>

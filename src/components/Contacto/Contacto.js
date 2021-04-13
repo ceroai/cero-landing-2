@@ -51,6 +51,7 @@ const Contacto = () => {
             <label htmlFor="nombre">
               Nombre
               <input
+                required="required"
                 id="nombre"
                 name="nombre"
                 ref={refPrimerCampo}
@@ -60,6 +61,7 @@ const Contacto = () => {
             <label htmlFor="telefono">
               Teléfono
               <input
+                required="required"
                 id="telefono"
                 name="telefono"
                 onChange={e => setTelefono(e.target.value)}
@@ -68,6 +70,7 @@ const Contacto = () => {
             <label htmlFor="email">
               E-mail de trabajo
               <input
+                required="required"
                 type="email"
                 id="email"
                 name="email"
@@ -84,6 +87,7 @@ const Contacto = () => {
             <label htmlFor="nombre_organizacion">
               Nombre organización
               <input
+                required="required"
                 id="nombre_organizacion"
                 name="nombre_organizacion"
                 onChange={e => setNombreOrganizacion(e.target.value)}
@@ -92,6 +96,7 @@ const Contacto = () => {
             <label htmlFor="tipo_organizacion">
               Tipo de organización
               <input
+                required="required"
                 id="tipo_organizacion"
                 name="tipo_organizacion"
                 onChange={e => setTipoOrganizacion(e.target.value)}
@@ -100,6 +105,7 @@ const Contacto = () => {
             <label htmlFor="software_gestion">
               Software de gestión
               <input
+                required="required"
                 id="software_gestion"
                 name="software_gestion"
                 onChange={e => setSoftware(e.target.value)}
@@ -113,6 +119,7 @@ const Contacto = () => {
           </h2>
           <div className="Contacto__contenedor_campos">
             <textarea
+              required="required"
               className="Contato__area_desafio"
               name="desafio"
               id="desafio"

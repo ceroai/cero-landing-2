@@ -3,7 +3,7 @@
   background:
     radial-gradient(ellipse 25rem 25em at var(--x) var(--y), var(--color-verde) 5%, transparent),
     radial-gradient(ellipse 25rem 25rem at calc(80% - var(--x)) calc(95% - var(--y)), var(--color-azul) 0%, transparent),
-    radial-gradient(ellipse 25rem 25rem at calc(var(--x) - 10%) calc(45% + var(--y)), var(--color-rojo) 0%, transparent),
+    radial-gradient(ellipse 25rem 25rem at calc(var(--x) + 10%) calc(45% + var(--y)), var(--color-rojo) 0%, transparent),
     var(--color-fondo-beneficios);
   display: flex;
   flex-direction: column;
@@ -124,7 +124,7 @@
 @media (orientation: portrait) {
   .Beneficios {
     padding: 5rem;
-    background: var(--color-fondo-beneficios);
+    /* background: var(--color-fondo-beneficios); */
     text-align: center;
   }
 

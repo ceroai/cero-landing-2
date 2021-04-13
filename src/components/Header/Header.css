@@ -12,6 +12,7 @@
 
 .Header__logo {
   width: 6rem;
+  transition: all .15s ease;
 }
 
 .Header__navegacion {
@@ -27,6 +28,7 @@
   font-family: 'Space Grotesk', sans-serif;
   font-size: .9rem;
   position: relative;
+  transition: all .25s ease;
 }
 
 .Header__link:hover::after {
@@ -44,7 +46,7 @@
 .Header__cta {
   color: var(--color-blanco);
   text-transform: uppercase;
-  border: 1px solid var(--color-blanco);
+  border: 1px solid;
   background: transparent;
   align-self: flex-start;
   padding: 0 1.25rem;
@@ -60,7 +62,27 @@
 
 .Header__cta:hover {
   background: var(--color-blanco);
+}
+
+.Header__logo--oscuro {
+  filter: invert();
+}
+
+.Header__cta--oscuro {
   color: var(--color-negro);
+}
+
+.Header__cta--oscuro:hover {
+  background: var(--color-negro);
+  color: var(--color-blanco);
+}
+
+.Header__link--oscuro {
+  color: var(--color-negro);
+}
+
+.Header__link--oscuro:hover::after {
+  background: var(--color-negro);
 }
 
 @keyframes Header__subrayado {
