@@ -103,3 +103,55 @@
     background-position: 0 50%;
   }
 }
+
+@media (orientation: portrait) {
+  .Superior {
+    padding: 0 5rem;
+  }
+
+  .Superior__mensaje_principal {
+    font-size: 6.5rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.25;
+    padding: 16rem 0 10rem 0;
+  }
+
+  .Superior__instruccion {
+    display: none;
+  }
+
+  .Superior__bajada {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .Superior__contenedor_texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Superior__cta {
+    align-self: auto;
+    margin-top: 4rem;
+    padding: 0 2.5rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 9in;
+  }
+
+  .Superior__texto_logos {
+    text-align: center;
+  }
+
+  .Superior__contenedor_logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    gap: 5rem;
+  }
+}

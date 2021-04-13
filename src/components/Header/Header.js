@@ -1,28 +1,11 @@
-import { useEffect } from 'react'
 import './Header.css'
 import { Link, useHistory, useRouteMatch } from 'react-router-dom'
 import logo from '../../assets/logos/logo.svg'
-import { gsap } from 'gsap'
 
-const Header = ({ invertir }) => {
+const Header = () => {
 
   const { path } = useRouteMatch()
   const history = useHistory()
-
-  useEffect(() => {
-    if (path === '/') {
-      gsap.to('.Header', {
-        scrollTrigger: {
-          trigger: '.QueEs',
-          start: 'center top',
-          toggleActions: 'play none none reverse'
-        },
-        position: 'fixed',
-        backgroundColor: 'black',
-        height: '4rem'
-      })
-    }
-  }, [path])
 
   return (
     <div className="Header">

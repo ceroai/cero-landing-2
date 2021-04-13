@@ -31,3 +31,24 @@
 .QueEs__diagrama {
   flex: 2;
 }
+
+@media (orientation: portrait) {
+  .QueEs {
+    flex-direction: column;
+    height: calc(32rem + 125vmin);
+    padding: 5rem;
+  }
+
+  .QueEs__textos {
+    width: 100%;
+  }
+
+  .QueEs__titulo {
+    font-size: 5rem;
+  }
+
+  .QueEs__explicacion {
+    width: auto;
+    font-size: 2.5rem;
+  }
+}

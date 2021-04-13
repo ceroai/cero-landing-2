@@ -5,7 +5,7 @@
     var(--color-azul) 120%
   );
   background-size: 400% 125%;
-  animation: Superior__bg 10s ease-in-out infinite;
+  animation: Superior__bg 15s ease-in-out infinite;
   color: var(--color-negro);
   padding: 0 10rem;
   font-family: 'Space Grotesk', sans-serif;

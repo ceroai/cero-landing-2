@@ -12,7 +12,6 @@
 
 .Header__logo {
   width: 6rem;
-  object-fit: contain;
 }
 
 .Header__navegacion {

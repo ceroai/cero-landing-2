@@ -1,4 +1,3 @@
-import Carreras from '../Carreras'
 import './AcercaDe.css'
 
 const AcercaDe = () => {
@@ -13,8 +12,7 @@ const AcercaDe = () => {
         Nos ponemos en el lugar de los
         usuarios ( ¡también lo somos! ) para
         construir servicios que se adapten al
-        día a día de las personas, de forma de
-        poder entregar información importante
+        día a día de las personas, entregando información importante
         de una forma natural, cómoda y
         eficiente para todos.
       </p>

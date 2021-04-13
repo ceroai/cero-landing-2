@@ -2,8 +2,8 @@
   padding: 5rem 10rem;
   background:
     radial-gradient(ellipse 25rem 25em at var(--x) var(--y), var(--color-verde) 5%, transparent),
-    radial-gradient(ellipse 25rem 25rem at calc(80% - var(--x)) calc(100% - var(--y)), var(--color-azul) 0%, transparent),
-    radial-gradient(ellipse 25rem 25rem at calc(var(--x) - 10%) calc(50% + var(--y)), var(--color-rojo) 0%, transparent),
+    radial-gradient(ellipse 25rem 25rem at calc(80% - var(--x)) calc(95% - var(--y)), var(--color-azul) 0%, transparent),
+    radial-gradient(ellipse 25rem 25rem at calc(var(--x) - 10%) calc(45% + var(--y)), var(--color-rojo) 0%, transparent),
     var(--color-fondo-beneficios);
   display: flex;
   flex-direction: column;
@@ -27,8 +27,8 @@
 
 @keyframes prueba {
   0% {
-    --x: 5%;
-    --y: 5%;
+    --x: 10%;
+    --y: 15%;
   }
   100% {
     --x: 90%;
@@ -103,7 +103,7 @@
   color: var(--color-texto);
   text-transform: uppercase;
   border: .1rem solid var(--color-texto);
-  background: transparent;
+  background: rgba(255, 255, 255, .15);
   align-self: flex-start;
   padding: 0 1.5rem;
   height: 2rem;
@@ -120,4 +120,19 @@
 .Beneficios__cta:hover {
   background: var(--color-negro);
   color: var(--color-blanco);
+}
+
+@media (orientation: portrait) {
+  .Beneficios {
+    padding: 5rem;
+    background: var(--color-fondo-beneficios);
+  }
+
+  .Beneficios__contenedor_beneficio {
+    flex-direction: column;
+  }
+
+  .Beneficios__contenedor_imagen_beneficio {
+    width: 100%;
+  }
 }
