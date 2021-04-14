@@ -47,6 +47,7 @@ const Superior = () => {
       stagger: .1,
       rotateX: 90
     })
+    window.scrollTo(0, 0)
   }, [header, explora])
 
   return (

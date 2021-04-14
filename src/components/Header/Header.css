@@ -62,6 +62,7 @@
 
 .Header__cta:hover {
   background: var(--color-blanco);
+  color: var(--color-negro);
 }
 
 .Header__logo--oscuro {

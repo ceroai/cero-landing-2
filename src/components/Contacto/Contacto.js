@@ -15,6 +15,7 @@ const Contacto = () => {
 
   useEffect(() => {
     refPrimerCampo.current.focus()
+    window.scrollTo(0, 0)
   }, [])
 
   const contactar = e => {

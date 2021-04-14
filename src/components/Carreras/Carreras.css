@@ -53,3 +53,14 @@
   background: var(--color-blanco);
   color: var(--color-negro);
 }
+
+@media (orientation: portrait) {
+  .Carreras {
+    padding: 0 5rem;
+  }
+
+  .Carreras__titulo {
+    font-size: 2rem;
+    text-align: center;
+  }
+}

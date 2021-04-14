@@ -64,6 +64,7 @@
   margin-top: .25rem;
   font-size: 1.5rem;
   color: black;
+  outline-color: var(--color-azul);
 }
 
 .Contato__area_desafio {
@@ -72,6 +73,7 @@
   height: 20rem;
   font-family: 'Space Grotesk', sans-serif;
   resize: none;
+  outline-color: var(--color-azul);
 }
 
 .Contacto__boton_enviar {
@@ -91,4 +93,34 @@
 .Contacto__boton_enviar:hover {
   background: var(--color-negro);
   color: var(--color-blanco);
+}
+
+@media (orientation: portrait) {
+  .Contacto {
+    padding: 0 5rem;
+  }
+
+  .Contacto__mensaje_principal {
+    font-size: 6rem;
+  }
+
+  .Contacto__seccion_formulario {
+    flex-direction: column;
+  }
+
+  .Contacto__titulo_seccion_formulario {
+    margin-bottom: 2rem;
+  }
+
+  .Contacto__contenedor_campos input {
+    padding: 1rem;
+  }
+
+  .Contacto__boton_enviar {
+    align-self: center;
+    font-size: 2.5rem;
+    height: 4rem;
+    border-radius: 9in;
+    margin-top: 2rem;
+  }
 }

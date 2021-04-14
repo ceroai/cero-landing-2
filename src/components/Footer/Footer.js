@@ -43,7 +43,7 @@ const Footer = () => {
               <a target="_blank" rel="noreferrer noopener" href="https://www.siliconriver.cl/koplandsymphony/">
                 <img className="Footer__logo_integracion" src={logoKopland} alt="Logo Kopland" />
               </a>
-              <a target="_blank" rel="noreferrer noopener" href="https://skedsocial.com/">
+              <a target="_blank" rel="noreferrer noopener" href="https://www.sked24.com/es/citas-medicas/">
                 <img className="Footer__logo_integracion" src={logoSked} alt="Logo Sked" />
               </a>
             </div>

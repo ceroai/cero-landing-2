@@ -1,11 +1,40 @@
 import './AcercaDe.css'
+import { gsap } from 'gsap'
+import { useRef, useEffect } from 'react'
 
 const AcercaDe = () => {
 
+  const header = useRef()
+  const p1 = useRef()
+
+  useEffect(() => {
+    gsap.to(header.current, {
+      scrollTrigger: {
+        trigger: header.current,
+        start: 'bottom center',
+        scrub: true
+      },
+      y: 50,
+      opacity: 0,
+      duration: 2
+    })
+    gsap.to(p1.current, {
+      scrollTrigger: {
+        trigger: p1.current,
+        start: 'bottom center',
+        scrub: true
+      },
+      y: 50,
+      opacity: 0,
+      duration: 2
+    })
+    window.scrollTo(0, 0)
+  }, [header, p1])
+
   return (
     <div className="AcercaDe">
-      <h1 className="AcercaDe__mensaje_principal">Sobre Cero</h1>
-      <p className="AcercaDe__bajada">
+      <h1 className="AcercaDe__mensaje_principal" ref={header}>Sobre Cero</h1>
+      <p className="AcercaDe__bajada" ref={p1}>
         Estamos en una misión para construir
         mejor comunicación entre
         organizaciones y usuarios.<br/>
