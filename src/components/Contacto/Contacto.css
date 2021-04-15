@@ -63,8 +63,13 @@
   padding: .5rem;
   margin-top: .25rem;
   font-size: 1.5rem;
-  color: black;
+  color: var(--color-negro);
   outline-color: var(--color-azul);
+}
+
+.Contacto__contenedor_campos input:disabled {
+  background-color: var(--color-blanco);
+  color: #666;
 }
 
 .Contato__area_desafio {
@@ -93,6 +98,27 @@
 .Contacto__boton_enviar:hover {
   background: var(--color-negro);
   color: var(--color-blanco);
+}
+
+.Contacto__boton_enviar:disabled {
+  background: var(--color-negro);
+  color: #666;
+}
+
+.Contacto__enviado {
+  font-size: 4rem;
+  padding: 8rem 8rem;
+  text-align: center;
+  animation: Contacto__aparece_enviado 2.5s ease both;
+}
+
+@keyframes Contacto__aparece_enviado {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (orientation: portrait) {

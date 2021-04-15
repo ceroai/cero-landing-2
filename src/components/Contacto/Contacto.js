@@ -12,6 +12,8 @@ const Contacto = () => {
   const [tipoOrganizacion, setTipoOrganizacion] = useState('')
   const [software, setSoftware] = useState('')
   const [desafio, setDesafio] = useState('')
+  const [mailEnviado, setMailEnviado] = useState(false)
+  const [enviando, setEnviando] = useState(false)
 
   useEffect(() => {
     refPrimerCampo.current.focus()
@@ -20,6 +22,7 @@ const Contacto = () => {
 
   const contactar = e => {
     e.preventDefault()
+    setEnviando(true)
     const params = new URLSearchParams()
     params.append('nombre', nombre)
     params.append('telefono', telefono)
@@ -33,7 +36,14 @@ const Contacto = () => {
     axios.post('/',
       params,
       { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
-    ).then(() => console.log('ok'))
+    ).then(() => {
+      setMailEnviado(true)
+      setEnviando(false)
+      window.scrollTo(0, 0)
+    }).catch(() => {
+      setMailEnviado(false)
+      setEnviando(false)
+    })
   }
   
   return (
@@ -43,94 +53,114 @@ const Contacto = () => {
         Hablemos sobre los desafíos de comunicación de tu empresa.<br />
         Agenda una Demo con nuestro equipo de especialistas.
       </p>
-      <form name="contactoCero" className="Contacto__formulario" onSubmit={contactar}>
-        <div className="Contacto__seccion_formulario">
-          <h2 className="Contacto__titulo_seccion_formulario">
-            Datos personales
-          </h2>
-          <div className="Contacto__contenedor_campos">
-            <label htmlFor="nombre">
-              Nombre
-              <input
-                required="required"
-                id="nombre"
-                name="nombre"
-                ref={refPrimerCampo}
-                onChange={e => setNombre(e.target.value)}
-              />
-            </label>
-            <label htmlFor="telefono">
-              Teléfono
-              <input
-                required="required"
-                id="telefono"
-                name="telefono"
-                onChange={e => setTelefono(e.target.value)}
-              />
-            </label>
-            <label htmlFor="email">
-              E-mail de trabajo
-              <input
-                required="required"
-                type="email"
-                id="email"
-                name="email"
-                onChange={e => setEmail(e.target.value)}
-              />
-            </label>
+      {mailEnviado
+        ? <div className="Contacto__enviado">
+            ¡Gracias!
+            Nos contactaremos contigo
+            (o algo así)
           </div>
-        </div>
-        <div className="Contacto__seccion_formulario">
-          <h2 className="Contacto__titulo_seccion_formulario">
-            Datos de tu organización
-          </h2>
-          <div className="Contacto__contenedor_campos">
-            <label htmlFor="nombre_organizacion">
-              Nombre organización
-              <input
-                required="required"
-                id="nombre_organizacion"
-                name="nombre_organizacion"
-                onChange={e => setNombreOrganizacion(e.target.value)}
-              />
-            </label>
-            <label htmlFor="tipo_organizacion">
-              Tipo de organización
-              <input
-                required="required"
-                id="tipo_organizacion"
-                name="tipo_organizacion"
-                onChange={e => setTipoOrganizacion(e.target.value)}
-              />
-            </label>
-            <label htmlFor="software_gestion">
-              Software de gestión
-              <input
-                required="required"
-                id="software_gestion"
-                name="software_gestion"
-                onChange={e => setSoftware(e.target.value)}
-              />
-            </label>
-          </div>
-        </div>
-        <div className="Contacto__seccion_formulario">
-          <h2 className="Contacto__titulo_seccion_formulario">
-            ¿Con qué desafío de comunicación<br />te podemos ayudar?
-          </h2>
-          <div className="Contacto__contenedor_campos">
-            <textarea
-              required="required"
-              className="Contato__area_desafio"
-              name="desafio"
-              id="desafio"
-              placeholder="Ej. Necesito ayuda para gestionar mis pacientes"
-              onChange={e => setDesafio(e.target.value)}
-            ></textarea>
-            <button type="submit" className="Contacto__boton_enviar">Enviar</button>
-          </div>
-        </div>
-      </form>
+        : <form name="contactoCero" className="Contacto__formulario" onSubmit={contactar}>
+            <div className="Contacto__seccion_formulario">
+              <h2 className="Contacto__titulo_seccion_formulario">
+                Datos personales
+              </h2>
+              <div className="Contacto__contenedor_campos">
+                <label htmlFor="nombre">
+                  Nombre
+                  <input
+                    required="required"
+                    id="nombre"
+                    name="nombre"
+                    ref={refPrimerCampo}
+                    disabled={enviando}
+                    onChange={e => setNombre(e.target.value)}
+                  />
+                </label>
+                <label htmlFor="telefono">
+                  Teléfono
+                  <input
+                    required="required"
+                    id="telefono"
+                    name="telefono"
+                    disabled={enviando}
+                    onChange={e => setTelefono(e.target.value)}
+                  />
+                </label>
+                <label htmlFor="email">
+                  E-mail de trabajo
+                  <input
+                    required="required"
+                    type="email"
+                    id="email"
+                    name="email"
+                    disabled={enviando}
+                    onChange={e => setEmail(e.target.value)}
+                  />
+                </label>
+              </div>
+            </div>
+            <div className="Contacto__seccion_formulario">
+              <h2 className="Contacto__titulo_seccion_formulario">
+                Datos de tu organización
+              </h2>
+              <div className="Contacto__contenedor_campos">
+                <label htmlFor="nombre_organizacion">
+                  Nombre organización
+                  <input
+                    required="required"
+                    id="nombre_organizacion"
+                    name="nombre_organizacion"
+                    disabled={enviando}
+                    onChange={e => setNombreOrganizacion(e.target.value)}
+                  />
+                </label>
+                <label htmlFor="tipo_organizacion">
+                  Tipo de organización
+                  <input
+                    required="required"
+                    id="tipo_organizacion"
+                    name="tipo_organizacion"
+                    disabled={enviando}
+                    onChange={e => setTipoOrganizacion(e.target.value)}
+                  />
+                </label>
+                <label htmlFor="software_gestion">
+                  Software de gestión
+                  <input
+                    required="required"
+                    id="software_gestion"
+                    name="software_gestion"
+                    disabled={enviando}
+                    onChange={e => setSoftware(e.target.value)}
+                  />
+                </label>
+              </div>
+            </div>
+            <div className="Contacto__seccion_formulario">
+              <h2 className="Contacto__titulo_seccion_formulario">
+                ¿Con qué desafío de comunicación<br />te podemos ayudar?
+              </h2>
+              <div className="Contacto__contenedor_campos">
+                <textarea
+                  required="required"
+                  className="Contato__area_desafio"
+                  name="desafio"
+                  id="desafio"
+                  disabled={enviando}
+                  placeholder="Ej. Necesito ayuda para gestionar mis pacientes"
+                  onChange={e => setDesafio(e.target.value)}
+                ></textarea>
+                <button
+                  disabled={enviando}
+                  type="submit"
+                  className="Contacto__boton_enviar"
+                >
+                  {enviando ? 'Enviando...' : 'Enviar'}
+                </button>
+              </div>
+            </div>
+          </form>
+      }
     </div>
   )
 }

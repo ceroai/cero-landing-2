@@ -11,10 +11,6 @@
   color: var(--color-blanco);
 }
 
-.Superior > *, .AcercaDe > *, .Contacto > * {
-  animation: fade-in .25s ease both;
-}
-
 .Superior__mensaje_principal {
   font-size: 9rem;
   padding-top: 13rem;
