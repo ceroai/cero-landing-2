@@ -86,11 +86,55 @@
   background: var(--color-negro);
 }
 
+.Header__boton_menu {
+  display: none;
+}
+
 @keyframes Header__subrayado {
   0% {
     width: 0;
   }
   100% {
     width: 100%;
+  }
+}
+
+@media (orientation: portrait) {
+
+  .Header {
+    padding: 6rem 5rem;
+  }
+
+  .Header__logo {
+    width: 10rem;
+  }
+
+  .Header__navegacion {
+    display: none;
+  }
+
+  .Header__boton_menu {
+    display: block;
+    width: 7rem;
+    height: 4.5rem;
+    border-radius: 2rem;
+    font-size: 3.25rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff55;
+    color: var(--color-blanco);
+    transition: all .25s ease;
+  }
+
+  .Header__boton_menu--oscuro {
+    color: var(--color-negro);
+    background-color: #bbbbbb55;
+  }
+
+  .Header__boton_menu:active {
+    background: var(--color-blanco);
+    color: black;
   }
 }

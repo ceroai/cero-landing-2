@@ -56,7 +56,7 @@ const Testimonios = () => {
             >
               <div>
                 <img
-                  className="Testimonios__retrato"
+                  className="Testimonios__retrato Testimonios__retrato--grande"
                   alt={`Imagen cliente ${i}`}
                   src={testimonio.foto}
                 />
@@ -65,6 +65,11 @@ const Testimonios = () => {
                 <blockquote className="Testimonios__cita">
                   {testimonio.texto}
                 </blockquote>
+                <img
+                  className="Testimonios__retrato Testimonios__retrato--pequeño"
+                  alt={`Imagen cliente ${i}`}
+                  src={testimonio.foto}
+                />
                 <div className="Testimonios__autor">
                   <p>{testimonio.nombre}</p>
                   <p>{testimonio.cargo}</p>

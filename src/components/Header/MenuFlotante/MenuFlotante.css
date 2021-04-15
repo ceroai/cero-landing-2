@@ -1,0 +1,48 @@
+.MenuFlotante {
+  position: fixed;
+  left: 2.5rem;
+  top: 2.5rem;
+  background-color: white;
+  border-radius: 2rem;
+  opacity: 0;
+  transition: all .25s ease-out;
+  z-index: 10;
+  transform: scale(.9);
+  transform-origin: 100% 0;
+  width: calc(100% - 5rem);
+  pointer-events: none;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.MenuFlotante--activo {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: all;
+  box-shadow:
+    0 .25rem 2rem rgba(0, 0, 0, .1),
+    0 .25rem 5rem rgba(0, 0, 0, .1);
+}
+
+.MenuFlotante__link {
+  padding: 10rem 0;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--color-negro);
+  width: 100%;
+  text-align: center;
+}
+
+.MenuFlotante__boton_cerrar {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  outline-color: var(--color-azul);
+}
