@@ -112,6 +112,10 @@
   animation: Contacto__aparece_enviado 2.5s ease both;
 }
 
+label[for="seudonimo"] {
+  display: none;
+}
+
 @keyframes Contacto__aparece_enviado {
   0% {
     opacity: 0;

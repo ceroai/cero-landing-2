@@ -12,6 +12,7 @@ const Contacto = () => {
   const [tipoOrganizacion, setTipoOrganizacion] = useState('')
   const [software, setSoftware] = useState('')
   const [desafio, setDesafio] = useState('')
+  const [seudonimo, setSeudonimo] = useState('')
   const [mailEnviado, setMailEnviado] = useState(false)
   const [enviando, setEnviando] = useState(false)
 
@@ -27,6 +28,7 @@ const Contacto = () => {
     params.append('nombre', nombre)
     params.append('telefono', telefono)
     params.append('email', email)
+    params.append('seudonimo', seudonimo)
     params.append('nombre_organizacion', nombreOrganizacion)
     params.append('tipo_organizacion', tipoOrganizacion)
     params.append('software', software)
@@ -59,12 +61,25 @@ const Contacto = () => {
             Nos contactaremos contigo
             (o algo así)
           </div>
-        : <form name="contactoCero" className="Contacto__formulario" onSubmit={contactar}>
+        : <form
+            name="contactoCero"
+            className="Contacto__formulario"
+            onSubmit={contactar}
+          >
             <div className="Contacto__seccion_formulario">
               <h2 className="Contacto__titulo_seccion_formulario">
                 Datos personales
               </h2>
               <div className="Contacto__contenedor_campos">
+                <label htmlFor="seudonimo">
+                  Seudonimo
+                  <input
+                    required="required"
+                    id="seudonimo"
+                    name="seudonimo"
+                    onChange={e => setSeudonimo(e.target.value)}
+                  />
+                </label>
                 <label htmlFor="nombre">
                   Nombre
                   <input
