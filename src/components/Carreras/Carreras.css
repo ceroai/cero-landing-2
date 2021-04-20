@@ -61,6 +61,28 @@
 
   .Carreras__titulo {
     font-size: 2rem;
-    text-align: center;
+  }
+
+  .Carreras__posicion {
+    font-size: 1.75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .Carreras__boton_aplicar {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    align-self: center;
+    justify-self: start;
+    margin-top: 1rem;
+  }
+
+  .Carreras__boton_aplicar {
+    padding: 0 2.5rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 9in;
+    align-self: center;
   }
 }

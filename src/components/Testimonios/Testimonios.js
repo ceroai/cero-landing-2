@@ -39,7 +39,7 @@ const Testimonios = () => {
       if (animacionActiva) {
         setIndiceTestimonio(prev => (prev + 1) % testimonios.length)
       }
-    }, 3000)
+    }, 5000)
     return () => clearInterval(animacionCarrusel)
   }, [animacionActiva, indiceTestimonio])
 

@@ -249,6 +249,10 @@
   align-items: center;
 }
 
+.Celular__etiqueta_deteccion--corta {
+  display: none;
+}
+
 .Celular__respuesta_deteccion {
   font-size: 2vmin;
   text-transform: none;
@@ -278,5 +282,17 @@
 @media (orientation: portrait) {
   .Celular {
     margin-top: 8rem;
+  }
+
+  .Celular__etiqueta_deteccion {
+    display: none;
+  }
+
+  .Celular__etiqueta_deteccion--corta {
+    display: flex;
+  }
+
+  .Celular__deteccion {
+    padding-left: calc(100% + 2rem);
   }
 }

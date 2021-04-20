@@ -124,14 +124,11 @@
 @media (orientation: portrait) {
   .Beneficios {
     padding: 5rem;
-    /* background: var(--color-fondo-beneficios); */
-    text-align: center;
   }
 
   .Beneficios__titulo {
     width: 100%;
     font-size: 2rem;
-    justify-content: center;
   }
 
   .Beneficios__contenedor_beneficio {

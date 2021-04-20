@@ -77,7 +77,7 @@ const Contacto = () => {
                   />
                 </label>
                 <label htmlFor="telefono">
-                  Teléfono
+                  Teléfono móvil
                   <input
                     required="required"
                     id="telefono"

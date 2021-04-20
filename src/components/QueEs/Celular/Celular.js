@@ -93,6 +93,7 @@ const Celular = () => {
           Hola. Tengo que asistir sí o sí a otro compromiso, está difícil.
           <div ref={deteccionMsg2} className="Celular__deteccion">
             <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_no" icon={iconoNo} />Paciente cancela hora</div>
+            <div className="Celular__etiqueta_deteccion Celular__etiqueta_deteccion--corta"><InlineIcon className="Celular__icono_no" icon={iconoNo} />Cancela</div>
             <div className="Celular__respuesta_deteccion">Generando respuesta...</div>
           </div>
         </div>
@@ -102,7 +103,8 @@ const Celular = () => {
         <div ref={elemMsg4} className="Celular__mensaje Celular__mensaje--saliente">
           Eso sería ideal!
           <div ref={deteccionMsg4} className="Celular__deteccion">
-            <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Paciente quiere reagendar hora</div>
+            <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Paciente reagenda hora</div>
+            <div className="Celular__etiqueta_deteccion Celular__etiqueta_deteccion--corta"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Reagenda</div>
             <div className="Celular__respuesta_deteccion">Generando respuesta...</div>
           </div>
         </div>
@@ -113,6 +115,7 @@ const Celular = () => {
           Muchas gracias! Que buena atención 👩‍🦰 💯
           <div ref={deteccionMsg6} className="Celular__deteccion">
             <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Interacción finalizada</div>
+            <div className="Celular__etiqueta_deteccion Celular__etiqueta_deteccion--corta"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Finaliza</div>
           </div>
         </div>
         <div className="Celular__mensaje Celular__mensaje--entrante">
