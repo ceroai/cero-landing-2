@@ -130,16 +130,31 @@
     font-size: 6rem;
   }
 
+  .Contacto__bajada {
+    font-size: 2rem;
+  }
+
   .Contacto__seccion_formulario {
     flex-direction: column;
   }
 
   .Contacto__titulo_seccion_formulario {
     margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .Contacto__contenedor_campos label {
+    font-size: 2rem;
   }
 
   .Contacto__contenedor_campos input {
-    padding: 1rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .Contato__area_desafio {
+    padding: 1.5rem;
+    font-size: 2rem;
   }
 
   .Contacto__boton_enviar {

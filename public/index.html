@@ -31,4 +31,18 @@
       <input type="text" name="subject" />
     </form>
   </body>
+  <script>
+    let pageInPortraintMode
+    window.addEventListener("resize", windowSizeChanged)
+    addEventListener("load", function() {
+      pageInPortraintMode = window.innerHeight > window.innerWidth
+      document.getElementById("viewport").setAttribute("content", "width=" + window.innerWidth + ", height=" + window.innerHeight + ", initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    })
+    function windowSizeChanged() {
+      if (((pageInPortraintMode === true) && (window.innerHeight < window.innerWidth)) || ((pageInPortraintMode === false) && (window.innerHeight > window.innerWidth))) {
+        pageInPortraintMode = window.innerHeight > window.innerWidth
+        document.getElementById("viewport").setAttribute("content", "width=" + window.innerWidth + ", height=" + window.innerHeight + ", initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+      }
+    }
+  </script>
 </html>
