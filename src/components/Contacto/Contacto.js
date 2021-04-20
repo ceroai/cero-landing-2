@@ -74,7 +74,6 @@ const Contacto = () => {
                 <label htmlFor="seudonimo">
                   Seudonimo
                   <input
-                    required="required"
                     id="seudonimo"
                     name="seudonimo"
                     onChange={e => setSeudonimo(e.target.value)}
