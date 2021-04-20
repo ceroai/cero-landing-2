@@ -2,7 +2,7 @@
   position: fixed;
   left: 2.5rem;
   top: 2.5rem;
-  background-color: white;
+  background-color: var(--color-blanco);
   border-radius: 2rem;
   opacity: 0;
   transition: all .25s ease-out;
@@ -45,4 +45,22 @@
   border: none;
   font-size: 4rem;
   outline-color: var(--color-azul);
+}
+
+.MenuFlotante--oscuro {
+  background-color: var(--color-negro);
+}
+
+.MenuFlotante--oscuro.MenuFlotante--activo {
+  box-shadow:
+    0 .25rem 2rem rgba(255, 255, 255, .1),
+    0 .25rem 2rem rgba(255, 255, 255, .1);
+}
+
+.MenuFlotante--oscuro .MenuFlotante__link {
+  color: var(--color-blanco);
+}
+
+.MenuFlotante--oscuro .MenuFlotante__boton_cerrar {
+  color: var(--color-blanco);
 }

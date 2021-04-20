@@ -4,16 +4,30 @@ import logo from '../../assets/logos/logo.svg'
 import classNames from 'classnames'
 import iconoMenu from '@iconify-icons/mdi/menu'
 import { InlineIcon } from '@iconify/react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import MenuFlotante from './MenuFlotante'
+
+let scrollPrevio = 0
 
 const Header = () => {
 
   const history = useHistory()
   const [menuActivo, setMenuActivo] = useState(false)
+  const [subiendo, setSubiendo] = useState(false)
   
   const { path } = useRouteMatch()
   const oscuro = path === '/contacto'
+  const oscuroFixed = path === '/sobre'
+
+  useEffect(() => {
+    const listener = () => {
+      const scrollActual = document.documentElement.scrollTop
+      setSubiendo(scrollActual <= scrollPrevio && scrollActual > 0)
+      scrollPrevio = scrollActual
+    }
+    window.addEventListener('scroll', listener)
+    return () => window.removeEventListener(listener)
+  }, [])
 
   return (
     <>
@@ -21,7 +35,11 @@ const Header = () => {
         menuActivo={menuActivo}
         setMenuActivo={setMenuActivo}
       />
-      <div className="Header">
+      <div className={classNames({
+        "Header": true,
+        "Header--fijo": subiendo,
+        "Header--fijo-oscuro": subiendo && oscuroFixed
+      })}>
         <Link to="/">
           <img
             className={classNames({

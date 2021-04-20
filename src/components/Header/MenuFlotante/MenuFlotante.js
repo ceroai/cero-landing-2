@@ -7,13 +7,14 @@ import { InlineIcon } from '@iconify/react'
 const MenuFlotante = ({ menuActivo, setMenuActivo }) => {
 
   const { path } = useRouteMatch()
-  const oscuro = path === '/contacto'
+  const oscuro = path === '/sobre'
 
   return (
     <div
       className={classNames({
         'MenuFlotante': true,
-        'MenuFlotante--activo': menuActivo
+        'MenuFlotante--activo': menuActivo,
+        'MenuFlotante--oscuro': oscuro
       })}
     >
       <Link

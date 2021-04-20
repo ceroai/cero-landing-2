@@ -8,11 +8,35 @@
   height: 7rem;
   z-index: 3;
   mix-blend-mode: luminosity;
+  transition: all .25s ease-in;
+}
+
+.Header--fijo {
+  position: fixed;
+  top: 0;
+  background-color: var(--color-blanco);
+  mix-blend-mode: normal;
+  height: 4rem;
+  animation: Header__aparece .35s ease-out both;
+  border-bottom: 1px solid rgb(156, 147, 147);
+}
+
+.Header--fijo-oscuro {
+  background-color: var(--color-negro);
+  border-bottom: none;
 }
 
 .Header__logo {
   width: 6rem;
   transition: all .15s ease;
+}
+
+.Header--fijo .Header__logo {
+  filter: brightness(0%);
+}
+
+.Header--fijo-oscuro .Header__logo {
+  filter: brightness(100%);
 }
 
 .Header__navegacion {
@@ -31,16 +55,28 @@
   transition: all .25s ease;
 }
 
+.Header--fijo .Header__link {
+  color: var(--color-negro);
+}
+
+.Header--fijo-oscuro .Header__link {
+  color: var(--color-blanco);
+}
+
 .Header__link:hover::after {
   content: '';
   width: 100%;
   height: .15rem;
-  background: white;
+  background: var(--color-blanco);
   border-radius: 1in;
   position: absolute;
   top: calc(100% + .15rem);
   left: 0;
   animation: Header__subrayado .15s ease-out both;
+}
+
+.Header--fijo .Header__link:hover::after {
+  background: var(--color-negro);
 }
 
 .Header__cta {
@@ -61,6 +97,24 @@
 }
 
 .Header__cta:hover {
+  background: var(--color-blanco);
+  color: var(--color-negro);
+}
+
+.Header--fijo .Header__cta {
+  color: var(--color-negro);
+}
+
+.Header--fijo .Header__cta:hover {
+  background: var(--color-negro);
+  color: var(--color-blanco);
+}
+
+.Header--fijo-oscuro .Header__cta {
+  color: var(--color-blanco);
+}
+
+.Header--fijo-oscuro .Header__cta:hover {
   background: var(--color-blanco);
   color: var(--color-negro);
 }
@@ -99,6 +153,15 @@
   }
 }
 
+@keyframes Header__aparece {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
 @media (orientation: portrait) {
 
   .Header {
@@ -111,6 +174,16 @@
 
   .Header__navegacion {
     display: none;
+  }
+
+  .Header--fijo .Header__boton_menu {
+    color: var(--color-negro);
+    background-color: #00000015;
+  }
+
+  .Header--fijo-oscuro .Header__boton_menu {
+    color: var(--color-blanco);
+    background-color: #ffffff55;
   }
 
   .Header__boton_menu {
