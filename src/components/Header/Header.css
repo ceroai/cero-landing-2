@@ -188,7 +188,7 @@
 
   .Header__boton_menu {
     display: block;
-    width: 7rem;
+    min-width: 7rem;
     height: 4.5rem;
     border-radius: 2rem;
     font-size: 3.25rem;

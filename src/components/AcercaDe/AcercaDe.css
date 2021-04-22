@@ -20,6 +20,13 @@
   animation: prueba 25s ease alternate-reverse infinite both;
 }
 
+@media not all and (min-resolution:.001dpcm) and (orientation: portrait)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+  .AcercaDe {
+    background: var(--color-negro);
+  }
+}}
+
 .AcercaDe__mensaje_principal {
   font-size: 13rem;
   padding-top: 13rem;
