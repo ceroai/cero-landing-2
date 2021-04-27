@@ -73,8 +73,9 @@
 
 .Footer__contenedor_integraciones {
   display: grid;
-  gap: 4rem;
+  gap: 1rem;
   grid-auto-flow: column;
+  place-items: end start;
 }
 
 .Footer__logo_integracion {
@@ -166,7 +167,6 @@
 
   .Footer__contenedor_integraciones {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    place-items: end center;
   }
 }
