@@ -97,6 +97,18 @@
   animation: Footer__subrayado .15s ease-out both;
 }
 
+.Footer__logos_redes {
+  font-size: 3rem;
+  display: grid;
+  grid-auto-flow: column;
+  max-width: 15rem;
+  gap: 1rem;
+}
+
+.Footer__logo_red {
+  color: var(--color-blanco);
+}
+
 @keyframes Footer__subrayado {
   0% {
     width: 0;

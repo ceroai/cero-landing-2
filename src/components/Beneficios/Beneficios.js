@@ -10,7 +10,7 @@ const Beneficios = () => {
     <section className="Beneficios">
       <h2 className="Beneficios__titulo">Beneficios</h2>
       <Beneficio
-        titulo="Natural, empático y al ritmo de tus usuarios."
+        titulo="Empatía y eficacia al ritmo de tus usuarios"
         imagen={fotoRespuestas}
         altImagen="Demo automatiza"
         subtitulo={`Dale continuidad al viaje del usuario aumentando los puntos de contacto.`}

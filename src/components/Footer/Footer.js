@@ -4,6 +4,10 @@ import logoSUPChile from '../../assets/logos/logo_sup_chile.png'
 import logoDentalink from '../../assets/logos/logo_dentalink.png'
 import logoKopland from '../../assets/logos/logo_kopland.png'
 import logoSked from '../../assets/logos/logo_sked.png'
+import logoFacebook from '@iconify-icons/mdi/facebook'
+import logoTwitter from '@iconify-icons/mdi/twitter'
+import logoLinkedin from '@iconify-icons/mdi/linkedin'
+import Icon from '@iconify/react'
 import './Footer.css'
 
 const Footer = () => {
@@ -12,10 +16,11 @@ const Footer = () => {
       <div className="Footer__contenedor">
         <div className="Footer__empresa">
           <img src={logo} alt="Logo Cero" className="Footer__logo_cero" />
-          <address>
-            <p>Av. Ricardo Lyon 1263</p>
-            <p>Providencia, Stgo</p>
-          </address>
+          <div className="Footer__logos_redes">
+            <a className="Footer__logo_red" href="/"><Icon icon={logoFacebook} /></a>
+            <a className="Footer__logo_red" href="/"><Icon icon={logoTwitter} /></a>
+            <a className="Footer__logo_red" href="/"><Icon icon={logoLinkedin} /></a>
+          </div>
           <div>
             <p>© Copyright {new Date().getFullYear()}</p>
             <p>Botlab, Inc.</p>

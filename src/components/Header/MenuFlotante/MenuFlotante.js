@@ -18,6 +18,15 @@ const MenuFlotante = ({ menuActivo, setMenuActivo }) => {
       })}
     >
       <Link
+        to="/"
+        onClick={() => setMenuActivo(false)}
+        className={classNames({
+          'MenuFlotante__link': true,
+        })}
+      >
+        Inicio
+      </Link>
+      <Link
         to="/sobre"
         onClick={() => setMenuActivo(false)}
         className={classNames({
