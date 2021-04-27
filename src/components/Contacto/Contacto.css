@@ -9,7 +9,6 @@
   color: var(--color-negro);
   padding: 0 10rem;
   font-family: 'Space Grotesk', sans-serif;
-  gap: 4rem;
 }
 
 .Contacto__mensaje_principal {
@@ -48,8 +47,7 @@
 
 .Contacto__contenedor_campos {
   flex: 1;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
 }
 
@@ -82,7 +80,7 @@
 }
 
 .Contacto__boton_enviar {
-  align-self: flex-end;
+  place-self: end;
   font-size: 1.5rem;
   font-family: 'Space Grotesk', sans-serif;
   height: 2.5rem;
@@ -162,7 +160,7 @@ label[for="seudonimo"] {
   }
 
   .Contacto__boton_enviar {
-    align-self: center;
+    place-self: center;
     font-size: 2.5rem;
     height: 4rem;
     border-radius: 9in;

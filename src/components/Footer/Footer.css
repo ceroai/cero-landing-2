@@ -107,6 +107,10 @@
   color: var(--color-blanco);
 }
 
+.Footer__logo_red:not(:last-child) {
+  display: none;
+}
+
 @keyframes Footer__subrayado {
   0% {
     width: 0;

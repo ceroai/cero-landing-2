@@ -14,13 +14,6 @@
   margin-left: 2rem;
 }
 
-@media not all and (min-resolution:.001dpcm) and (orientation: portrait)
-{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-  .Celular {
-    transform: translateY(24rem);
-  }
-}}
-
 .Celular::before {
   content: '';
   position: absolute;
@@ -90,8 +83,8 @@
 }
 
 .Celular__barra_estado_iconos {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
   gap: 1.5vmin;
 }
 
@@ -124,8 +117,7 @@
 }
 
 .Celular__contacto {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: .6vmin;
   padding-left: 1vmin;
 }
@@ -142,7 +134,8 @@
 }
 
 .Celular__iconos_barra_app {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   gap: 3vmin;
   padding-right: 3vmin;
   color: #44a2ff;
@@ -173,6 +166,7 @@
   border-radius: .5vmin;
   font-size: 2.25vmin;
   line-height: 1.25;
+  margin-bottom: .75vh;
   position: relative;
   filter: drop-shadow(0 .1rem .15rem rgba(0, 0, 0, .1));
 }
@@ -240,7 +234,8 @@
   position: absolute;
   height: calc(100% + .5vmin);
   top: 0;
-  padding-left: calc(100% + 5rem);
+  padding-left: 100%;
+  margin-left: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -300,6 +295,6 @@
   }
 
   .Celular__deteccion {
-    padding-left: calc(100% + 2rem);
+    margin-left: 3rem;
   }
 }

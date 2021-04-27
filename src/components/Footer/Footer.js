@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="Footer__logos_redes">
             <a className="Footer__logo_red" href="/"><Icon icon={logoFacebook} /></a>
             <a className="Footer__logo_red" href="/"><Icon icon={logoTwitter} /></a>
-            <a className="Footer__logo_red" href="/"><Icon icon={logoLinkedin} /></a>
+            <a className="Footer__logo_red" href="https://www.linkedin.com/company/ceroai/"><Icon icon={logoLinkedin} /></a>
           </div>
           <div>
             <p>© Copyright {new Date().getFullYear()}</p>

@@ -40,7 +40,8 @@
 }
 
 .Header__navegacion {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   gap: 8rem;
   align-items: center;
 }

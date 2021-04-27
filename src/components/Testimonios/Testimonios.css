@@ -1,6 +1,6 @@
 .Testimonios {
   padding: 5rem 10rem 8rem;
-  background: white;
+  background: var(--color-blanco);
   display: flex;
   flex-direction: column;
   font-family: 'Space Grotesk', sans-serif;
@@ -70,7 +70,7 @@
   flex-direction: column;
   gap: 2rem;
   padding-left: 3rem;
-  background: linear-gradient(to right, transparent 0%, white 30%);
+  background: var(--color-blanco);
   transform: translateX(-4rem);
 }
 
