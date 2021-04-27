@@ -2,8 +2,7 @@
   padding: 5rem 10rem;
   background: var(--color-negro);
   color: var(--color-blanco);
-  display: flex;
-  flex-direction: column;
+  display: grid;
   font-family: 'Space Grotesk', sans-serif;
   gap: 7rem;
   text-transform: uppercase;
@@ -31,8 +30,7 @@
 }
 
 .Footer__empresa {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 6rem;
   grid-row-start: 1;
   grid-row-end: 3;
@@ -74,9 +72,9 @@
 }
 
 .Footer__contenedor_integraciones {
-  display: flex;
+  display: grid;
   gap: 4rem;
-  align-items: center;
+  grid-auto-flow: column;
 }
 
 .Footer__logo_integracion {
@@ -134,8 +132,12 @@
   }
 
   .Footer__empresa {
-    flex-direction: column;
-    align-items: center;
+    gap: 2rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    place-items: center;
   }
 
   .Footer__informacion {
@@ -143,14 +145,14 @@
   }
 
   .Footer__links {
-    display: flex;
-    flex-direction: column-reverse;
+    display: grid;
+    grid-auto-flow: row;
     gap: 6rem;
   }
 
   .Footer__integraciones {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-flow: row;
     gap: 6rem;
     padding: 6rem 0;
     grid-row-start: 2;

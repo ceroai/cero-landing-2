@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: column;
   font-family: 'Space Grotesk', sans-serif;
-  gap: 7rem;
 }
 
 .Testimonios__titulo {
   text-transform: uppercase;
   font-size: 1.4rem;
+  margin-bottom: 7rem;
 }
 
 .Testomonios__carrusel {

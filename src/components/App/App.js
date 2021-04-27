@@ -10,7 +10,6 @@ import Contacto from '../Contacto'
 import Carreras from '../Carreras'
 import { Switch, Route } from 'react-router-dom'
 import './App.css'
-import FondoAnimado from '../FondoAnimado'
 
 const App = () => {
   return (
@@ -26,10 +25,8 @@ const App = () => {
         </Route>
         <Route path="/sobre">
           <Header />
-          <FondoAnimado>
-            <AcercaDe />
-            <Carreras />
-          </FondoAnimado>
+          <AcercaDe />
+          <Carreras />
         </Route>
         <Route path="/contacto">
           <Header invertir={true} />

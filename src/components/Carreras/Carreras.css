@@ -70,6 +70,10 @@
     grid-template-rows: 1fr 1fr;
   }
 
+  .Carreras__posicion p {
+    width: auto;
+  }
+
   .Carreras__boton_aplicar {
     grid-row-start: 2;
     grid-column-start: 2;

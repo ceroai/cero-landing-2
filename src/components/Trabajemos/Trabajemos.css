@@ -2,8 +2,8 @@
   padding: 8rem 10rem 12rem;
   background: var(--color-negro);
   color: var(--color-blanco);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  place-items: start;
   font-family: 'Space Grotesk', sans-serif;
   gap: 4rem;
 }

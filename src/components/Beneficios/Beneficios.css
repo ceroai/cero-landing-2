@@ -5,8 +5,7 @@
     radial-gradient(ellipse 25rem 25rem at calc(80% - var(--x)) calc(95% - var(--y)), var(--color-azul) 0%, transparent),
     radial-gradient(ellipse 25rem 25rem at calc(var(--x) + 10%) calc(45% + var(--y)), var(--color-rojo) 0%, transparent),
     var(--color-fondo-beneficios);
-  display: flex;
-  flex-direction: column;
+  display: grid;
   font-family: 'Space Grotesk', sans-serif;
   gap: 7rem;
   --x: 15rem;
