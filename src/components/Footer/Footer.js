@@ -4,6 +4,7 @@ import logoSUPChile from '../../assets/logos/logo_sup_chile.png'
 import logoDentalink from '../../assets/logos/logo_dentalink.png'
 import logoKopland from '../../assets/logos/logo_kopland.png'
 import logoSked from '../../assets/logos/logo_sked.png'
+import logoGenesys from '../../assets/logos/logo_genesys.svg'
 import logoFacebook from '@iconify-icons/mdi/facebook'
 import logoTwitter from '@iconify-icons/mdi/twitter'
 import logoLinkedin from '@iconify-icons/mdi/linkedin'
@@ -49,6 +50,9 @@ const Footer = () => {
             </a>
             <a target="_blank" rel="noreferrer noopener" href="https://www.sked24.com/es/citas-medicas/">
               <img className="Footer__logo_integracion" src={logoSked} alt="Logo Sked" />
+            </a>
+            <a target="_blank" rel="noreferrer noopener" href="https://www.genesys.com/">
+              <img className="Footer__logo_integracion" src={logoGenesys} alt="Logo Genesys" />
             </a>
           </div>
         </div>
