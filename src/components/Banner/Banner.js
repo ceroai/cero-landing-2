@@ -8,6 +8,9 @@ const Banner = () => {
 
   const [visible, setVisible] = useState(true)
 
+  const numeroMes = new Date().getMonth() + 1
+  const stringMes = numeroMes < 10 ? ('0' + numeroMes) : ('' + numeroMes)
+
   return (
     <div 
       className={classNames({
@@ -17,7 +20,7 @@ const Banner = () => {
     >
       Agenda una demo y prueba el servicio gratis por 1 mes 👉
       <a
-        href="https://calendly.com/felipe-cero/30min?month=2021-05"
+        href={`https://calendly.com/felipe-cero/30min?month=${new Date().getFullYear()}-${stringMes}`}
         className="Banner__boton"
         target="_blank"
         rel="noreferrer noopener"
