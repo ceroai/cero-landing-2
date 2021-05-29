@@ -27,6 +27,7 @@ const Banner = () => {
       <button
         onClick={() => setVisible(false)}
         className="Banner__boton_cerrar"
+        title="Cerrar"
       >
         <Icon icon={iconoCerrar} />
       </button>

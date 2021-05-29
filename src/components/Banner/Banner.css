@@ -3,10 +3,14 @@
   align-items: center;
   height: 3rem;
   justify-content: center;
-  position: sticky;
+  position: fixed;
+  bottom: 0;
   background-color: var(--color-blanco);
   font-size: 1.25rem;
   font-weight: 600;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0 -.1rem .15rem rgba(0, 0, 0, .15);
 }
 
 .Banner__boton {
@@ -36,6 +40,12 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  border: none;
+}
+
+.Banner__boton:hover {
+  background-color: var(--color-blanco);
+  color: var(--color-azul);
 }
 
 .Banner--invisible {
