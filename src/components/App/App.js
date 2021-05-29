@@ -1,3 +1,4 @@
+import Banner from '../Banner'
 import Header from '../Header'
 import QueEs from '../QueEs'
 import Superior from '../Superior'
@@ -16,6 +17,7 @@ const App = () => {
     <div className="App">
       <Switch>
         <Route exact path="/">
+          <Banner />
           <Header />
           <Superior />
           <QueEs />
