@@ -5,6 +5,8 @@
   justify-content: center;
   position: sticky;
   background-color: var(--color-blanco);
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .Banner__boton {
@@ -23,6 +25,7 @@
   display: flex;
   align-items: center;
   transition: all .15s ease-in-out;
+  font-weight: 400;
 }
 
 .Banner__boton_cerrar {
@@ -31,6 +34,8 @@
   right: 1rem;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .Banner--invisible {

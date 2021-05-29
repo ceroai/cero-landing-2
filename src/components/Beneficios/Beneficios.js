@@ -8,7 +8,6 @@ const Beneficios = () => {
 
   return (
     <section className="Beneficios">
-      <h2 className="Beneficios__titulo">Beneficios</h2>
       <Beneficio
         titulo="Empatía y eficacia al ritmo de tus usuarios"
         imagen={fotoRespuestas}
