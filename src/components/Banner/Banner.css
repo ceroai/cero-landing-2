@@ -34,6 +34,7 @@
 
 .Banner__boton_cerrar {
   color: var(--color-negro);
+  background-color: transparent;
   position: absolute;
   right: 1rem;
   border: none;
