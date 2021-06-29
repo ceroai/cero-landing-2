@@ -70,8 +70,8 @@ const Superior = () => {
       </div>
       <div className="Superior__logos">
         <p className="Superior__texto_logos">
-          Usado por equipos de<br />
-          marketing y servicio al cliente en:
+          Usado por los<br />
+          equipos de salud en:
         </p>
         <div className="Superior__contenedor_logos">
           <img className="Superior__logo" alt="Logo Sanasalud" src={logoSanasalud} />
