@@ -12,6 +12,7 @@ import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { useEffect, useRef, useState } from 'react'
 import { format } from 'date-fns'
+import logo from '../../../assets/logos/logo.svg'
 
 const Celular = () => {
 
@@ -74,7 +75,9 @@ const Celular = () => {
       <div className="Celular__barra_app">
         <div className="Celular__informacion_contacto">
           <Icon className="Celular__icono_volver" icon={iconoVolver} />
-          <div className="Celular__avatar" />
+          <div className="Celular__avatar">
+            <img className="Celular__imagen_avatar" src={logo} alt="Avatar cero" />
+          </div>
           <div className="Celular__contacto">
             <p className="Celular__nombre_contacto">Red de Salud <InlineIcon icon={iconoCheck} className="Celular__icono_verificado" /></p>
             <p ref={elemEstado} className="Celular__estado_contacto">en línea</p>

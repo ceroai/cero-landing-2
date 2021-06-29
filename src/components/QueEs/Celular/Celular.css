@@ -110,16 +110,31 @@
 }
 
 .Celular__avatar {
-  background-color: lightgray;
+  background: linear-gradient(
+    45deg,
+    var(--color-rojo) 0 25%,
+    var(--color-azul),
+    var(--color-purpura) 75%
+  );
+  background-size: 1000% 1000%;
+  animation: Superior__bg 10s ease-in-out infinite;
   width: 5vmin;
   height: 5vmin;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Celular__imagen_avatar {
+  width: 3.75vmin;
+  min-height: 3.75vmin;
 }
 
 .Celular__contacto {
   display: grid;
   gap: .6vmin;
-  padding-left: 1vmin;
+  padding-left: 1.5vmin;
 }
 
 .Celular__nombre_contacto {
