@@ -12,6 +12,12 @@
   animation: prueba 25s ease alternate-reverse infinite both;
 }
 
+@-moz-document url-prefix() {
+  .Beneficios {
+    background: var(--color-fondo-beneficios);
+  }
+}
+
 @property --x {
   syntax: '<percentage>';
   inherits: false;
