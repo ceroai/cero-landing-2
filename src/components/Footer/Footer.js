@@ -37,7 +37,7 @@ const Footer = () => {
             </p>
           </div>
           <div><Link to="/contacto">Contacto</Link></div>
-          <div><a target="_blank" rel="noreferrer noopener" href="https://status.cero.ai/">STATUS</a></div>
+          <div><a target="_blank" rel="noreferrer noopener" href="https://stats.uptimerobot.com/w2My8ULEWR">STATUS</a></div>
         </div>
         <div className="Footer__integraciones">
           <p>Integraciones</p>
