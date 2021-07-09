@@ -58,7 +58,7 @@ const ContactoDemo = () => {
           />
         </div>
         <div className="Contacto__contenedor_campos">
-          <label htmlFor="sistema">Sistema de gestión</label>
+          <label htmlFor="sistema" aclaracion="opcional">Sistema de gestión</label>
           <select
             name="sistema"
             id="sistema"
@@ -85,7 +85,7 @@ const ContactoDemo = () => {
           />
         </div>
         <div className="Contacto__contenedor_campos">
-          <label htmlFor="pacientes">Pacientes mensuales</label>
+          <label htmlFor="pacientes" aclaracion="opcional">Pacientes mensuales</label>
           <input
             name="pacientes"
             id="pacientes"
