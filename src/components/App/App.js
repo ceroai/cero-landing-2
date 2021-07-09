@@ -1,3 +1,4 @@
+import { Switch, Route } from 'react-router-dom'
 import Banner from '../Banner'
 import Header from '../Header'
 import QueEs from '../QueEs'
@@ -9,13 +10,17 @@ import Footer from '../Footer'
 import AcercaDe from '../AcercaDe'
 import Contacto from '../Contacto'
 import Carreras from '../Carreras'
-import { Switch, Route } from 'react-router-dom'
+import ContactoDemo from '../ContactoDemo'
 import './App.css'
 
 const App = () => {
   return (
     <div className="App">
       <Switch>
+        <Route exact path="/contacto_demo">
+          <Header />
+          <ContactoDemo />
+        </Route>
         <Route exact path="/">
           <Banner />
           <Header />

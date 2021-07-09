@@ -48,7 +48,7 @@
 .Contacto__contenedor_campos {
   flex: 1;
   display: grid;
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .Contacto__contenedor_campos label {
