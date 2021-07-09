@@ -10,7 +10,7 @@ const ContactoDemo = () => {
   const [nombre, setNombre] = useState('')
   const [telefono, setTelefono] = useState('')
   const [pacientes, setPacientes] = useState('0')
-  const [sistema, setSistema] = useState('')
+  const [sistema, setSistema] = useState('Dentalink')
 
   useEffect(() => {
     refPrimerCampo.current.focus()
@@ -18,6 +18,9 @@ const ContactoDemo = () => {
 
   const contactar = e => {
     e.preventDefault()
+    if (!nombre || !telefono || enviando) {
+      return
+    }
     setEnviando(true)
     const params = new URLSearchParams()
     params.append('nombre', nombre)
@@ -54,6 +57,7 @@ const ContactoDemo = () => {
             type="text"
             ref={refPrimerCampo}
             value={nombre}
+            disabled={enviando}
             onChange={e => setNombre(e.target.value)}
           />
         </div>
@@ -63,6 +67,7 @@ const ContactoDemo = () => {
             name="sistema"
             id="sistema"
             value={sistema}
+            disabled={enviando}
             onChange={e => setSistema(e.target.value)}
           >
             <option value="Agenda Pro">Agenda Pro</option>
@@ -81,6 +86,7 @@ const ContactoDemo = () => {
             id="telefono"
             type="text"
             value={telefono}
+            disabled={enviando}
             onChange={e => setTelefono(e.target.value)}
           />
         </div>
@@ -91,10 +97,16 @@ const ContactoDemo = () => {
             id="pacientes"
             type="number"
             value={pacientes}
+            disabled={enviando}
             onChange={e => setPacientes(e.target.value)}
           />
         </div>
-        <button className="ContactoDemo__boton">¡Comencemos!</button>
+        <button
+          className="ContactoDemo__boton"
+          disabled={enviando}
+        >
+          ¡Comencemos!
+        </button>
       </form>
     </div>
   )
