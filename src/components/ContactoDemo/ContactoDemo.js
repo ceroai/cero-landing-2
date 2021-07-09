@@ -13,7 +13,7 @@ const ContactoDemo = () => {
   const [sistema, setSistema] = useState('Dentalink')
 
   useEffect(() => {
-    refPrimerCampo.current.focus()
+    refPrimerCampo.current?.focus()
   }, [])
 
   const contactar = e => {
@@ -43,71 +43,74 @@ const ContactoDemo = () => {
 
   return (
     <div className="ContactoDemo">
-      <form
-        name="contactoDemoCero"
-        className="ContactoDemo__formulario"
-        onSubmit={contactar}
-      >
-        <h1 className="ContactoDemo__titulo">Contacto Demo</h1>
-        <div className="Contacto__contenedor_campos">
-          <label htmlFor="nombre">Nombre</label>
-          <input
-            name="nombre"
-            id="nombre"
-            type="text"
-            ref={refPrimerCampo}
-            value={nombre}
-            disabled={enviando}
-            onChange={e => setNombre(e.target.value)}
-          />
-        </div>
-        <div className="Contacto__contenedor_campos">
-          <label htmlFor="sistema" aclaracion="opcional">Sistema de gestión</label>
-          <select
-            name="sistema"
-            id="sistema"
-            value={sistema}
-            disabled={enviando}
-            onChange={e => setSistema(e.target.value)}
-          >
-            <option value="Agenda Pro">Agenda Pro</option>
-            <option value="Encuadrado">Encuadrado</option>
-            <option value="Dentalink">Dentalink</option>
-            <option value="Dentalsoft">Dentalsoft</option>
-            <option value="Medilink">Medilink</option>
-            <option value="Sked">Sked</option>
-            <option value="Otro">Otro</option>
-          </select>
-        </div>
-        <div className="Contacto__contenedor_campos">
-          <label htmlFor="telefono">Teléfono</label>
-          <input
-            name="telefono"
-            id="telefono"
-            type="text"
-            value={telefono}
-            disabled={enviando}
-            onChange={e => setTelefono(e.target.value)}
-          />
-        </div>
-        <div className="Contacto__contenedor_campos">
-          <label htmlFor="pacientes" aclaracion="opcional">Pacientes mensuales</label>
-          <input
-            name="pacientes"
-            id="pacientes"
-            type="number"
-            value={pacientes}
-            disabled={enviando}
-            onChange={e => setPacientes(e.target.value)}
-          />
-        </div>
-        <button
-          className="ContactoDemo__boton"
-          disabled={enviando}
+      {mailEnviado 
+        ? <p className="ContactoDemo__gracias">¡Gracias!</p>
+        : <form
+          name="contactoDemoCero"
+          className="ContactoDemo__formulario"
+          onSubmit={contactar}
         >
-          ¡Comencemos!
-        </button>
-      </form>
+          <h1 className="ContactoDemo__titulo">Contacto Demo</h1>
+          <div className="Contacto__contenedor_campos">
+            <label htmlFor="nombre">Nombre</label>
+            <input
+              name="nombre"
+              id="nombre"
+              type="text"
+              ref={refPrimerCampo}
+              value={nombre}
+              disabled={enviando}
+              onChange={e => setNombre(e.target.value)}
+            />
+          </div>
+          <div className="Contacto__contenedor_campos">
+            <label htmlFor="sistema" aclaracion="opcional">Sistema de gestión</label>
+            <select
+              name="sistema"
+              id="sistema"
+              value={sistema}
+              disabled={enviando}
+              onChange={e => setSistema(e.target.value)}
+            >
+              <option value="Agenda Pro">Agenda Pro</option>
+              <option value="Encuadrado">Encuadrado</option>
+              <option value="Dentalink">Dentalink</option>
+              <option value="Dentalsoft">Dentalsoft</option>
+              <option value="Medilink">Medilink</option>
+              <option value="Sked">Sked</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div className="Contacto__contenedor_campos">
+            <label htmlFor="telefono">Teléfono</label>
+            <input
+              name="telefono"
+              id="telefono"
+              type="text"
+              value={telefono}
+              disabled={enviando}
+              onChange={e => setTelefono(e.target.value)}
+            />
+          </div>
+          <div className="Contacto__contenedor_campos">
+            <label htmlFor="pacientes" aclaracion="opcional">Pacientes mensuales</label>
+            <input
+              name="pacientes"
+              id="pacientes"
+              type="number"
+              value={pacientes}
+              disabled={enviando}
+              onChange={e => setPacientes(e.target.value)}
+            />
+          </div>
+          <button
+            className="ContactoDemo__boton"
+            disabled={enviando}
+          >
+            ¡Comencemos!
+          </button>
+        </form>
+      }
     </div>
   )
 }

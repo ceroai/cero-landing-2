@@ -100,6 +100,10 @@
   opacity: .8;
 }
 
+.ContactoDemo__gracias {
+  font-size: 5rem;
+}
+
 @keyframes aparece-formulario-demo {
   0% {
     opacity: 0;
