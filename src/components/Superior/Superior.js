@@ -65,7 +65,12 @@ const Superior = () => {
             herramienta de comunicación escrita automatizada,
             empática y efectiva en cada paso de la atención médica.
           </p>
-          <button onClick={() => history.push('/contacto')} className="Superior__cta">Comencemos</button>
+          <button
+            onClick={() => history.push('/contacto')}
+            className="Superior__cta"
+          >
+            Comencemos
+          </button>
         </div>
       </div>
       <div className="Superior__logos">
