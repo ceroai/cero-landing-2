@@ -18,7 +18,7 @@ const Banner = () => {
         "Banner--invisible": !visible
       })}
     >
-      Agenda una demo y prueba el servicio gratis por 1 mes 👉
+      Agenda una demo y prueba el servicio por 1 mes 👉
       <a
         href={`https://calendly.com/felipe-cero/30min?month=${new Date().getFullYear()}-${stringMes}`}
         className="Banner__boton"
