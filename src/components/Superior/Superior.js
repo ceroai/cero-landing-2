@@ -53,7 +53,7 @@ const Superior = () => {
   return (
     <section className="Superior">
       <p className="Superior__mensaje_principal" ref={header}>
-        Mejora tu comunicación sumando cero
+        Comunicación<br /> automática <br />y efectiva<br /> con todos<br /> tus pacientes
       </p>
       <div className="Superior__bajada">
         <p className="Superior__instruccion" ref={explora}>

@@ -12,17 +12,15 @@
 }
 
 .Superior__mensaje_principal {
-  font-size: 9rem;
+  font-size: 5.5rem;
   padding-top: 13rem;
-  text-transform: uppercase;
-  width: 50%;
   font-family: 'Space Grotesk', sans-serif;
 }
 
 .Superior__bajada {
   display: flex;
   width: 100%;
-  padding: 6rem 0 4rem 0;
+  padding: 8rem 0 4rem 0;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.4rem;
 }
