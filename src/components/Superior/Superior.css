@@ -6,7 +6,7 @@
     var(--color-purpura) 75%
   );
   background-size: 400% 400%;
-  animation: Superior__bg 10s ease-in-out infinite;
+  /* animation: Superior__bg 10s ease-in-out infinite; */
   padding: 0 10rem;
   color: var(--color-blanco);
 }
