@@ -12,16 +12,17 @@ const emojisRandom = [
   '💖',
   '⭐⭐⭐⭐⭐',
   '😍',
-  '😄'
+  '😄',
+  '🚀'
 ]
 
 const mensajesRandomConfirma = [
   'Confirmo mi asistencia',
-  'Sí',
+  'Sí asistiré',
   'Claro que sí',
   'Confirmo!!',
   '👍👍',
-  'claro Nos vemos ese dia',
+  'No vemos ese dia!!',
   'Hay estare👍',
 ]
 

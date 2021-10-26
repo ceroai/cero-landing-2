@@ -4,8 +4,10 @@ import './SlideMensaje.css'
 const mensajes = [
   'Incorpora el poder de la inteligencia artificial a tu servicio al cliente',
   'Comunicación automática y efectiva con todos tus pacientes',
-  'Incorpora el poder de la inteligencia artificial a tu servicio al cliente',
-  'Incorpora el poder de la inteligencia artificial a tu servicio al cliente',
+  'Automatiza hasta el 90% y focaliza tu equipo en los casos más complejos',
+  'Agenda tu demo y analicemos los desafíos de comunicación con clientes de tu organización',
+  'Reduce hasta en un 70% los costos de contacto con tus pacientes',
+  'Visualiza en tiempo real la tasa de respuesta y supervisa las interacciones con tus pacientes'
 ]
 
 const SlideMensaje = () => {
