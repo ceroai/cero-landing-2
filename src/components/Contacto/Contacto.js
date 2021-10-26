@@ -121,7 +121,7 @@ const Contacto = () => {
                 <label htmlFor="nombre_organizacion">
                   Nombre organización
                   <input
-                    required="required"
+                    // required="required"
                     id="nombre_organizacion"
                     name="nombre_organizacion"
                     disabled={enviando}
@@ -131,7 +131,7 @@ const Contacto = () => {
                 <label htmlFor="tipo_organizacion">
                   Tipo de organización
                   <input
-                    required="required"
+                    // required="required"
                     id="tipo_organizacion"
                     name="tipo_organizacion"
                     disabled={enviando}
@@ -141,7 +141,7 @@ const Contacto = () => {
                 <label htmlFor="software_gestion">
                   Software de gestión
                   <input
-                    required="required"
+                    // required="required"
                     id="software_gestion"
                     name="software_gestion"
                     disabled={enviando}
@@ -156,7 +156,7 @@ const Contacto = () => {
               </h2>
               <div className="Contacto__contenedor_campos">
                 <textarea
-                  required="required"
+                  // required="required"
                   className="Contato__area_desafio"
                   name="desafio"
                   id="desafio"
