@@ -11,36 +11,42 @@ import AcercaDe from '../AcercaDe'
 import Contacto from '../Contacto'
 import Carreras from '../Carreras'
 import ContactoDemo from '../ContactoDemo'
+import Expo from '../Expo'
 import './App.css'
 
 const App = () => {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/contacto_demo">
-          <Header />
-          <ContactoDemo />
+        <Route exact path="/expo">
+          <Expo />
         </Route>
-        <Route exact path="/">
-          <Banner />
-          <Header />
-          <Superior />
-          <QueEs />
-          <Beneficios />
-          <Testimonios />
-          <Trabajemos />
-        </Route>
-        <Route path="/sobre">
-          <Header />
-          <AcercaDe />
-          <Carreras />
-        </Route>
-        <Route path="/contacto">
-          <Header invertir={true} />
-          <Contacto />
+        <Route>
+          <Route exact path="/contacto_demo">
+            <Header />
+            <ContactoDemo />
+          </Route>
+          <Route exact path="/">
+            <Banner />
+            <Header />
+            <Superior />
+            <QueEs />
+            <Beneficios />
+            <Testimonios />
+            <Trabajemos />
+          </Route>
+          <Route path="/sobre">
+            <Header />
+            <AcercaDe />
+            <Carreras />
+          </Route>
+          <Route path="/contacto">
+            <Header invertir={true} />
+            <Contacto />
+          </Route>
+          <Footer />
         </Route>
       </Switch>
-      <Footer />
     </div>
   );
 }
