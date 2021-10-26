@@ -14,6 +14,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
     <title>Cero</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7XRYPC794"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y7XRYPC794');
+    </script>
   </head>
   <body>
     <noscript>Necesitas JavaScript.</noscript>
@@ -30,6 +39,15 @@
       <input type="text" name="software" />
       <input type="text" name="desafio" />
       <input type="text" name="subject" />
+    </form>
+    
+    <!-- A little help for the Netlify post-processing bots -->
+    <form name="contactoDemoCero" netlify netlify-honeypot="seudonimo" hidden>
+      <input type="text" name="seudonimo" />
+      <input type="text" name="nombre" />
+      <input type="text" name="telefono" />
+      <input type="text" name="sistema" />
+      <input type="text" name="pacientes" />
     </form>
   </body>
 </html>

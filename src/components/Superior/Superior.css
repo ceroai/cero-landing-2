@@ -12,17 +12,15 @@
 }
 
 .Superior__mensaje_principal {
-  font-size: 9rem;
+  font-size: 5.5rem;
   padding-top: 13rem;
-  text-transform: uppercase;
-  width: 50%;
   font-family: 'Space Grotesk', sans-serif;
 }
 
 .Superior__bajada {
   display: flex;
   width: 100%;
-  padding: 6rem 0 4rem 0;
+  padding: 8rem 0 4rem 0;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.4rem;
 }
@@ -48,24 +46,26 @@
 .Superior__cta {
   color: var(--color-blanco);
   text-transform: uppercase;
-  border: .1rem solid var(--color-blanco);
+  border: .12rem solid var(--color-blanco);
   background: transparent;
   align-self: flex-start;
-  padding: 0 1.5rem;
-  height: 2rem;
+  padding: 0 2rem;
+  height: 3.25rem;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: .9rem;
+  font-size: 1.5rem;
   border-radius: 2rem;
   display: flex;
   align-items: center;
   cursor: pointer;
   transition: all .15s ease-in-out;
   mix-blend-mode: luminosity;
+  box-shadow: none;
 }
 
 .Superior__cta:hover {
   background: var(--color-blanco);
   color: var(--color-negro);
+  box-shadow: 0 .1rem .5rem rgba(255, 255, 255, .25);
 }
 
 .Superior__logos {

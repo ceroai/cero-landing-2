@@ -67,7 +67,12 @@
 }
 
 .Footer_logo_sup_chile {
-  width: 12rem;
+  width: 10rem;
+  margin-top: 2rem;
+}
+
+.Footer_logo_yc {
+  width: 10rem;
   margin-top: 2rem;
 }
 
@@ -76,11 +81,12 @@
   gap: 1rem;
   grid-auto-flow: column;
   place-items: center start;
+  width: 100%;
 }
 
 .Footer__logo_integracion {
   margin-top: 1rem;
-  width: 8rem;
+  width: 6.5rem;
   filter: brightness(120%);
 }
 

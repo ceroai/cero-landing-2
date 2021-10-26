@@ -1,4 +1,25 @@
-.Celular {
+.SlideCelularGenerica {
+  animation: aparece-slide 1s ease;
+  min-height: 100vh;
+  min-width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.SlideCelularGenerica__texto {
+  font-size: 3.25rem;
+  text-align: left;
+  line-height: 1.25;
+  max-width: 20ch;
+}
+
+.SlideCelularGenerica__celular {
+  color: var(--color-negro);
   height: 125vmin;
   background: #F7F7F7;
   width: 55vmin;
@@ -7,14 +28,16 @@
     0 0 0 .7vmin #2B292A,
     -.2vmin -.2vmin 0 .7vmin #B0B0B0,
     0 0 0 1.4vmin #656565;
-  position: relative;
+  position: absolute;
+  right: 10%;
+  top: 10%;
   font-family: 'Helvetica', sans-serif;
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
 }
 
-.Celular::before {
+.SlideCelularGenerica__celular::before {
   content: '';
   position: absolute;
   width: .5vmin;
@@ -25,7 +48,7 @@
   border-radius: 1vmin 0 0 1vmin;
 }
 
-.Celular::after {
+.SlideCelularGenerica__celular::after {
   content: '';
   position: absolute;
   width: .6vmin;
@@ -37,7 +60,7 @@
   box-shadow: 0 9vmin #333;
 }
 
-.Celular__solapa {
+.SlideCelularGenerica__celular_solapa {
   position: absolute;
   --ancho: 20vmin;
   top: 0;
@@ -49,7 +72,7 @@
   border-radius: 0 0 10vmin 10vmin / 0 0 20vmin 20vmin;
 }
 
-.Celular__solapa::before {
+.SlideCelularGenerica__celular_solapa::before {
   position: absolute;
   content: '';
   width: .5vmin;
@@ -60,7 +83,7 @@
   top: .3vmin;
 }
 
-.Celular__solapa::after {
+.SlideCelularGenerica__celular_solapa::after {
   position: absolute;
   content: '';
   width: 10vmin;
@@ -71,7 +94,7 @@
   top: 1.5vmin;
 }
 
-.Celular__barra_estado {
+.SlideCelularGenerica__celular_barra_estado {
   height: 5vmin;
   display: flex;
   justify-content: space-between;
@@ -82,13 +105,13 @@
   color: #2B292A;
 }
 
-.Celular__barra_estado_iconos {
+.SlideCelularGenerica__celular_barra_estado_iconos {
   display: grid;
   grid-auto-flow: column;
   gap: 1.5vmin;
 }
 
-.Celular__barra_app {
+.SlideCelularGenerica__celular_barra_app {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,19 +120,19 @@
   z-index: 2;
 }
 
-.Celular__informacion_contacto {
+.SlideCelularGenerica__celular_informacion_contacto {
   display: flex;
   align-items: center;
   z-index: 2;
 }
 
-.Celular__icono_volver {
+.SlideCelularGenerica__celular_icono_volver {
   font-size: 6vmin;
   margin-left: -.25rem;
   color: #44a2ff;
 }
 
-.Celular__avatar {
+.SlideCelularGenerica__celular_avatar {
   background: linear-gradient(
     45deg,
     var(--color-rojo) 0 25%,
@@ -126,29 +149,29 @@
   justify-content: center;
 }
 
-.Celular__imagen_avatar {
+.SlideCelularGenerica__celular_imagen_avatar {
   width: 3.75vmin;
   min-height: 3.75vmin;
 }
 
-.Celular__contacto {
+.SlideCelularGenerica__celular_contacto {
   display: grid;
   gap: .6vmin;
   padding-left: 1.5vmin;
 }
 
-.Celular__nombre_contacto {
+.SlideCelularGenerica__celular_nombre_contacto {
   font-size: 2.25vmin;
   font-weight: bold;
   position: relative;
 }
 
-.Celular__estado_contacto {
+.SlideCelularGenerica__celular_estado_contacto {
   font-size: 1.8vmin;
   color: gray;
 }
 
-.Celular__iconos_barra_app {
+.SlideCelularGenerica__celular_iconos_barra_app {
   display: grid;
   grid-auto-flow: column;
   gap: 3vmin;
@@ -157,7 +180,7 @@
   font-size: 3vmin;
 }
 
-.Celular__pantalla {
+.SlideCelularGenerica__celular_pantalla {
   flex: 1;
   background: linear-gradient(
       45deg,
@@ -175,7 +198,7 @@
   position: relative;
 }
 
-.Celular__mensaje {
+.SlideCelularGenerica__celular_mensaje {
   max-width: 66%;
   padding: 1.15vmin;
   border-radius: .5vmin;
@@ -186,17 +209,16 @@
   filter: drop-shadow(0 .1rem .15rem rgba(0, 0, 0, .1));
 }
 
-.Celular__mensaje--saliente::after {
+.SlideCelularGenerica__celular_mensaje--saliente::after {
   content: '';
   position: absolute;
-  border-bottom: 1px dotted var(--color-negro);
   height: 100%;
   width: calc(100% + 30vw);
   left: .25vmin;
   top: .75vmin;
 }
 
-.Celular__mensaje--entrante::before {
+.SlideCelularGenerica__celular_mensaje--entrante::before {
   content: '';
   position: absolute;
   width: 2vmin;
@@ -207,13 +229,15 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
 
-.Celular__mensaje--entrante {
+.SlideCelularGenerica__celular_mensaje--entrante {
   transform-origin: 0% 0%;
   background: white;
   align-self: flex-start;
+  transform-origin: 0% 0%;
+  animation: aparece-mensaje-entrante-slidecelular .25s ease both;
 }
 
-.Celular__mensaje--entrante::before {
+.SlideCelularGenerica__celular_mensaje--entrante::before {
   content: '';
   position: absolute;
   width: 2vmin;
@@ -224,13 +248,15 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
 
-.Celular__mensaje--saliente {
+.SlideCelularGenerica__celular_mensaje--saliente {
   transform-origin: 100% 0%;
   background: #dcf8c7;
   align-self: flex-end;
+  transform-origin: 100% 0%;
+  animation: aparece-mensaje-saliente-slidecelular .25s ease both;
 }
 
-.Celular__mensaje--saliente::before {
+.SlideCelularGenerica__celular_mensaje--saliente::before {
   content: '';
   position: absolute;
   width: 2vmin;
@@ -241,11 +267,11 @@
   clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
 }
 
-.Celular strong {
+.SlideCelularGenerica__celular strong {
   font-weight: bold;
 }
 
-.Celular__deteccion {
+.SlideCelularGenerica__celular_deteccion {
   position: absolute;
   height: calc(100% + .5vmin);
   top: 0;
@@ -258,7 +284,7 @@
   min-width: 50rem;
 }
 
-.Celular__etiqueta_deteccion {
+.SlideCelularGenerica__celular_etiqueta_deteccion {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2.5vmin;
@@ -266,29 +292,29 @@
   align-items: center;
 }
 
-.Celular__etiqueta_deteccion--corta {
+.SlideCelularGenerica__celular_etiqueta_deteccion--corta {
   display: none;
 }
 
-.Celular__respuesta_deteccion {
+.SlideCelularGenerica__celular_respuesta_deteccion {
   font-size: 2vmin;
   text-transform: none;
   margin-left: 2rem;
 }
 
-.Celular__icono_no {
+.SlideCelularGenerica__celular_icono_no {
   color: var(--color-rojo);
   margin-right: .5rem;
   font-size: 1.5rem;
 }
 
-.Celular__icono_si {
+.SlideCelularGenerica__celular_icono_si {
   color: var(--color-verde);
   margin-right: .5rem;
   font-size: 1.5rem;
 }
 
-.Celular__icono_verificado {
+.SlideCelularGenerica__celular_icono_verificado {
   color: var(--color-verde);
   font-size: 1.5rem;
   position: absolute;
@@ -296,20 +322,23 @@
   top: -.15rem;
 }
 
-@media (orientation: portrait) {
-  .Celular {
-    margin-top: 8rem;
+@keyframes aparece-mensaje-entrante-slidecelular {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
   }
-
-  .Celular__etiqueta_deteccion {
-    display: none;
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
+}
 
-  .Celular__etiqueta_deteccion--corta {
-    display: flex;
+@keyframes aparece-mensaje-saliente-slidecelular {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
   }
-
-  .Celular__deteccion {
-    margin-left: 3rem;
+  100% {
+    opacity: 1;
   }
 }

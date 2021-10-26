@@ -53,7 +53,7 @@ const Superior = () => {
   return (
     <section className="Superior">
       <p className="Superior__mensaje_principal" ref={header}>
-        Mejora tu comunicación sumando cero
+        Comunicación<br /> automática <br />y efectiva<br /> con todos<br /> tus pacientes
       </p>
       <div className="Superior__bajada">
         <p className="Superior__instruccion" ref={explora}>
@@ -61,17 +61,22 @@ const Superior = () => {
         </p>
         <div className="Superior__contenedor_texto">
           <p className="Superior__texto">
-            Interactúa con tus usuarios usando nuestra
+            Interactúa con tus pacientes usando nuestra
             herramienta de comunicación escrita automatizada,
-            empática y efectiva en cada paso de la atención.
+            empática y efectiva en cada paso de la atención médica.
           </p>
-          <button onClick={() => history.push('/contacto')} className="Superior__cta">Comencemos</button>
+          <button
+            onClick={() => history.push('/contacto')}
+            className="Superior__cta"
+          >
+            Comencemos
+          </button>
         </div>
       </div>
       <div className="Superior__logos">
         <p className="Superior__texto_logos">
-          Usado por equipos de<br />
-          marketing y servicio al cliente en:
+          Usado por los<br />
+          equipos de salud en:
         </p>
         <div className="Superior__contenedor_logos">
           <img className="Superior__logo" alt="Logo Sanasalud" src={logoSanasalud} />

@@ -71,7 +71,7 @@ const Contacto = () => {
                 Datos personales
               </h2>
               <div className="Contacto__contenedor_campos">
-                <label htmlFor="seudonimo">
+                <label htmlFor="seudonimo" style={{ display: 'none' }}>
                   Seudonimo
                   <input
                     id="seudonimo"

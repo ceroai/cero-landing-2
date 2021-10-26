@@ -26,7 +26,7 @@ const Header = () => {
       scrollPrevio = scrollActual
     }
     window.addEventListener('scroll', listener)
-    return () => window.removeEventListener(listener)
+    return () => window.removeEventListener('scroll', listener)
   }, [])
 
   return (

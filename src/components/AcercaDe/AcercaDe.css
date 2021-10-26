@@ -20,6 +20,12 @@
   animation: prueba 25s ease alternate-reverse infinite both;
 }
 
+@-moz-document url-prefix() {
+  .AcercaDe {
+    background: var(--color-negro);
+  }
+}
+
 @media not all and (min-resolution:.001dpcm) and (orientation: portrait)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
   .AcercaDe {

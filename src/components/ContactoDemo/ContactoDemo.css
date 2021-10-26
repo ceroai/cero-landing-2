@@ -1,0 +1,150 @@
+.ContactoDemo {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  padding: 0 10rem;
+  font-family: 'Space Grotesk', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6rem;
+  max-width: 100vw;
+  overflow: hidden;
+  z-index: 2;
+  background:
+    radial-gradient(ellipse 25rem 25rem at calc(50% - var(--x)) calc(50% - var(--y)), var(--color-negro) 55%, transparent),
+    radial-gradient(ellipse 25rem 25rem at var(--x) var(--y), var(--color-azul) 5%, transparent),
+    radial-gradient(ellipse 25rem 25rem at calc(100% - var(--x)) calc(100% - var(--y)), var(--color-azul) 5%, transparent),
+    radial-gradient(ellipse 25rem 25rem at calc(var(--x) - 10%) calc(50% + var(--y)), var(--color-rojo) 5%, transparent),
+    var(--color-negro);
+  animation: prueba 25s ease alternate-reverse infinite both;
+  padding-top: 13rem;
+  position: relative;
+}
+
+@-moz-document url-prefix() {
+  .ContactoDemo {
+    background: var(--color-negro);
+  }
+}
+
+.ContactoDemo::after {
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  background: linear-gradient(transparent, var(--color-negro));
+  height: 15rem;
+  width: 100%;
+}
+
+.ContactoDemo__formulario {
+  border: 1px solid white;
+  border-radius: .5rem;
+  padding: 2rem;
+  backdrop-filter: blur(5rem);
+  box-shadow: 0 .25rem 2rem rgba(0, 0, 0, .35);
+  display: grid;
+  grid-template: repeat(4, auto) / repeat(2, auto);
+  gap: 2rem 4rem;
+  z-index: 2;
+  animation: aparece-formulario-demo 2s ease both;
+}
+
+.ContactoDemo__titulo {
+  grid-area: auto / span 2;
+  font-size: 2rem;
+}
+
+.Contacto__contenedor_campos label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.35rem;
+  position: relative;
+}
+
+.Contacto__contenedor_campos input, .Contacto__contenedor_campos select {
+  padding: .5rem;
+  font-size: 1.5rem;
+  color: var(--color-negro);
+  outline-color: var(--color-azul);
+}
+
+.ContactoDemo__boton {
+  grid-area: auto / span 2;
+  justify-self: center;
+  font-size: 1.5rem;
+  font-family: 'Space Grotesk', sans-serif;
+  height: 3rem;
+  padding: 0 2.5rem;
+  background: transparent;
+  border: 1px solid var(--color-blanco);
+  color: var(--color-blanco);
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+}
+
+.ContactoDemo__boton:hover {
+  background: var(--color-blanco);
+  color: var(--color-negro);
+}
+
+.ContactoDemo label[aclaracion="opcional"]::after {
+  content: '* Opcional';
+  font-size: .75rem;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  font-style: italic;
+}
+
+.ContactoDemo *:disabled {
+  opacity: .8;
+}
+
+.ContactoDemo__gracias {
+  font-size: 5rem;
+}
+
+@keyframes aparece-formulario-demo {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (orientation: portrait) {
+
+  .ContactoDemo__titulo {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .Contacto__contenedor_campos {
+    grid-area: auto / span 2;
+  }
+
+  .ContactoDemo__formulario {
+    width: 100%;
+  }
+
+  .Contacto__contenedor_campos label {
+    font-size: 2rem;
+  }
+
+  .Contacto__contenedor_campos input, .Contacto__contenedor_campos select {
+    padding: 1rem;
+    font-size: 2rem;
+    color: var(--color-negro);
+    outline-color: var(--color-azul);
+  }
+  
+  .ContactoDemo__boton {
+    font-size: 3rem;
+    height: 6rem;
+    border-radius: 3rem;
+    margin-top: 2rem;
+  }
+}

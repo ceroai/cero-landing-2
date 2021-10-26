@@ -1,3 +1,5 @@
+import { Switch, Route } from 'react-router-dom'
+import Banner from '../Banner'
 import Header from '../Header'
 import QueEs from '../QueEs'
 import Superior from '../Superior'
@@ -8,32 +10,43 @@ import Footer from '../Footer'
 import AcercaDe from '../AcercaDe'
 import Contacto from '../Contacto'
 import Carreras from '../Carreras'
-import { Switch, Route } from 'react-router-dom'
+import ContactoDemo from '../ContactoDemo'
+import Expo from '../Expo'
 import './App.css'
 
 const App = () => {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/">
-          <Header />
-          <Superior />
-          <QueEs />
-          <Beneficios />
-          <Testimonios />
-          <Trabajemos />
+        <Route exact path="/expo">
+          <Expo />
         </Route>
-        <Route path="/sobre">
-          <Header />
-          <AcercaDe />
-          <Carreras />
-        </Route>
-        <Route path="/contacto">
-          <Header invertir={true} />
-          <Contacto />
+        <Route>
+          <Route exact path="/contacto_demo">
+            <Header />
+            <ContactoDemo />
+          </Route>
+          <Route exact path="/">
+            <Banner />
+            <Header />
+            <Superior />
+            <QueEs />
+            <Beneficios />
+            <Testimonios />
+            <Trabajemos />
+          </Route>
+          <Route path="/sobre">
+            <Header />
+            <AcercaDe />
+            <Carreras />
+          </Route>
+          <Route path="/contacto">
+            <Header invertir={true} />
+            <Contacto />
+          </Route>
+          <Footer />
         </Route>
       </Switch>
-      <Footer />
     </div>
   );
 }

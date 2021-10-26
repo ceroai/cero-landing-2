@@ -8,27 +8,26 @@ const Beneficios = () => {
 
   return (
     <section className="Beneficios">
-      <h2 className="Beneficios__titulo">Beneficios</h2>
       <Beneficio
-        titulo="Empatía y eficacia al ritmo de tus usuarios"
+        titulo="Empatía y eficacia al ritmo de tus pacientes"
         imagen={fotoRespuestas}
         altImagen="Demo automatiza"
         subtitulo={`Dale continuidad al viaje del usuario aumentando los puntos de contacto.`}
         lista={[
-          `Adapta tu comunicación a los canales preferidos por tus usuarios. Al usar Whatsapp evitas los portales de usuario, aplicaciones móviles o inicios de sesión complejos.`,
-          `Suma empatía y sentimiento para crear instancias donde los usuarios interactúen con naturalidad, respondiendo a su ritmo y estilo. `
+          `Comunicarte por WhatsApp significa que no hay portales de pacientes, aplicaciones móviles o inicios de sesión complejos, solo comunicación simple en los dispositivos que los pacientes usan todos los días.`,
+          `Suma empatía y sentimiento para crear instancias donde los usuarios interactúen con naturalidad, respondiendo a su ritmo y estilo.`
         ]}
       />
       <Beneficio
-        titulo="Aumenta los puntos de contacto con tus clientes"
+        titulo="Aumenta los puntos de contacto con tus pacientes"
         imagen={fotoChat}
         altImagen="Demo interacción"
         subtitulo={`Natural, empático y al ritmo 
         de tus usuarios`}
         lista={[
-          `Dale continuidad al viaje del usuario aumentando los puntos de contacto.`,
+          `Dale continuidad al viaje del paciente aumentando los puntos de contacto.`,
           `Automatiza hasta el 90% de los casos de uso y enfoca tu equipo en los casos más complejos. Transforma puntos de quiebre de comunicación en oportunidades de conversión para tu organización.`,
-          `Desde la coordinación de una cita online hasta la recopilación de comentarios después de cada visita, Cero.ai agiliza el proceso de ayudar a tus usuarios a alcanzar sus objetivos.` 
+          `Desde la admisión de pacientes hasta la recopilación de comentarios después de cada visita, Cero.ai agiliza el proceso de ayudar a tus pacientes a alcanzar sus objetivos de salud.` 
         ]}
       />
       <Beneficio
@@ -39,8 +38,8 @@ const Beneficios = () => {
           resultados según tus 
           necesidades`}
         lista={[
-          `Nos integramos a tus sistemas y adaptamos a tus procesos para entregar un servicio personalizado y ágil que te permita maximizar tus resultados de negocio.`,
-          `Revisa en tiempo real métricas de comunicación y mantente un paso adelante con información de las tendencias de respuesta de tus usuarios. Detecta patrones para mejorar tu negocio y escala reduciendo hasta 70% en los costos de contacto a tus usuarios.`
+          `Nos integramos a tus sistemas para maximizar tus resultados de negocio, entregando un servicio personalizado, ﬂexible y ágil para que juntos entreguemos mejor comunicación.`,
+          `Revisa en tiempo real las tasas de respuesta, disminuye el no show y mantente un paso adelante con información de las tendencias de respuesta de tus pacientes. Detecta patrones para mejorar tu negocio y escala reduciendo hasta en un 70% los costos de contacto con tus pacientes.`
         ]}
       />
     </section>

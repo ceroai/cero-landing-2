@@ -23,11 +23,11 @@ const QueEs = () => {
       <div className="QueEs__textos">
         <h2 className="QueEs__titulo">¿Qué me permite Cero?</h2>
         <p className="QueEs__explicacion">
-          Los asistentes virtuales de CERO.AI permiten a
-          organizaciones automatizar procesos de comunicación,
+          Los agentes automáticos de CERO.AI permiten a
+          organizaciones de salud automatizar procesos de comunicación,
           entregando información importante para la operación,
           reduciendo costos de personal de apoyo y superando
-          las expectativas del usuario.
+          las expectativas del paciente.
         </p>
       </div>
       <div className="QueEs__diagrama">
