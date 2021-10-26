@@ -8,6 +8,9 @@ const SlideAI = () => {
         className="SlideAI__logo"
         src={logo}
         alt="Logo de Cero"
+        style={{
+          bottom: `${50 + 20 * Math.random()}%`
+        }}
       />
       <div className="SlideAI__slide">
         <h1>

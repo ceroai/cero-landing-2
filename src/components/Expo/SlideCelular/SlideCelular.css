@@ -233,6 +233,8 @@
   transform-origin: 0% 0%;
   background: white;
   align-self: flex-start;
+  transform-origin: 0% 0%;
+  animation: aparece-mensaje-entrante-slidecelular .25s ease both;
 }
 
 .SlideCelular__celular_mensaje--entrante::before {
@@ -250,6 +252,8 @@
   transform-origin: 100% 0%;
   background: #dcf8c7;
   align-self: flex-end;
+  transform-origin: 100% 0%;
+  animation: aparece-mensaje-saliente-slidecelular .25s ease both;
 }
 
 .SlideCelular__celular_mensaje--saliente::before {
@@ -316,4 +320,25 @@
   position: absolute;
   left: calc(100% + .35rem);
   top: -.15rem;
+}
+
+@keyframes aparece-mensaje-entrante-slidecelular {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes aparece-mensaje-saliente-slidecelular {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+  100% {
+    opacity: 1;
+  }
 }

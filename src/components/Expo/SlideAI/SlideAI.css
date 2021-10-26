@@ -8,7 +8,7 @@
   position: fixed;
   bottom: 50%;
   opacity: .1;
-  animation: aparece-logo-slideai 30s ease infinite both;
+  animation: aparece-logo-slideai 30s ease both;
 }
 
 .SlideAI h1 {

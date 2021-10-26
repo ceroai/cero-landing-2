@@ -9,7 +9,7 @@ const Expo = () => {
   const tSlideMS = 30000
 
   const slides = useMemo(() => [
-    <SlideAI />,
+    // <SlideAI />,
     <SlideCelular />
   ], [])
 
