@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import './Expo.css'
-import SlideAI from './SlideAI/SlideAI'
-import SlideCelular from './SlideCelular'
+import SlideMensaje from './SlideMensaje/SlideMensaje'
+import SlideCelularReagenda from './SlideCelularReagenda'
+import SlideCelularRevertir from './SlideCelularRevertir'
 
 const Expo = () => {
 
@@ -9,8 +10,10 @@ const Expo = () => {
   const tSlideMS = 30000
 
   const slides = useMemo(() => [
-    // <SlideAI />,
-    <SlideCelular />
+    <SlideMensaje />,
+    <SlideCelularReagenda	 />,
+    <SlideMensaje />,
+    <SlideCelularRevertir />
   ], [])
 
   useEffect(() => {

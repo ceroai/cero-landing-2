@@ -1,4 +1,4 @@
-.SlideCelular {
+.SlideCelularGenerica {
   animation: aparece-slide 1s ease;
   min-height: 100vh;
   min-width: 100vw;
@@ -11,14 +11,14 @@
   padding-left: 10%;
 }
 
-.SlideCelular__texto {
+.SlideCelularGenerica__texto {
   font-size: 3.25rem;
   text-align: left;
   line-height: 1.25;
   max-width: 20ch;
 }
 
-.SlideCelular__celular {
+.SlideCelularGenerica__celular {
   color: var(--color-negro);
   height: 125vmin;
   background: #F7F7F7;
@@ -37,7 +37,7 @@
   margin-left: 2rem;
 }
 
-.SlideCelular__celular::before {
+.SlideCelularGenerica__celular::before {
   content: '';
   position: absolute;
   width: .5vmin;
@@ -48,7 +48,7 @@
   border-radius: 1vmin 0 0 1vmin;
 }
 
-.SlideCelular__celular::after {
+.SlideCelularGenerica__celular::after {
   content: '';
   position: absolute;
   width: .6vmin;
@@ -60,7 +60,7 @@
   box-shadow: 0 9vmin #333;
 }
 
-.SlideCelular__celular_solapa {
+.SlideCelularGenerica__celular_solapa {
   position: absolute;
   --ancho: 20vmin;
   top: 0;
@@ -72,7 +72,7 @@
   border-radius: 0 0 10vmin 10vmin / 0 0 20vmin 20vmin;
 }
 
-.SlideCelular__celular_solapa::before {
+.SlideCelularGenerica__celular_solapa::before {
   position: absolute;
   content: '';
   width: .5vmin;
@@ -83,7 +83,7 @@
   top: .3vmin;
 }
 
-.SlideCelular__celular_solapa::after {
+.SlideCelularGenerica__celular_solapa::after {
   position: absolute;
   content: '';
   width: 10vmin;
@@ -94,7 +94,7 @@
   top: 1.5vmin;
 }
 
-.SlideCelular__celular_barra_estado {
+.SlideCelularGenerica__celular_barra_estado {
   height: 5vmin;
   display: flex;
   justify-content: space-between;
@@ -105,13 +105,13 @@
   color: #2B292A;
 }
 
-.SlideCelular__celular_barra_estado_iconos {
+.SlideCelularGenerica__celular_barra_estado_iconos {
   display: grid;
   grid-auto-flow: column;
   gap: 1.5vmin;
 }
 
-.SlideCelular__celular_barra_app {
+.SlideCelularGenerica__celular_barra_app {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -120,19 +120,19 @@
   z-index: 2;
 }
 
-.SlideCelular__celular_informacion_contacto {
+.SlideCelularGenerica__celular_informacion_contacto {
   display: flex;
   align-items: center;
   z-index: 2;
 }
 
-.SlideCelular__celular_icono_volver {
+.SlideCelularGenerica__celular_icono_volver {
   font-size: 6vmin;
   margin-left: -.25rem;
   color: #44a2ff;
 }
 
-.SlideCelular__celular_avatar {
+.SlideCelularGenerica__celular_avatar {
   background: linear-gradient(
     45deg,
     var(--color-rojo) 0 25%,
@@ -149,29 +149,29 @@
   justify-content: center;
 }
 
-.SlideCelular__celular_imagen_avatar {
+.SlideCelularGenerica__celular_imagen_avatar {
   width: 3.75vmin;
   min-height: 3.75vmin;
 }
 
-.SlideCelular__celular_contacto {
+.SlideCelularGenerica__celular_contacto {
   display: grid;
   gap: .6vmin;
   padding-left: 1.5vmin;
 }
 
-.SlideCelular__celular_nombre_contacto {
+.SlideCelularGenerica__celular_nombre_contacto {
   font-size: 2.25vmin;
   font-weight: bold;
   position: relative;
 }
 
-.SlideCelular__celular_estado_contacto {
+.SlideCelularGenerica__celular_estado_contacto {
   font-size: 1.8vmin;
   color: gray;
 }
 
-.SlideCelular__celular_iconos_barra_app {
+.SlideCelularGenerica__celular_iconos_barra_app {
   display: grid;
   grid-auto-flow: column;
   gap: 3vmin;
@@ -180,7 +180,7 @@
   font-size: 3vmin;
 }
 
-.SlideCelular__celular_pantalla {
+.SlideCelularGenerica__celular_pantalla {
   flex: 1;
   background: linear-gradient(
       45deg,
@@ -198,7 +198,7 @@
   position: relative;
 }
 
-.SlideCelular__celular_mensaje {
+.SlideCelularGenerica__celular_mensaje {
   max-width: 66%;
   padding: 1.15vmin;
   border-radius: .5vmin;
@@ -209,7 +209,7 @@
   filter: drop-shadow(0 .1rem .15rem rgba(0, 0, 0, .1));
 }
 
-.SlideCelular__celular_mensaje--saliente::after {
+.SlideCelularGenerica__celular_mensaje--saliente::after {
   content: '';
   position: absolute;
   height: 100%;
@@ -218,7 +218,7 @@
   top: .75vmin;
 }
 
-.SlideCelular__celular_mensaje--entrante::before {
+.SlideCelularGenerica__celular_mensaje--entrante::before {
   content: '';
   position: absolute;
   width: 2vmin;
@@ -229,7 +229,7 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
 
-.SlideCelular__celular_mensaje--entrante {
+.SlideCelularGenerica__celular_mensaje--entrante {
   transform-origin: 0% 0%;
   background: white;
   align-self: flex-start;
@@ -237,7 +237,7 @@
   animation: aparece-mensaje-entrante-slidecelular .25s ease both;
 }
 
-.SlideCelular__celular_mensaje--entrante::before {
+.SlideCelularGenerica__celular_mensaje--entrante::before {
   content: '';
   position: absolute;
   width: 2vmin;
@@ -248,7 +248,7 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
 
-.SlideCelular__celular_mensaje--saliente {
+.SlideCelularGenerica__celular_mensaje--saliente {
   transform-origin: 100% 0%;
   background: #dcf8c7;
   align-self: flex-end;
@@ -256,7 +256,7 @@
   animation: aparece-mensaje-saliente-slidecelular .25s ease both;
 }
 
-.SlideCelular__celular_mensaje--saliente::before {
+.SlideCelularGenerica__celular_mensaje--saliente::before {
   content: '';
   position: absolute;
   width: 2vmin;
@@ -267,11 +267,11 @@
   clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
 }
 
-.SlideCelular__celular strong {
+.SlideCelularGenerica__celular strong {
   font-weight: bold;
 }
 
-.SlideCelular__celular_deteccion {
+.SlideCelularGenerica__celular_deteccion {
   position: absolute;
   height: calc(100% + .5vmin);
   top: 0;
@@ -284,7 +284,7 @@
   min-width: 50rem;
 }
 
-.SlideCelular__celular_etiqueta_deteccion {
+.SlideCelularGenerica__celular_etiqueta_deteccion {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2.5vmin;
@@ -292,29 +292,29 @@
   align-items: center;
 }
 
-.SlideCelular__celular_etiqueta_deteccion--corta {
+.SlideCelularGenerica__celular_etiqueta_deteccion--corta {
   display: none;
 }
 
-.SlideCelular__celular_respuesta_deteccion {
+.SlideCelularGenerica__celular_respuesta_deteccion {
   font-size: 2vmin;
   text-transform: none;
   margin-left: 2rem;
 }
 
-.SlideCelular__celular_icono_no {
+.SlideCelularGenerica__celular_icono_no {
   color: var(--color-rojo);
   margin-right: .5rem;
   font-size: 1.5rem;
 }
 
-.SlideCelular__celular_icono_si {
+.SlideCelularGenerica__celular_icono_si {
   color: var(--color-verde);
   margin-right: .5rem;
   font-size: 1.5rem;
 }
 
-.SlideCelular__celular_icono_verificado {
+.SlideCelularGenerica__celular_icono_verificado {
   color: var(--color-verde);
   font-size: 1.5rem;
   position: absolute;
