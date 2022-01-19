@@ -79,7 +79,7 @@
 .Footer__contenedor_integraciones {
   display: grid;
   gap: 1rem;
-  grid-auto-flow: column;
+  grid-template: auto auto / repeat(4, 1fr);
   place-items: center start;
   width: 100%;
 }
@@ -173,6 +173,13 @@
 
   .Footer__contenedor_integraciones {
     width: 100%;
-    place-items: end center;
+    place-items: center center;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  }
+
+  .Footer__logo_integracion {
+    margin-top: 1rem;
+    width: 10rem;
+    filter: brightness(120%);
   }
 }

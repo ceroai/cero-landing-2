@@ -8,6 +8,8 @@ import logoSked from '../../assets/logos/logo_sked.png'
 import logoGenesys from '../../assets/logos/logo_genesys.svg'
 import logoFacebook from '@iconify-icons/mdi/facebook'
 import logoMedilink from '../../assets/logos/logo_medilink.svg'
+import logoPhilaxmed from '../../assets/logos/logo_philaxmed.png'
+import logoRezebra from '../../assets/logos/logo_rezebra.svg'
 import logoTwitter from '@iconify-icons/mdi/twitter'
 import logoLinkedin from '@iconify-icons/mdi/linkedin'
 import Icon from '@iconify/react'
@@ -50,19 +52,25 @@ const Footer = () => {
           <p>Integraciones</p>
           <div className="Footer__contenedor_integraciones">
             <a target="_blank" rel="noreferrer noopener" href="https://www.softwaredentalink.com/">
-              <img className="Footer__logo_integracion" src={logoDentalink} alt="Logo Dentalink" />
+              <img className="Footer__logo_integracion" src={logoDentalink} alt="Logo integración con Dentalink" />
             </a>
             <a target="_blank" rel="noreferrer noopener" href="https://www.siliconriver.cl/koplandsymphony/">
-              <img className="Footer__logo_integracion" src={logoKopland} alt="Logo Kopland" />
+              <img className="Footer__logo_integracion" src={logoKopland} alt="Logo integración con Kopland" />
             </a>
             <a target="_blank" rel="noreferrer noopener" href="https://www.sked24.com/es/citas-medicas/">
-              <img className="Footer__logo_integracion" src={logoSked} alt="Logo Sked" />
+              <img className="Footer__logo_integracion" src={logoSked} alt="Logo integración con Sked" />
             </a>
-            <a target="_blank" rel="noreferrer noopener" href="https://www.genesys.com/">
-              <img className="Footer__logo_integracion" src={logoGenesys} alt="Logo Genesys" />
+            <a target="_blank" rel="noreferrer noopener" href="https://philaxmed.cl/">
+              <img className="Footer__logo_integracion" src={logoPhilaxmed} alt="Logo integración con Philaxmed" />
             </a>
             <a target="_blank" rel="noreferrer noopener" href="https://www.softwaremedilink.com/">
-              <img className="Footer__logo_integracion" src={logoMedilink} alt="Logo Medilink" />
+              <img className="Footer__logo_integracion" src={logoMedilink} alt="Logo integración con Medilink" />
+            </a>
+            <a target="_blank" rel="noreferrer noopener" href="https://www.rezebra.cl">
+              <img className="Footer__logo_integracion" src={logoRezebra} alt="Logo integración con Rezebra" />
+            </a>
+            <a target="_blank" rel="noreferrer noopener" href="https://www.genesys.com/">
+              <img className="Footer__logo_integracion" src={logoGenesys} alt="Logo integración con Genesys" />
             </a>
           </div>
         </div>
