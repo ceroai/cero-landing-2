@@ -10,6 +10,7 @@ import logoFacebook from '@iconify-icons/mdi/facebook'
 import logoMedilink from '../../assets/logos/logo_medilink.svg'
 import logoPhilaxmed from '../../assets/logos/logo_philaxmed.png'
 import logoRezebra from '../../assets/logos/logo_rezebra.svg'
+import logoMedinet from '../../assets/logos/logo_medinet.svg'
 import logoTwitter from '@iconify-icons/mdi/twitter'
 import logoLinkedin from '@iconify-icons/mdi/linkedin'
 import Icon from '@iconify/react'
@@ -71,6 +72,9 @@ const Footer = () => {
             </a>
             <a target="_blank" rel="noreferrer noopener" href="https://www.genesys.com/">
               <img className="Footer__logo_integracion" src={logoGenesys} alt="Logo integración con Genesys" />
+            </a>
+            <a target="_blank" rel="noreferrer noopener" href="https://medinetapp.com/">
+              <img className="Footer__logo_integracion" src={logoMedinet} alt="Logo integración con Medinet" />
             </a>
           </div>
         </div>
