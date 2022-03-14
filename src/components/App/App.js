@@ -13,6 +13,7 @@ import Carreras from '../Carreras'
 import ContactoDemo from '../ContactoDemo'
 import Expo from '../Expo'
 import './App.css'
+import CasosDeUso from '../CasosDeUso'
 
 const App = () => {
   return (
@@ -43,6 +44,10 @@ const App = () => {
           <Route path="/contacto">
             <Header invertir={true} />
             <Contacto />
+          </Route>
+          <Route path="/casos-uso">
+            <Header />
+            <CasosDeUso />
           </Route>
           <Footer />
         </Route>

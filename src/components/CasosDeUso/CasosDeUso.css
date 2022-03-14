@@ -1,0 +1,51 @@
+.CasosDeUso {
+  background: linear-gradient(
+    45deg,
+    var(--color-rojo) 0 25%,
+    var(--color-azul),
+    var(--color-purpura) 75%
+  );
+  background-size: 400% 400%;
+  animation: Superior__bg 10s ease-in-out infinite;
+  padding: 9rem 10rem;
+  color: var(--color-blanco);
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.CasosDeUso__titulo {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+
+.CasosDeUso__contenedor_tarjetas {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.CasosDeUso__tarjeta {
+  padding: 2rem 2rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, .15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .15s ease-out;
+  border-radius: .25rem;
+}
+
+.CasosDeUso__tarjeta:hover {
+  box-shadow:
+    0 0 0 .3rem rgba(255, 255, 255, .15),
+    0 0 0 .2rem white;
+  background-color: rgba(255, 255, 255, .2);
+  text-shadow: 0 0 1rem rgba(255, 255, 255, .2);
+}
+
+.CasosDeUso__nombre_caso {
+  padding: .75rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
