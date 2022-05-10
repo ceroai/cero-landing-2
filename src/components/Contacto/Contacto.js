@@ -70,9 +70,9 @@ const Contacto = () => {
       </p>
       {mailEnviado
         ? <div className="Contacto__enviado">
-            ¡Gracias!
-            Nos contactaremos contigo
-            (o algo así)
+            ¡Gracias! <br />
+            Nos pondremos en contacto <br />
+            contigo a la brevedad 🙂
           </div>
         : <form
             name="contactoCero"
