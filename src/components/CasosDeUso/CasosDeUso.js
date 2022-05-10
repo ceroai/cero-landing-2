@@ -42,6 +42,9 @@ const casos = [
 const CasosDeUso = () => {
   return (
     <div className="CasosDeUso">
+      <div className="CasosDeUso__modal">
+        xxx
+      </div>
       <h1 className="CasosDeUso__titulo">Casos de uso</h1>
       <div className="CasosDeUso__contenedor_tarjetas">
         {casos.map((caso, i) => (

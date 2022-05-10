@@ -11,6 +11,12 @@
   color: var(--color-blanco);
   text-align: center;
   font-family: 'Space Grotesk', sans-serif;
+  position: relative;
+}
+
+.CasosDeUso__modal {
+  position: absolute;
+  background-color: red;
 }
 
 .CasosDeUso__titulo {

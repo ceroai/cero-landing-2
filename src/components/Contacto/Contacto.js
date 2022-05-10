@@ -1,6 +1,11 @@
 import { useRef, useEffect, useState } from 'react'
 import axios from 'axios'
 import './Contacto.css'
+import classNames from 'classnames'
+
+const cuponesValidos = [
+  'DLCAI22'
+]
 
 const Contacto = () => {
 
@@ -13,6 +18,8 @@ const Contacto = () => {
   const [software, setSoftware] = useState('')
   const [desafio, setDesafio] = useState('')
   const [seudonimo, setSeudonimo] = useState('')
+  const [cuponDescuento, setCuponDescuento] = useState('')
+  const [cuponInvalido, setCuponInvalido] = useState(false)
   const [mailEnviado, setMailEnviado] = useState(false)
   const [enviando, setEnviando] = useState(false)
 
@@ -23,6 +30,11 @@ const Contacto = () => {
 
   const contactar = e => {
     e.preventDefault()
+    setCuponInvalido(false)
+    if (cuponDescuento && !cuponesValidos.includes(cuponDescuento)) {
+      setCuponInvalido(true)
+      return
+    }
     setEnviando(true)
     const params = new URLSearchParams()
     params.append('nombre', nombre)
@@ -33,6 +45,7 @@ const Contacto = () => {
     params.append('tipo_organizacion', tipoOrganizacion)
     params.append('software', software)
     params.append('desafio', desafio)
+    params.append('cupon_descuento', cuponDescuento)
     params.append('form-name', 'contactoCero')
     params.append('subject', 'Contacto a través de Cero.ai')
     axios.post('/',
@@ -164,6 +177,28 @@ const Contacto = () => {
                   placeholder="Ej. Necesito ayuda para gestionar mis pacientes"
                   onChange={e => setDesafio(e.target.value)}
                 ></textarea>
+              </div>
+            </div>
+            <div className="Contacto__seccion_formulario">
+              <h2 className="Contacto__titulo_seccion_formulario">
+                ¿Tienes un cupón de descuento? <br/>
+                ¡Ingrésalo aquí!
+              </h2>
+              <div className="Contacto__contenedor_campos">
+                <input
+                  id="cupon_descuento"
+                  name="cupon_descuento"
+                  disabled={enviando}
+                  onChange={e => setCuponDescuento(e.target.value)}
+                />
+                <p
+                  className={classNames({
+                    'Contacto__mensaje_cupon_invalido': true,
+                    'Contacto__mensaje_cupon_invalido--activo': cuponInvalido,
+                  })}
+                >
+                  Código de cupón inválido
+                </p>
                 <button
                   disabled={enviando}
                   type="submit"
