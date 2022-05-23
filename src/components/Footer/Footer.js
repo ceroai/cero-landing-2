@@ -11,6 +11,7 @@ import logoMedilink from '../../assets/logos/logo_medilink.svg'
 import logoPhilaxmed from '../../assets/logos/logo_philaxmed.png'
 import logoRezebra from '../../assets/logos/logo_rezebra.svg'
 import logoMedinet from '../../assets/logos/logo_medinet.svg'
+import logoSalutem from '../../assets/logos/logo_salutem.svg'
 import logoTwitter from '@iconify-icons/mdi/twitter'
 import logoLinkedin from '@iconify-icons/mdi/linkedin'
 import Icon from '@iconify/react'
@@ -70,11 +71,14 @@ const Footer = () => {
             <a target="_blank" rel="noreferrer noopener" href="https://www.rezebra.cl">
               <img className="Footer__logo_integracion" src={logoRezebra} alt="Logo integración con Rezebra" />
             </a>
-            <a target="_blank" rel="noreferrer noopener" href="https://www.genesys.com/">
-              <img className="Footer__logo_integracion" src={logoGenesys} alt="Logo integración con Genesys" />
+            <a target="_blank" rel="noreferrer noopener" href="https://www.salutem.cl/">
+              <img className="Footer__logo_integracion" src={logoSalutem} alt="Logo integración con Salutem" />
             </a>
             <a target="_blank" rel="noreferrer noopener" href="https://medinetapp.com/">
               <img className="Footer__logo_integracion" src={logoMedinet} alt="Logo integración con Medinet" />
+            </a>
+            <a target="_blank" rel="noreferrer noopener" href="https://www.genesys.com/">
+              <img className="Footer__logo_integracion" src={logoGenesys} alt="Logo integración con Genesys" />
             </a>
           </div>
         </div>
