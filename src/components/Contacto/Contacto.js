@@ -3,9 +3,9 @@ import axios from 'axios'
 import './Contacto.css'
 import classNames from 'classnames'
 
-const cuponesValidos = [
-  'DLCAI22'
-]
+// const cuponesValidos = [
+//   'DLCAI22'
+// ]
 
 const Contacto = () => {
 
@@ -31,10 +31,10 @@ const Contacto = () => {
   const contactar = e => {
     e.preventDefault()
     setCuponInvalido(false)
-    if (cuponDescuento && !cuponesValidos.includes(cuponDescuento)) {
-      setCuponInvalido(true)
-      return
-    }
+    // if (cuponDescuento && !cuponesValidos.includes(cuponDescuento)) {
+    //   setCuponInvalido(true)
+    //   return
+    // }
     setEnviando(true)
     const params = new URLSearchParams()
     params.append('nombre', nombre)
