@@ -12,6 +12,9 @@ import logoPhilaxmed from '../../assets/logos/logo_philaxmed.png'
 import logoRezebra from '../../assets/logos/logo_rezebra.svg'
 import logoMedinet from '../../assets/logos/logo_medinet.svg'
 import logoSalutem from '../../assets/logos/logo_salutem.svg'
+import logoAgendaPro from '../../assets/logos/logo_agendapro.svg'
+import logoDentalSoft from '../../assets/logos/logo_dentalsoft.svg'
+import logoInterSystems from '../../assets/logos/logo_intersystems.svg'
 import logoTwitter from '@iconify-icons/mdi/twitter'
 import logoLinkedin from '@iconify-icons/mdi/linkedin'
 import Icon from '@iconify/react'
@@ -79,6 +82,15 @@ const Footer = () => {
             </a>
             <a target="_blank" rel="noreferrer noopener" href="https://www.genesys.com/">
               <img className="Footer__logo_integracion" src={logoGenesys} alt="Logo integración con Genesys" />
+            </a>
+            <a target="_blank" rel="noreferrer noopener" href="https://agendapro.com/">
+              <img className="Footer__logo_integracion" src={logoAgendaPro} alt="Logo integración con AgendaPro" />
+            </a>
+            <a target="_blank" rel="noreferrer noopener" href="https://dentalsoft.cl/">
+              <img className="Footer__logo_integracion" src={logoDentalSoft} alt="Logo integración con DentalSoft" />
+            </a>
+            <a target="_blank" rel="noreferrer noopener" href="https://www.intersystems.com/">
+              <img className="Footer__logo_integracion" src={logoInterSystems} alt="Logo integración con InterSystems" />
             </a>
           </div>
         </div>
