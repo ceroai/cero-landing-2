@@ -18,7 +18,7 @@ const Banner = () => {
         "Banner--invisible": !visible
       })}
     >
-      Agenda una demo y prueba el servicio 👉
+      ¿Por qué te conformas con un 18% de No-Show 🤔? Pide tu prueba gratis acá ▶️
       <a
         href={`https://calendly.com/felipe-cero/30min?month=${new Date().getFullYear()}-${stringMes}`}
         className="Banner__boton"

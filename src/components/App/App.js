@@ -14,6 +14,7 @@ import ContactoDemo from '../ContactoDemo'
 import Expo from '../Expo'
 import './App.css'
 import CasosDeUso from '../CasosDeUso'
+import ExpoPruebas from '../Expo/ExpoPruebas'
 
 const App = () => {
   return (
@@ -21,6 +22,9 @@ const App = () => {
       <Switch>
         <Route exact path="/expo">
           <Expo />
+        </Route>
+        <Route exact path="/expowax">
+          <ExpoPruebas />
         </Route>
         <Route>
           <Route exact path="/contacto_demo">

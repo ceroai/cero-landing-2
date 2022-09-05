@@ -53,7 +53,7 @@ const Superior = () => {
   return (
     <section className="Superior">
       <p className="Superior__mensaje_principal" ref={header}>
-        Comunicación<br /> automática <br />y efectiva<br /> con todos<br /> tus pacientes
+        Más pacientes<br /> atendidos<br /> menos horas<br /> perdidas
       </p>
       <div className="Superior__bajada">
         <p className="Superior__instruccion" ref={explora}>
@@ -61,9 +61,10 @@ const Superior = () => {
         </p>
         <div className="Superior__contenedor_texto">
           <p className="Superior__texto">
-            Interactúa con tus pacientes usando nuestra
-            herramienta de comunicación escrita automatizada,
-            empática y efectiva en cada paso de la atención médica.
+            En Cero nos encargamos 
+            de que todos tus pacientes 
+            lleguen a sus citas
+            a la hora 🕐 y preparados 💊
           </p>
           <button
             onClick={() => history.push('/contacto')}
