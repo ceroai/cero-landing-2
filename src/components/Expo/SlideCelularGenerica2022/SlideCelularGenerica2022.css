@@ -204,7 +204,7 @@
 }
 
 .SlideCelularGenerica2022__celular_mensaje {
-  max-width: 66%;
+  max-width: 80%;
   padding: 1.15vmin;
   border-radius: .5vmin;
   font-size: 2.25vmin;
@@ -218,14 +218,16 @@
   position: absolute;
   top: 0;
   background-color: var(--color-blanco);
-  width: 20rem;
+  width: 28ch;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: .25rem;
   display: flex;
   flex-direction: column;
   gap: .5rem;
   animation: lax .5s 2s ease both;
-  box-shadow: 0 0 2rem rgba(255, 255, 255, .5);
+  box-shadow:
+    .25rem .25rem 0 .2rem rgba(0, 0, 0, .35),
+    0 0 2rem rgba(255, 255, 255, .5);
 }
 
 .SlideCelularGenerica2022__explicacion::after {
@@ -235,7 +237,8 @@
   height: .25rem;
   background-color: white;
   top: 1rem;
-  left: 100%;
+  left: calc(100% + 0rem);
+  box-shadow: 0 .25rem 0 0 rgba(0, 0, 0, .35);
 }
 
 .SlideCelularGenerica2022__celular_mensaje--entrante .SlideCelularGenerica2022__explicacion {
@@ -247,11 +250,12 @@
 }
 
 .SlideCelularGenerica2022__celular_mensaje--saliente .SlideCelularGenerica2022__explicacion::after {
-  left: -2rem;
+  left: -2.5rem;
 }
 
 .SlideCelularGenerica2022__explicacion h2 {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
+  font-family: 'Space Grotesk';
   font-weight: bold;
 }
 
@@ -400,7 +404,7 @@
     transform: scale(.9);
   }
   100% {
-    opacity: 1;
+    opacity: .9;
     transform: scale(1);
   }
 }

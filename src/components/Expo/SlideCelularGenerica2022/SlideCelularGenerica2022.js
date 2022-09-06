@@ -82,13 +82,15 @@ const SlideCelularGenerica2022 = ({ titulo, mensajesEntrantes, mensajesSalientes
             className="SlideCelularGenerica2022__celular_mensaje SlideCelularGenerica2022__celular_mensaje--entrante"
             style={{ animationDelay: `${1 + 1 * Math.random()}s` }}
           >
-            <div
-              className="SlideCelularGenerica2022__explicacion"
-              style={{ animationDelay: `${2 + 1 * Math.random()}s` }}
-            >
-              <h2>{mensajesEntrantes[0].tituloExplicacion}</h2>
-              <p>{mensajesEntrantes[0].contenidoExplicacion}</p>
-            </div>
+            {mensajesEntrantes[0]?.tituloExplicacion &&
+              <div
+                className="SlideCelularGenerica2022__explicacion"
+                style={{ animationDelay: `${2 + 1 * Math.random()}s` }}
+              >
+                <h2>{mensajesEntrantes[0].tituloExplicacion}</h2>
+                <p>{mensajesEntrantes[0].contenidoExplicacion}</p>
+              </div>
+            }
             {mensajesEntrantes[0].contenido}
           </div>
           <div
@@ -96,13 +98,15 @@ const SlideCelularGenerica2022 = ({ titulo, mensajesEntrantes, mensajesSalientes
             className="SlideCelularGenerica2022__celular_mensaje SlideCelularGenerica2022__celular_mensaje--saliente"
             style={{ animationDelay: `${6 + 1 * Math.random()}s` }}
           >
-            <div
-              className="SlideCelularGenerica2022__explicacion"
-              style={{ animationDelay: `${7 + 1 * Math.random()}s` }}
-            >
-              <h2>{mensajesSalientes[0].tituloExplicacion}</h2>
-              <p>{mensajesSalientes[0].contenidoExplicacion}</p>
-            </div>
+            {mensajesSalientes[0]?.tituloExplicacion &&
+              <div
+                className="SlideCelularGenerica2022__explicacion"
+                style={{ animationDelay: `${7 + 1 * Math.random()}s` }}
+              >
+                <h2>{mensajesSalientes[0].tituloExplicacion}</h2>
+                <p>{mensajesSalientes[0].contenidoExplicacion}</p>
+              </div>
+            }
             {mensajesSalientes[0].contenido}
           </div>
           <div
@@ -110,28 +114,48 @@ const SlideCelularGenerica2022 = ({ titulo, mensajesEntrantes, mensajesSalientes
             className="SlideCelularGenerica2022__celular_mensaje SlideCelularGenerica2022__celular_mensaje--entrante"
             style={{ animationDelay: `${9 + 1 * Math.random()}s` }}
           >
-            <div
-              className="SlideCelularGenerica2022__explicacion"
-              style={{ animationDelay: `${10 + 1 * Math.random()}s` }}
-            >
-              <h2>{mensajesEntrantes[1].tituloExplicacion}</h2>
-              <p>{mensajesEntrantes[1].contenidoExplicacion}</p>
-            </div>
+            {mensajesEntrantes[1].tituloExplicacion &&
+              <div
+                className="SlideCelularGenerica2022__explicacion"
+                style={{ animationDelay: `${10 + 1 * Math.random()}s` }}
+              >
+                <h2>{mensajesEntrantes[1].tituloExplicacion}</h2>
+                <p>{mensajesEntrantes[1].contenidoExplicacion}</p>
+              </div>
+            }
             {mensajesEntrantes[1].contenido}
           </div>
           <div
             ref={elemMsg4}
             className="SlideCelularGenerica2022__celular_mensaje SlideCelularGenerica2022__celular_mensaje--saliente"
-            style={{ animationDelay: `${14 + 2 * Math.random()}s` }}
+            style={{ animationDelay: `${14 + 1 * Math.random()}s` }}
           >
+            {mensajesSalientes[1].tituloExplicacion &&
+              <div
+                className="SlideCelularGenerica2022__explicacion"
+                style={{ animationDelay: `${15 + 1 * Math.random()}s` }}
+              >
+                <h2>{mensajesSalientes[1].tituloExplicacion}</h2>
+                <p>{mensajesSalientes[1].contenidoExplicacion}</p>
+              </div>
+            }
             {mensajesSalientes[1].contenido}
           </div>
           {mensajesEntrantes[2] &&
             <div
               ref={elemMsg5}
               className="SlideCelularGenerica2022__celular_mensaje SlideCelularGenerica2022__celular_mensaje--entrante"
-              style={{ animationDelay: `${17 + 2 * Math.random()}s` }}
+              style={{ animationDelay: `${17 + 1 * Math.random()}s` }}
             >
+              {mensajesEntrantes[2].tituloExplicacion &&
+                <div
+                  className="SlideCelularGenerica2022__explicacion"
+                  style={{ animationDelay: `${18 + 1 * Math.random()}s` }}
+                >
+                  <h2>{mensajesEntrantes[2].tituloExplicacion}</h2>
+                  <p>{mensajesEntrantes[2].contenidoExplicacion}</p>
+                </div>
+              }
               {mensajesEntrantes[2].contenido}
             </div>
           }
@@ -139,9 +163,54 @@ const SlideCelularGenerica2022 = ({ titulo, mensajesEntrantes, mensajesSalientes
             <div
               ref={elemMsg6}
               className="SlideCelularGenerica2022__celular_mensaje SlideCelularGenerica2022__celular_mensaje--saliente"
-              style={{ animationDelay: `${21 + 2 * Math.random()}s` }}
+              style={{ animationDelay: `${21 + 1 * Math.random()}s` }}
             >
+              {mensajesSalientes[2].tituloExplicacion &&
+                <div
+                  className="SlideCelularGenerica2022__explicacion"
+                  style={{ animationDelay: `${22 + 1 * Math.random()}s` }}
+                >
+                  <h2>{mensajesSalientes[2].tituloExplicacion}</h2>
+                  <p>{mensajesSalientes[2].contenidoExplicacion}</p>
+                </div>
+              }
               {mensajesSalientes[2].contenido}
+            </div>
+          }
+          {mensajesEntrantes[3] &&
+            <div
+              ref={elemMsg5}
+              className="SlideCelularGenerica2022__celular_mensaje SlideCelularGenerica2022__celular_mensaje--entrante"
+              style={{ animationDelay: `${24 + 1 * Math.random()}s` }}
+            >
+              {mensajesEntrantes[3].tituloExplicacion &&
+                <div
+                  className="SlideCelularGenerica2022__explicacion"
+                  style={{ animationDelay: `${25 + 1 * Math.random()}s` }}
+                >
+                  <h2>{mensajesEntrantes[3].tituloExplicacion}</h2>
+                  <p>{mensajesEntrantes[3].contenidoExplicacion}</p>
+                </div>
+              }
+              {mensajesEntrantes[3].contenido}
+            </div>
+          }
+          {mensajesSalientes[3] &&
+            <div
+              ref={elemMsg6}
+              className="SlideCelularGenerica2022__celular_mensaje SlideCelularGenerica2022__celular_mensaje--saliente"
+              style={{ animationDelay: `${27 + 1 * Math.random()}s` }}
+            >
+              {mensajesSalientes[3].tituloExplicacion &&
+                <div
+                  className="SlideCelularGenerica2022__explicacion"
+                  style={{ animationDelay: `${28 + 1 * Math.random()}s` }}
+                >
+                  <h2>{mensajesSalientes[3].tituloExplicacion}</h2>
+                  <p>{mensajesSalientes[3].contenidoExplicacion}</p>
+                </div>
+              }
+              {mensajesSalientes[3].contenido}
             </div>
           }
         </div>
