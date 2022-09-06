@@ -3,6 +3,7 @@ import './Expo.css'
 import SlideMensaje from './SlideMensaje/SlideMensaje'
 import SlideCelularReagenda from './SlideCelularReagenda'
 import SlideCelularRevertir from './SlideCelularRevertir'
+import SlideCelularExpo2022 from './SlideCelularExpo2022'
 
 const Expo = () => {
 
@@ -10,10 +11,10 @@ const Expo = () => {
   const tSlideMS = 30000
 
   const slides = useMemo(() => [
-    <SlideMensaje />,
-    <SlideCelularReagenda	 />,
-    <SlideMensaje />,
-    <SlideCelularRevertir />
+    // <SlideMensaje />,
+    <SlideCelularExpo2022	 />,
+    // <SlideMensaje />,
+    // <SlideCelularRevertir />
   ], [])
 
   useEffect(() => {
