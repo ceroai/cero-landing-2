@@ -1,0 +1,348 @@
+.SlideCelularExpo2022 {
+  animation: aparece-slide 1s ease;
+  min-height: 100vh;
+  min-width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.SlideCelularExpo2022__texto {
+  font-size: 3.25rem;
+  text-align: left;
+  line-height: 1.25;
+  max-width: 20ch;
+}
+
+.SlideCelularGenerica2022__link {
+  color: #44a2ff;
+}
+
+.SlideCelularExpo2022__celular {
+  color: var(--color-negro);
+  height: 125vmin;
+  background: #F7F7F7;
+  width: 55vmin;
+  border-radius: 5vmin;
+  box-shadow:
+    0 0 0 .7vmin #2B292A,
+    -.2vmin -.2vmin 0 .7vmin #B0B0B0,
+    0 0 0 1.4vmin #656565;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  font-family: 'Helvetica', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.SlideCelularExpo2022__celular::before {
+  content: '';
+  position: absolute;
+  width: .5vmin;
+  top: 15vmin;
+  height: 10vmin;
+  background: #444;
+  left: -1.8vmin;
+  border-radius: 1vmin 0 0 1vmin;
+}
+
+.SlideCelularExpo2022__celular::after {
+  content: '';
+  position: absolute;
+  width: .6vmin;
+  top: 8vmin;
+  height: 7vmin;
+  background: #333;
+  right: -1.8vmin;
+  border-radius: 0 2vmin 2vmin 0;
+  box-shadow: 0 9vmin #333;
+}
+
+.SlideCelularExpo2022__celular_solapa {
+  position: absolute;
+  --ancho: 20vmin;
+  top: 0;
+  left: calc(55vmin / 2 - var(--ancho) / 2);
+  content: '';
+  width: var(--ancho);
+  height: 3.5vmin;
+  background: #2B292A;
+  border-radius: 0 0 10vmin 10vmin / 0 0 20vmin 20vmin;
+}
+
+.SlideCelularExpo2022__celular_solapa::before {
+  position: absolute;
+  content: '';
+  width: .5vmin;
+  height: .5vmin;
+  border-radius: 50%;
+  background: #5A5A5A;
+  left: 10.25vmin;
+  top: .3vmin;
+}
+
+.SlideCelularExpo2022__celular_solapa::after {
+  position: absolute;
+  content: '';
+  width: 10vmin;
+  height: .75vmin;
+  border-radius: 2vmin;
+  background: linear-gradient(#2C2C2C, #989898);
+  left: 5.5vmin;
+  top: 1.5vmin;
+}
+
+.SlideCelularExpo2022__celular_barra_estado {
+  height: 5vmin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2vmin;
+  padding: 0 4vmin;
+  font-weight: bold;
+  color: #2B292A;
+}
+
+.SlideCelularExpo2022__celular_barra_estado_iconos {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.5vmin;
+}
+
+.SlideCelularExpo2022__celular_barra_app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7vmin;
+  box-shadow: 0 .1vmin .2vmin rgba(0, 0, 0, .1);
+  z-index: 2;
+}
+
+.SlideCelularExpo2022__celular_informacion_contacto {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.SlideCelularExpo2022__celular_icono_volver {
+  font-size: 6vmin;
+  margin-left: -.25rem;
+  color: #44a2ff;
+}
+
+.SlideCelularExpo2022__celular_avatar {
+  background: linear-gradient(
+    45deg,
+    var(--color-rojo) 0 25%,
+    var(--color-azul),
+    var(--color-purpura) 75%
+  );
+  background-size: 1000% 1000%;
+  animation: Superior__bg 10s ease-in-out infinite;
+  width: 5vmin;
+  height: 5vmin;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SlideCelularExpo2022__celular_imagen_avatar {
+  width: 3.75vmin;
+  min-height: 3.75vmin;
+}
+
+.SlideCelularExpo2022__celular_contacto {
+  display: grid;
+  gap: .6vmin;
+  padding-left: 1.5vmin;
+}
+
+.SlideCelularExpo2022__celular_nombre_contacto {
+  font-size: 2.25vmin;
+  font-weight: bold;
+  position: relative;
+}
+
+.SlideCelularExpo2022__celular_estado_contacto {
+  font-size: 1.8vmin;
+  color: gray;
+}
+
+.SlideCelularExpo2022__celular_iconos_barra_app {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3vmin;
+  padding-right: 3vmin;
+  color: #44a2ff;
+  font-size: 3vmin;
+}
+
+.SlideCelularExpo2022__celular_pantalla {
+  flex: 1;
+  background: linear-gradient(
+      45deg,
+      #ed332425 0 25%,
+      #005bf125,
+      #a506e925 75%
+    ), white;
+  background-size: 500% 100%;
+  animation: Superior__bg 10s ease infinite;
+  border-radius: 0 0 5vmin 5vmin;
+  display: flex;
+  padding: 1.5vmin 2vmin;
+  flex-direction: column;
+  gap: 1.5vmin;
+  position: relative;
+}
+
+.SlideCelularExpo2022__celular_mensaje {
+  max-width: 66%;
+  padding: 1.15vmin;
+  border-radius: .5vmin;
+  font-size: 2.25vmin;
+  line-height: 1.25;
+  margin-bottom: .75vh;
+  position: relative;
+  filter: drop-shadow(0 .1rem .15rem rgba(0, 0, 0, .1));
+}
+
+.SlideCelularExpo2022__celular_mensaje--saliente::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 30vw);
+  left: .25vmin;
+  top: .75vmin;
+}
+
+.SlideCelularExpo2022__celular_mensaje--entrante::before {
+  content: '';
+  position: absolute;
+  width: 2vmin;
+  height: 2vmin;
+  left: -1.5vmin;
+  top: 0;
+  background: white;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+.SlideCelularExpo2022__celular_mensaje--entrante {
+  transform-origin: 0% 0%;
+  background: white;
+  align-self: flex-start;
+  transform-origin: 0% 0%;
+  animation: aparece-mensaje-entrante-slidecelular .25s ease both;
+}
+
+.SlideCelularExpo2022__celular_mensaje--entrante::before {
+  content: '';
+  position: absolute;
+  width: 2vmin;
+  height: 2vmin;
+  left: -1.5vmin;
+  top: 0;
+  background: inherit;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+.SlideCelularExpo2022__celular_mensaje--saliente {
+  transform-origin: 100% 0%;
+  background: #dcf8c7;
+  align-self: flex-end;
+  transform-origin: 100% 0%;
+  animation: aparece-mensaje-saliente-slidecelular .25s ease both;
+}
+
+.SlideCelularExpo2022__celular_mensaje--saliente::before {
+  content: '';
+  position: absolute;
+  width: 2vmin;
+  height: 2vmin;
+  left: calc(100% - .5vmin);
+  top: 0;
+  background: inherit;
+  clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+}
+
+.SlideCelularExpo2022__celular strong {
+  font-weight: bold;
+}
+
+.SlideCelularExpo2022__celular_deteccion {
+  position: absolute;
+  height: calc(100% + .5vmin);
+  top: 0;
+  padding-left: 100%;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  min-width: 50rem;
+}
+
+.SlideCelularExpo2022__celular_etiqueta_deteccion {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5vmin;
+  display: flex;
+  align-items: center;
+}
+
+.SlideCelularExpo2022__celular_etiqueta_deteccion--corta {
+  display: none;
+}
+
+.SlideCelularExpo2022__celular_respuesta_deteccion {
+  font-size: 2vmin;
+  text-transform: none;
+  margin-left: 2rem;
+}
+
+.SlideCelularExpo2022__celular_icono_no {
+  color: var(--color-rojo);
+  margin-right: .5rem;
+  font-size: 1.5rem;
+}
+
+.SlideCelularExpo2022__celular_icono_si {
+  color: var(--color-verde);
+  margin-right: .5rem;
+  font-size: 1.5rem;
+}
+
+.SlideCelularExpo2022__celular_icono_verificado {
+  color: var(--color-verde);
+  font-size: 1.5rem;
+  position: absolute;
+  left: calc(100% + .35rem);
+  top: -.15rem;
+}
+
+@keyframes aparece-mensaje-entrante-slidecelular {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes aparece-mensaje-saliente-slidecelular {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+  100% {
+    opacity: 1;
+  }
+}
