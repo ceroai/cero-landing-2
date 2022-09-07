@@ -12,11 +12,10 @@ import { useEffect, useRef, useState } from 'react'
 
 const nombresEmpresas = [
   'Red de Salud',
-  'Salud Connect',
-  'Healthy Way',
-  'Perfecta Salud',
-  'Wisdom Health',
-  'Salud 21st',
+  'Clínica San Vital',
+  'Hospital de Salud',
+  'Clínica Sonrisas al Cien',
+  'Hospital del Robledo',
 ]
 
 const SlideCelularGenerica2022 = ({ titulo, mensajesEntrantes, mensajesSalientes }) => {

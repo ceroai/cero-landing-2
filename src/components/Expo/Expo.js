@@ -18,7 +18,7 @@ const Expo = () => {
         {
           contenido: 
             <>
-              Hola Paulo, soy Denis del Área Médica de la clínica. Le escribo
+              Hola Paulo, soy Gaby del Área Médica de la clínica. Le escribo
               para confirmar su hora para <strong>mañana jueves 13 de enero a las 13:45
               que tiene con la Dra. Fabiola Lavanderos de Otorrinolaringología</strong> en
               nuestra sucursal de Providencia. ¿Confirma su hora? 
@@ -165,7 +165,7 @@ const Expo = () => {
         {
           contenido: 
             <>
-              Hola Agnes, soy María del Área Médica. Le escribo
+              Hola Agnes, soy Gaby del Área Médica. Le escribo
               para confirmar su cita <strong>mañana jueves 6 a las 13:45</strong> con
               la Dra. Zunino. ¿Asistirá a su cita? 
             </>,
@@ -238,7 +238,7 @@ const Expo = () => {
         {
           contenido: 
             <>
-              Hola Diego, soy María del Área Médica. Te escribo
+              Hola Diego, soy Gaby del Área Médica. Te escribo
               para confirmar tu cita <strong>el lunes 2 de junio a las 13:15</strong> con
               la Dra. Zunino en nuestra sucursal de Providencia. ¿Asistirá a su cita? 
             </>,
@@ -355,7 +355,7 @@ const Expo = () => {
         {
           contenido: 
             <>
-              Hola Franco, soy María del Área Médica. Como se inscribió
+              Hola Franco, soy Gaby del Área Médica. Como se inscribió
               en nuestra Lista de Espera, le escribo porque tengo una hora
               pre-reservada de <strong>CARDIOLOGÍA ADULTO mañana martes 25 de enero
               a las 17:20 con Pedro Parra en nuestra sucursal de Providencia</strong>
@@ -404,6 +404,62 @@ const Expo = () => {
         ]
       }
     />,
+    <SlideCelularGenerica2022
+      titulo="Derivaciones"
+      mensajesEntrantes={[
+        {
+          contenido: 
+            <>
+              Hola Joe, soy Gaby del Área Médica. La Dra. Zunino me
+              me pidió que le ayudara a coordinar los exámenes de
+              procedimiento que le indicó. ¿Le gustaría que le
+              ayudemos a agendarlos?
+            </>,
+          tituloExplicacion:
+            <>
+              Al terminar una consulta médica con indicación de
+              exámenes, contactamos al paciente para ofrecer ayuda
+            </>,
+        },
+        {
+          contenido:
+            <>
+              Perfecto! Le vamos a llamar por teléfono (más fácil 🤓)
+              para coordinar los detalles de la cita. Le pido por favor que
+              tenga a mano las indicaciones que le dio la Dra.
+            </>,
+          tituloExplicacion:
+            <>
+              Derivamos el caso al call center
+            </>,
+          contenidoExplicacion:
+            <>
+              Hot-lead
+            </>
+        },
+      ]}
+      mensajesSalientes={
+        [
+          {
+            contenido:
+              <>
+                Hola Gaby, si fuera posible, se lo agradecería
+              </>,
+            tituloExplicacion:
+              <>
+                Paciente responde positivamente
+              </>,
+          },
+          {
+            contenido:
+              <>
+                Espero su llamada, gracias
+              </>
+            ,
+          },
+        ]
+      }
+    />,
   ], [])
 
   useEffect(() => {
@@ -416,6 +472,9 @@ const Expo = () => {
   return (
     <div className="Expo" key={Math.random()}>
       {slides[indiceSlide]}
+      <div className="Expo__numero_slide">
+        Caso de uso {indiceSlide + 1} / {slides.length}
+      </div>
     </div>
   )
 }
