@@ -36,7 +36,7 @@
     0 0 0 1.4vmin #656565;
   position: absolute;
   right: calc(50% - 22.5vmin);
-  top: 10%;
+  top: 5%;
   font-family: 'Helvetica', sans-serif;
   display: flex;
   flex-direction: column;

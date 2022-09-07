@@ -9,10 +9,10 @@ import SlideCelularGenerica2022 from './SlideCelularGenerica2022'
 const Expo = () => {
 
   const [indiceSlide, setIndiceSlide] = useState(0)
-  const tSlideMS = 40000
+  const tSlideMS = 40_000
 
   const slides = useMemo(() => [
-    <SlideMensaje />,
+    // <SlideMensaje />,
     <SlideCelularGenerica2022
       titulo="Confirmaciones de citas"
       mensajesEntrantes={[
@@ -78,7 +78,7 @@ const Expo = () => {
         ]
       }
     />,
-    <SlideMensaje />,
+    // <SlideMensaje />,
     <SlideCelularGenerica2022
       titulo="Confirmaciones de citas múltiples"
       mensajesEntrantes={[
@@ -161,7 +161,7 @@ const Expo = () => {
         ]
       }
     />,
-    <SlideMensaje />,
+    // <SlideMensaje />,
     <SlideCelularGenerica2022
       titulo="Cancelación espontánea"
       mensajesEntrantes={[
@@ -235,7 +235,7 @@ const Expo = () => {
         ]
       }
     />,
-    <SlideMensaje />,
+    // <SlideMensaje />,
     <SlideCelularGenerica2022
       titulo="Reagendamiento automático"
       mensajesEntrantes={[
@@ -243,7 +243,7 @@ const Expo = () => {
           contenido: 
             <>
               Hola Salomón, soy María del Área Médica. Te escribo
-              para confirmar tu cita <strong>el miércoles 22 de diciembre a las 13:15</strong> con
+              para confirmar tu cita <strong>el lunes 2 de junio a las 13:15</strong> con
               la Dra. Zunino en nuestra sucursal de Providencia. ¿Asistirá a su cita? 
             </>,
         },
@@ -257,11 +257,11 @@ const Expo = () => {
         {
           contenido:
             <>
-              Tengo estas opciones con la Dra. Zunino en nuestra sucursal de Providencia:<br /><br />
-              1) el miércoles 9 de marzo a las 11:15<br />
-              1) el miércoles 9 de marzo a las 12:15<br />
-              1) el miércoles 9 de marzo a las 13:15<br /><br />
-              Por favor dime cuál de acomoda (1, 2 o 3) para poder agendarla
+              Tengo estas opciones con la Dra. Zunino en Providencia:<br /><br />
+              1) el miércoles 9 de junio a las 11:15<br />
+              1) el miércoles 9 de junio a las 12:15<br />
+              1) el miércoles 9 de junio a las 13:15<br /><br />
+              Por favor dime cuál de acomoda para poder agendarla
             </>,
           tituloExplicacion:
             <>
@@ -285,7 +285,7 @@ const Expo = () => {
           {
             contenido:
               <>
-                Por favor reagendar para el 9 de marzo entre las 11 y las 13 horas
+                Por favor reagendar para el 9 de junio entre las 11 y las 13 horas
               </>,
             tituloExplicacion:
               <>
@@ -303,10 +303,10 @@ const Expo = () => {
       setIndiceSlide(i => (i + 1) % slides.length)
     }, tSlideMS)
     return () => clearInterval(slidesInteval)
-  } , [])
+  } , [slides.length])
 
   return (
-    <div className="Expo">
+    <div className="Expo" key={Math.random()}>
       {slides[indiceSlide]}
     </div>
   )
