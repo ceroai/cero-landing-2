@@ -246,8 +246,8 @@ const Expo = () => {
         {
           contenido:
             <>
-              Ok, no te preocupes, avisaré a la doctora. ¿Quieres reagendar tu cita? Si es así, 
-              dime por favor opciones de fecha y horario para buscar
+              Ok, no te preocupes, avisaré a la doctora. Si quieres reagendar, 
+              dime por favor opciones de fecha y hora para buscar
             </>,
         },
         {
@@ -297,14 +297,14 @@ const Expo = () => {
         {
           contenido: 
             <>
-              🚨🚨 <strong>SU HORA HA SIDO SUSPENDIDA</strong> 🚨🚨<br />
+              🚨 <strong>SU HORA FUE SUSPENDIDA</strong> 🚨<br />
               Hola Camilo, lamento informarle
-              que su cita para mañana jueves 5 de junio a las 17:30 con la Dra. Zunino en
-              nuestra sucursal de Providencia ha sido <strong>suspendida
-              por motivos de fuerza mayor</strong><br /><br />
-              Le pedimos disculpas, y para solucionar este problema <strong>hemos
-              agendado UNA NUEVA HORA para mañana a las 18:20 con el Dr. Schwartz en la misma sucursal</strong>. Le
-              acomoda esta alternativa?
+              que su cita para mañana a las 17:30 con la Dra. Zunino
+              fue <strong>suspendida
+              por motivos de fuerza mayor</strong>.<br /><br />
+              Le pedimos disculpas, y para solucionar este problema le <strong>hemos
+              agendado <strong>una nueva hora</strong> para mañana a las 18:20 con el Dr. Schwartz</strong>.
+              ¿Le acomoda esta opción?
             </>,
           tituloExplicacion:
             <>
@@ -356,9 +356,9 @@ const Expo = () => {
           contenido: 
             <>
               Hola Franco, soy Gaby del Área Médica. Como se inscribió
-              en nuestra Lista de Espera, le escribo porque tengo una hora
-              pre-reservada de <strong>CARDIOLOGÍA ADULTO mañana martes 25 de enero
-              a las 17:20 con Pedro Parra en nuestra sucursal de Providencia</strong>
+              en nuestra lista de espera, le escribo porque hay una hora
+              disponible de <strong>Cardiología para este jueves a las 17:20
+              con el Dr. Parra en nuestra sucursal de Providencia.</strong>
               <br /><br />
               ¿Le acomoda esta alternativa? 
             </>,
@@ -370,10 +370,10 @@ const Expo = () => {
         {
           contenido:
             <>
-              Gracias por su respuesta. Todos los pacientes tienen 3
-              oportunidades para encontrar una cita. Esta es la primera vez que
-              le preguntamos por lo que aún sigue en la Lista de Espera y
-              le avisaremos tan pronto encontremos un nuevo cupo.
+              Entiendo, no se preocupe. Recuerde que todos los pacientes
+              tienen 3 oportunidades para encontrar una cita. Esta es la primera vez que
+              le preguntamos por lo que aún sigue en la lista de espera y
+              le avisaremos tan pronto encontremos un nuevo cupo 😊
             </>,
             tituloExplicacion:
             <>
@@ -410,7 +410,7 @@ const Expo = () => {
         {
           contenido: 
             <>
-              Hola Joe, soy Gaby del Área Médica. La Dra. Zunino me
+              Hola Joe, soy Gaby del Área Médica. La Dra. Zunino
               me pidió que le ayudara a coordinar los exámenes de
               procedimiento que le indicó. ¿Le gustaría que le
               ayudemos a agendarlos?
