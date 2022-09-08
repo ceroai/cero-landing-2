@@ -6,6 +6,24 @@ import SlideCelularRevertir from './SlideCelularRevertir'
 import SlideCelularExpo2022 from './SlideCelularExpo2022'
 import SlideCelularGenerica2022 from './SlideCelularGenerica2022'
 
+const conversacion = `
+  BOT: Hola Paulo, soy Gaby del Área Médica de la clínica. Le escribo
+  para confirmar su hora para *mañana jueves 13 de enero a las 13:45
+  que tiene con la Dra. Fabiola Lavanderos de Otorrinolaringología* en
+  nuestra sucursal de Providencia. ¿Confirma su hora?
+  -> Confirmación en lenguaje natural
+  -> Detalles como usar "Dra." en nombres femeninos
+  USUARIO: 👍 Cnfirmo
+  -> Capturamos respuestas en lenguaje natural
+  -> Con emojis y faltas de ortografía
+  BOT: Excelente, confirmado para mañana jueves 😊
+    • Recuerde llegar 20 minutos antes de su cita
+    • La dirección es Las Lilas 2039 (Metro Salvador) Piso 300 https://maps.gl/diyMvNQ
+  -> Dirección en el mapa
+  -> Proporcionamos información adicional para facilitar la presentación del paciente
+  USUARIO: Gracias!
+`
+
 const Expo = () => {
 
   const [indiceSlide, setIndiceSlide] = useState(0)
@@ -14,6 +32,7 @@ const Expo = () => {
   const slides = useMemo(() => [
     <SlideCelularGenerica2022
       titulo="Confirmaciones de citas"
+      conversacion={conversacion}
       mensajesEntrantes={[
         {
           contenido: 
@@ -240,7 +259,7 @@ const Expo = () => {
             <>
               Hola Diego, soy Gaby del Área Médica. Te escribo
               para confirmar tu cita <strong>el lunes 2 de junio a las 13:15</strong> con
-              la Dra. Zunino en nuestra sucursal de Providencia. ¿Asistirá a su cita? 
+              la Dra. Zunino en nuestra sucursal de Providencia. ¿Asistirás a tu cita? 
             </>,
         },
         {
