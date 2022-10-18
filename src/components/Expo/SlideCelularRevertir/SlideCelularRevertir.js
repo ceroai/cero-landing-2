@@ -52,13 +52,13 @@ const SlideCelularRevertir = () => {
       }
       mensajesEntrantes={[
         <>
-          ¡Hola Gabriela! Tiene hora para un <strong>importante examen de salud</strong> el próximo martes en nuestro centro médico. ¿Asistirá?
+          ¡Hola Gabriela! Tiene una cita para un <strong>importante examen de salud</strong> el próximo martes en nuestro centro médico. ¿Asistirá?
         </>,
         <>
           ¡Excelente! Su cita queda confirmada. ¡Nos vemos! 😊
         </>,
         <>
-          Entiendo, no se preocupe, gracias por avisarnos. Más adelante nos comunicaremos con Ud. para reagendar su hora.
+          Entiendo, no se preocupe, gracias por avisarnos. Más adelante nos comunicaremos con Ud. para reagendar su cita.
         </>,
       ]}
       mensajesSalientes={[

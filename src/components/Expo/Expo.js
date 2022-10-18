@@ -8,9 +8,9 @@ import SlideCelularGenerica2022 from './SlideCelularGenerica2022'
 
 const conversacion = `
   BOT: Hola Paulo, soy Gaby del Área Médica de la clínica. Le escribo
-  para confirmar su hora para *mañana jueves 13 de enero a las 13:45
+  para confirmar su cita para *mañana jueves 13 de enero a las 13:45
   que tiene con la Dra. Fabiola Lavanderos de Otorrinolaringología* en
-  nuestra sucursal de Providencia. ¿Confirma su hora?
+  nuestra sucursal de Providencia. ¿Confirma su cita?
   -> Confirmación en lenguaje natural
   -> Detalles como usar "Dra." en nombres femeninos
   USUARIO: 👍 Cnfirmo
@@ -38,9 +38,9 @@ const Expo = () => {
           contenido: 
             <>
               Hola Paulo, soy Gaby del Área Médica de la clínica. Le escribo
-              para confirmar su hora para <strong>mañana jueves 13 de enero a las 13:45
+              para confirmar su cita para <strong>mañana jueves 13 de enero a las 13:45
               que tiene con la Dra. Fabiola Lavanderos de Otorrinolaringología</strong> en
-              nuestra sucursal de Providencia. ¿Confirma su hora? 
+              nuestra sucursal de Providencia. ¿Confirma su cita? 
             </>,
           tituloExplicacion: 
             <>
@@ -185,7 +185,7 @@ const Expo = () => {
           contenido: 
             <>
               Hola Agnes, soy Gaby del Área Médica. Le escribo
-              para confirmar su cita <strong>mañana jueves 6 a las 13:45</strong> con
+              para confirmar su cita para <strong>mañana jueves 6 a las 13:45</strong> con
               la Dra. Zunino. ¿Asistirá a su cita? 
             </>,
         },
@@ -202,13 +202,13 @@ const Expo = () => {
         {
           contenido:
             <>
-              Entiendo que no podrá asistir a esta hora, cierto? <br />
+              Entiendo que no podrá asistir a esta cita, cierto? <br />
               <strong>6 de enero a las 13:45 con la Dra. Zunino</strong><br />
               Muchas gracias por informarnos
             </>,
           tituloExplicacion:
             <>
-              Anulamos y liberamos la hora
+              Anulamos y liberamos la cita
             </>,
           contenidoExplicacion:
             <>
@@ -258,7 +258,7 @@ const Expo = () => {
           contenido: 
             <>
               Hola Diego, soy Gaby del Área Médica. Te escribo
-              para confirmar tu cita <strong>el lunes 2 de junio a las 13:15</strong> con
+              para confirmar tu cita para <strong>el lunes 2 de junio a las 13:15</strong> con
               la Dra. Zunino en nuestra sucursal de Providencia. ¿Asistirás a tu cita? 
             </>,
         },
@@ -280,7 +280,7 @@ const Expo = () => {
             </>,
           tituloExplicacion:
             <>
-              Entregamos opciones de horas
+              Entregamos opciones de horarios para la cita
             </>,
         },
       ]}
@@ -316,13 +316,13 @@ const Expo = () => {
         {
           contenido: 
             <>
-              🚨 <strong>SU HORA FUE SUSPENDIDA</strong> 🚨<br />
+              🚨 <strong>SU CITA FUE SUSPENDIDA</strong> 🚨<br />
               Hola Camilo, lamento informarle
               que su cita para mañana a las 17:30 con la Dra. Zunino
               fue <strong>suspendida
               por motivos de fuerza mayor</strong>.<br /><br />
               Le pedimos disculpas, y para solucionar este problema le <strong>hemos
-              agendado <strong>una nueva hora</strong> para mañana a las 18:20 con el Dr. Schwartz</strong>.
+              agendado <strong>una nueva cita</strong> para mañana a las 18:20 con el Dr. Schwartz</strong>.
               ¿Le acomoda esta opción?
             </>,
           tituloExplicacion:
@@ -375,7 +375,7 @@ const Expo = () => {
           contenido: 
             <>
               Hola Franco, soy Gaby del Área Médica. Como se inscribió
-              en nuestra lista de espera, le escribo porque hay una hora
+              en nuestra lista de espera, le escribo porque hay una cita
               disponible de <strong>Cardiología para este jueves a las 17:20
               con el Dr. Parra en nuestra sucursal de Providencia.</strong>
               <br /><br />

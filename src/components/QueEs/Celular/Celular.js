@@ -90,29 +90,29 @@ const Celular = () => {
       </div>
       <div className="Celular__pantalla">
         <div ref={elemMsg1} className="Celular__mensaje Celular__mensaje--entrante">
-          ¡Hola Gabriela! Tiene hora para un <strong>importante examen de salud</strong> el próximo martes en nuestro centro médico. ¿Asistirá?
+          ¡Hola Gabriela! Tiene una cita para un <strong>importante examen de salud</strong> el próximo martes en nuestro centro médico. ¿Asistirá?
         </div>
         <div ref={elemMsg2} className="Celular__mensaje Celular__mensaje--saliente">
           Hola. Tengo que asistir sí o sí a otro compromiso, está difícil.
           <div ref={deteccionMsg2} className="Celular__deteccion">
-            <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_no" icon={iconoNo} />Paciente cancela hora</div>
+            <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_no" icon={iconoNo} />Paciente cancela cita</div>
             <div className="Celular__etiqueta_deteccion Celular__etiqueta_deteccion--corta"><InlineIcon className="Celular__icono_no" icon={iconoNo} />Cancela</div>
             <div className="Celular__respuesta_deteccion">Generando respuesta...</div>
           </div>
         </div>
         <div ref={elemMsg3} className="Celular__mensaje Celular__mensaje--entrante">
-          Entiendo, no se preocupe. ¿Le gustaría cambiar su hora para otro día?
+          Entiendo, no se preocupe. ¿Le gustaría cambiar su cita para otro día?
         </div>
         <div ref={elemMsg4} className="Celular__mensaje Celular__mensaje--saliente">
           Eso sería ideal!
           <div ref={deteccionMsg4} className="Celular__deteccion">
-            <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Paciente reagenda hora</div>
+            <div className="Celular__etiqueta_deteccion"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Paciente reagenda cita</div>
             <div className="Celular__etiqueta_deteccion Celular__etiqueta_deteccion--corta"><InlineIcon className="Celular__icono_si" icon={iconoSi} />Reagenda</div>
             <div className="Celular__respuesta_deteccion">Generando respuesta...</div>
           </div>
         </div>
         <div ref={elemMsg5} className="Celular__mensaje Celular__mensaje--entrante">
-          ¡Perfecto! Nos comunicaremos con Ud. para coordinar el reagendamiento de su hora 🕖
+          ¡Perfecto! Nos comunicaremos con Ud. para coordinar el reagendamiento de su cita 🕖
         </div>
         <div ref={elemMsg6} className="Celular__mensaje Celular__mensaje--saliente">
           Muchas gracias! Que buena atención 👩‍🦰 💯

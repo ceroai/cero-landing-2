@@ -16,11 +16,11 @@ const emojisRandom = [
 const mensajesRandomCancela = [
   'Hola. Tengo que asistir sí o sí a otro compromiso, está difícil.',
   'Pucha, tuve un compromiso avisele a la doctora si puede',
-  'No podre asistir, lo siento pero necesito otra hora para más adelante',
+  'No podre asistir, lo siento pero necesito otra cita para más adelante',
   'Hola. Tengo que asistir sí o sí a otro compromiso, está difícil.',
   'Lamento informar que no podre asistir esta vez, les pido disculpas',
-  'Espereme parece que voy a faltar a la hora',
-  `Buen${new Date().getHours() < 12 ? 'os días, ' : 'as tardes, '}tuve un percance y tendré que posponer la hora`
+  'Me parece que voy a faltar a la cita',
+  `Buen${new Date().getHours() < 12 ? 'os días, ' : 'as tardes, '}tuve un percance y tendré que posponer la cita`
 ]
 
 const mensajesRandomReagenda = [
@@ -55,10 +55,10 @@ const SlideCelularReagenda = () => {
           ¡Hola Gabriela! Tiene agendado un <strong>importante control de salud</strong> el próximo martes en nuestro centro médico. ¿Asistirá?
         </>,
         <>
-          Entiendo, no se preocupe. ¿Le gustaría cambiar su hora para otro día?
+          Entiendo, no se preocupe. ¿Le gustaría cambiar su cita para otro día?
         </>,
         <>
-          ¡Perfecto! Nos comunicaremos con Ud. para coordinar el reagendamiento de su hora 🕖
+          ¡Perfecto! Nos comunicaremos con Ud. para coordinar el reagendamiento de su cita 🕖
         </>,
       ]}
       mensajesSalientes={[
