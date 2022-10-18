@@ -12,10 +12,10 @@ import { useEffect, useRef, useState } from 'react'
 
 const nombresEmpresas = [
   'Red de Salud',
-  'Denta Connect',
-  'Dental Way',
-  'Perfecta Salud',
-  'Dental Wisdom'
+  'Clínica San Vital',
+  'Hospital de Salud',
+  'Clínica Sonrisas al Cien',
+  'Hospital del Robledo',
 ]
 
 const SlideCelularGenerica2022 = ({ titulo, mensajesEntrantes, mensajesSalientes }) => {
@@ -51,6 +51,37 @@ const SlideCelularGenerica2022 = ({ titulo, mensajesEntrantes, mensajesSalientes
       {/* <h1 className="SlideCelularGenerica2022__texto">
         {texto}
       </h1> */}
+      <div
+        className="SlideCelularGenerica2022__celular"
+        style={{ zIndex: 10, clipPath: `polygon(0% 0%, 100% 0%, 100% 12vmin, 0% 12vmin)` }}
+      >
+        <div className="SlideCelularGenerica2022__celular_solapa"></div>
+        <div className="SlideCelularGenerica2022__celular_barra_estado">
+          <p>{format(hora, 'HH:mm')}</p>
+          <p className="SlideCelularGenerica2022__celular_barra_estado_iconos">
+            <InlineIcon icon={iconoWifi} />
+            <InlineIcon icon={iconoBateria} style={{ transform: 'rotate(90deg)' }} />
+          </p>
+        </div>
+        <div className="SlideCelularGenerica2022__celular_barra_app">
+          <div className="SlideCelularGenerica2022__celular_informacion_contacto">
+            <Icon className="SlideCelularGenerica2022__celular_icono_volver" icon={iconoVolver} />
+            <div className="SlideCelularGenerica2022__celular_avatar">
+              <img className="SlideCelularGenerica2022__celular_imagen_avatar" src={logo} alt="Avatar cero" />
+            </div>
+            <div className="SlideCelularGenerica2022__celular_contacto">
+              <p className="SlideCelularGenerica2022__celular_nombre_contacto">{nombresEmpresas[Math.floor(nombresEmpresas.length * Math.random())]} <InlineIcon icon={iconoCheck} className="SlideCelularGenerica2022__celular_icono_verificado" /></p>
+              <p ref={elemEstado} className="SlideCelularGenerica2022__celular_estado_contacto">en línea</p>
+            </div>
+          </div>
+          <div className="SlideCelularGenerica2022__celular_iconos_barra_app">
+            <Icon icon={iconoCamara} />
+            <Icon icon={iconoLlamada} />
+          </div>
+        </div>
+        <div className="SlideCelularGenerica2022__celular_pantalla">
+        </div>
+      </div>
       <div className="SlideCelularGenerica2022__celular">
         <div className="SlideCelularGenerica2022__celular_solapa"></div>
         <div className="SlideCelularGenerica2022__celular_barra_estado">

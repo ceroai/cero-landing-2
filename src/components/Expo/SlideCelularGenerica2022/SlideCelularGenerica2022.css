@@ -35,8 +35,8 @@
     -.2vmin -.2vmin 0 .7vmin #B0B0B0,
     0 0 0 1.4vmin #656565;
   position: absolute;
-  right: calc(50% - 22.5vmin);
-  top: 10%;
+  right: calc(50% - 26vmin);
+  top: 5%;
   font-family: 'Helvetica', sans-serif;
   display: flex;
   flex-direction: column;
