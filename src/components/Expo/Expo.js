@@ -274,8 +274,8 @@ const Expo = () => {
             <>
               Tengo estas opciones con la Dra. Zunino en Providencia:<br /><br />
               1) el miércoles 9 de junio a las 11:15<br />
-              1) el miércoles 9 de junio a las 12:15<br />
-              1) el miércoles 9 de junio a las 13:15<br /><br />
+              2) el miércoles 9 de junio a las 12:15<br />
+              3) el miércoles 9 de junio a las 13:15<br /><br />
               Por favor dime cuál de acomoda para poder agendarla
             </>,
           tituloExplicacion:
